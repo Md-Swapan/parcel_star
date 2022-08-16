@@ -1,0 +1,13 @@
+.navbar{
+    font-family: "Poppins", sans-serif;
+}
+.navbar-container{
+    width: 80%;
+    margin: auto;
+}
+.mainlogo{
+    top: 0px;
+}
+.navbar-nav{
+    /* margin-top: 80px; */
+}
