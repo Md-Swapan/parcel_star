@@ -1,13 +1,110 @@
-.navbar{
-    font-family: "Poppins", sans-serif;
+/* Navbar css */
+.navbar {
+  font-family: "Poppins", sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  height: 130px;
 }
-.navbar-container{
-    width: 80%;
+.navbar-container {
+  width: 80%;
+  margin: auto;
+}
+.mainlogo {
+  top: 0px;
+}
+
+/* Topbar css */
+.topBar-container {
+  position: absolute;
+  margin-left: 330px;
+  display: flex;
+  font-size: 14px;
+  margin-bottom: 40px;
+  color: gray;
+  padding-bottom: 10px;
+  border: 10px solid;
+    border-image-slice: 1;
+    border-width: 1px;
+    border-image-source: linear-gradient(to left, rgba(0, 0, 0, 0), rgb(148, 148, 148),rgba(0, 0, 0, 0));
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.location-container {
+  font-weight: 400;
+}
+.clock-container {
+  margin-left: 30px;
+  font-weight: 500;
+}
+.clock-container .open {
+  color: green;
+}
+.clock-container .close {
+  color: red;
+  margin-left: 10px;
+}
+.social-container {
+  margin-left: 150px;
+}
+.social-container span {
+  padding: 0px 7px;
+  color: rgb(146, 146, 146);
+}
+
+
+/* nav menu css */
+.navbar-nav {
+  margin-top: 60px;
+  margin-left: 100px;
+}
+.navbar-nav li {
+  font-size: 14px;
+  padding: 0px 10px;
+  color: rgb(145, 145, 145);
+  font-weight: 500;
+}
+.nav-item:hover .nav-link{
+  color: #eba21e !important;
+}
+.login {
+  margin-left: 135px;
+  border-radius: 3px;
+  background: #eba21e;
+  padding: 0px 40px !important;
+}
+.login:hover .login-link{
+    color: #fff !important;
+}
+.login-link {
+  color: #fff !important;
+}
+
+
+/* Resposive css */
+@media screen and (max-width: 786px) {
+  .topBar-container {
+    display: none;
+  }
+  .navbar {
+    height: 90px !important;
+    z-index: 9999;
+  }
+  .navbar-container {
+    width: 95%;
     margin: auto;
-}
-.mainlogo{
-    top: 0px;
-}
-.navbar-nav{
-    /* margin-top: 80px; */
+    padding: 0px;
+  }
+  .navbar-nav {
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+  .nav-menu {
+    margin-left: auto;
+  }
+  .login {
+    margin-top: 100px;
+  }
+
 }

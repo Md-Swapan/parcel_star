@@ -1,0 +1,44 @@
+.productTracker-container{
+    margin-top: -191px;
+    z-index: 9999;
+    padding: 44px;
+    width: 50%;
+    position: absolute;
+    clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
+    background: #fff;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .productTracker-container h4{
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 260px;
+  }
+  .productTracker-container input{
+    width: 50%;
+    border: .1px solid gainsboro;
+    border-radius: 3px;
+    padding: 9px 20px;
+    outline: none;
+    font-size: 14px;
+    color: gray;
+  }
+
+  .track-btn{
+    border: none;
+    padding: 9px 60px;
+    background: #002a47;
+    margin-top: 10px;
+    border-radius: 3px;
+    color: #fff;
+    margin-left: 157px;
+    font-size: 14px;
+    font-weight: 300;
+    transition: all .2s;
+  }
+
+  .track-btn:hover{
+    background: #FA4319;
+   
+  }

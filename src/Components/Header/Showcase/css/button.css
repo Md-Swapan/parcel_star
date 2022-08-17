@@ -1,0 +1,33 @@
+.contact-explore-btn{
+    margin-top: -320px;
+    z-index: 9999;
+    position: absolute;
+    margin-left: 20%;
+}
+.contact-explore-btn button{
+    font-family: "Poppins", sans-serif;
+    border: none;
+    border-radius: 5px;
+    background: #fa4319;
+    padding: 10px 40px;
+    color: #ffffff;
+    margin-right: 20px;
+}
+.contact-explore-btn button:hover{
+    background: #ffffff;
+    color: #fa4319;
+    
+}
+.contact-explore-btn button:last-child{
+    font-family: "Poppins", sans-serif;
+    border: none;
+    border-radius: 5px;
+    background: #ffffff;
+    padding: 10px 40px;
+    color: #002a47;
+    margin-right: 10px;
+}
+.contact-explore-btn button:last-child:hover{
+    background: #002a47;
+    color: #ffffff;
+}
