@@ -2,7 +2,8 @@
     margin-top: -191px;
     z-index: 9999;
     padding: 44px;
-    width: 50%;
+    width: 48.5%;
+    /* height: 193px; */
     position: absolute;
     clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
     background: #fff;
@@ -27,12 +28,12 @@
 
   .track-btn{
     border: none;
-    padding: 9px 60px;
+    padding: 10px 40px;
     background: #002a47;
     margin-top: 10px;
     border-radius: 3px;
     color: #fff;
-    margin-left: 157px;
+    margin-left: 179px;
     font-size: 14px;
     font-weight: 300;
     transition: all .2s;
@@ -41,4 +42,25 @@
   .track-btn:hover{
     background: #FA4319;
    
+  }
+
+  .productTracker-container-shadow1{
+    margin-top: -191px;
+    z-index: 9998;
+    padding: 44px;
+    width: 49%;
+    height: 191.5px;
+    position: absolute;
+    clip-path: polygon(0 0, 81.5% 0, 100% 100%, 0 100%);
+    background: #FA4319;
+  }
+  .productTracker-container-shadow2{
+    margin-top: -191px;
+    z-index: 9997;
+    padding: 44px;
+    width: 50%;
+    height: 191.5px;
+    position: absolute;
+    clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
+    background: #002a47;
   }

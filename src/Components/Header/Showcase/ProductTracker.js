@@ -11,6 +11,10 @@ const ProductTracker = () => {
         </div>
         <button className="track-btn">TRACK YOUR PRODUCT</button>
       </div>
+      <div className="productTracker-container-shadow1">
+      </div>
+      <div className="productTracker-container-shadow2">
+      </div>
     </>
   );
 };

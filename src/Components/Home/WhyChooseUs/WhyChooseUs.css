@@ -1,0 +1,110 @@
+.whychooseus-container{
+    margin-top: 150px;
+    font-family: "Poppins", sans-serif;
+
+}
+.wcu-header{
+    text-align: center;
+    margin-bottom: 50px !important;
+    background: #002a47;
+    border-radius: 3px;
+    width: 320px;
+    padding: 5px;
+    margin: auto;
+    z-index: 1;
+}
+.wcu-header h1{
+    color: #fff;
+    font-size: 34px;
+}
+.wcu-before{
+    width: 20px;
+    height: 66px;
+    background: #fa4319;
+    position: absolute;
+    margin-left: 25.3%;
+    margin-top: -4px;
+}
+.wcu-after{
+    width: 20px;
+    height: 66px;
+    background: #fa4319; 
+    position: absolute;
+    margin-left: 41.8%;
+    margin-top: -4px;
+}
+
+.whyChooseUs-content{
+    margin-top: 20px;
+}
+
+.Delivery-container{
+    width: 80%;
+    padding: 5px 20px;
+    display: flex;
+    margin: 20px 0px;
+}
+.Delivery-container .icon{
+    font-size: 45px;
+    margin: 0px 20px;
+    color: #FA4319;
+    display: flex;
+}
+.Delivery-content h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #002a47;
+    margin-bottom: 10px;
+}
+.Delivery-content p {
+    color: #757575;
+    
+}
+
+
+.count-container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+}
+.parcel-delivered-count, .Expert-employee-count, .satisfied-client-count, .branches-count{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 40px;
+    margin: 0px 40px;
+    text-align: center;
+    color: #FA4319;
+}
+.count-container-border1, .count-container-border2, .count-container-border3{
+    background: rgb(182, 182, 182);
+    width: 3px !important;
+    height: 70px;
+    margin: 0px 20px;
+    position: absolute;
+    
+}
+.count-container-border1{
+    margin-left: 310px;
+    margin-top: -120px;
+}
+.count-container-border2{
+    margin-left: 645px;
+    margin-top: -120px;
+}
+.count-container-border3{
+    margin-left: 977px;
+    margin-top: -120px;
+}
+
+/* .half-border{
+    width: 130px;
+    height: 120px;
+    background: #FA4319;
+    margin-top: -10px;
+    margin-left: 30px;
+    position: absolute;
+}
+
+.half-border:hover{
+    background: #002a47;
+} */

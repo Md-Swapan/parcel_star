@@ -1,0 +1,122 @@
+.serviceProvider-container {
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(#dfdfdf88, #dfdfdf88),
+    linear-gradient(#dfdfdf88, #dfdfdf88),
+    url(../../../assets/carousel_img/image.jpg) center center fixed;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 0px;
+  font-family: "Poppins", sans-serif;
+}
+.swp-before {
+  width: 20px;
+  height: 66px;
+  background: #fa4319;
+  position: absolute;
+  margin-left: 24.5%;
+  margin-top: -4px;
+}
+.swp-after {
+  width: 20px;
+  height: 66px;
+  background: #fa4319;
+  position: absolute;
+  margin-left: 42.55%;
+  margin-top: -4px;
+}
+.swp-header {
+  text-align: center;
+  margin-bottom: 50px !important;
+  background: #002a47;
+  border-radius: 3px;
+  width: 350px;
+  padding: 5px;
+  margin: auto;
+  z-index: 1;
+}
+.swp-header h1 {
+  font-family: "Poppins", sans-serif !important;
+  color: #fff;
+  font-size: 34px;
+}
+
+.serviceProvide-navTab-content {
+  display: flex;
+  margin: 0px 40px;
+}
+.navTabs {
+  padding: 30px 50px;
+  background: #fff;
+  height: auto;
+  border-radius: 5px;
+}
+.navTabs h2 {
+  color: #fa4319;
+  border-bottom: 4px solid #002a47;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.navTabs p {
+  border-bottom: 2px solid #fa4319;
+  margin: 15px 0px;
+  font-size: 20px;
+  color: #002a47;
+  cursor: pointer;
+}
+
+.containt {
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background: #fff;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.content1 {
+  height: 350px;
+  border-radius: 5px;
+}
+.vehicle-header {
+  display: flex;
+  border-bottom: 3px solid #fa4319;
+}
+.vehicle-header .icon{
+  margin-left: 100px;
+  margin-top: 20px;
+  margin-right: 50px;
+  
+}
+.vehicle-header .icon i{
+  margin: 5px;
+
+}
+.content1 h2 {
+  text-align: center;
+  margin-left: 35px !important;
+  margin: 0px;
+  padding: 10px;
+  font-weight: 600;
+}
+.content2 {
+  height: 250px;
+  border-radius: 5px;
+}
+.child {
+  height: 100%;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+}
+.Againchild {
+  height: 100%;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+  text-align: center;
+}
+.child img {
+  height: 100%;
+  width: 100%;
+}

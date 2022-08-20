@@ -42,7 +42,7 @@
   color: green;
 }
 .clock-container .close {
-  color: red;
+  color: #fa4319;
   margin-left: 10px;
 }
 .social-container {
@@ -66,12 +66,12 @@
   font-weight: 500;
 }
 .nav-item:hover .nav-link{
-  color: #eba21e !important;
+  color: #fa4319 !important;
 }
 .login {
   margin-left: 135px;
   border-radius: 3px;
-  background: #eba21e;
+  background: #fa4319;
   padding: 0px 40px !important;
 }
 .login:hover .login-link{
