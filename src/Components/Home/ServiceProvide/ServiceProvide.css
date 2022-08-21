@@ -1,9 +1,9 @@
 .serviceProvider-container {
   margin-top: 20px;
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(#dfdfdf88, #dfdfdf88),
-    linear-gradient(#dfdfdf88, #dfdfdf88),
-    url(../../../assets/carousel_img/image.jpg) center center fixed;
+  background: linear-gradient(#d4d4d46e, #d4d4d46e),
+    linear-gradient(#b1b1b16e, #b1b1b16e),
+    url(../../../assets/img/service-bg.png) center center fixed;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -47,10 +47,12 @@
   margin: 0px 40px;
 }
 .navTabs {
+  margin-top: 20px;
   padding: 30px 50px;
   background: #fff;
   height: auto;
   border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 .navTabs h2 {
   color: #fa4319;
@@ -65,11 +67,18 @@
   font-size: 20px;
   color: #002a47;
   cursor: pointer;
+  transition: all .3s;
+}
+.navTabs p:hover {
+  color: #fa4319;
 }
 
+.serviceProvide-content {
+  margin-top: 20px;
+}
 .containt {
   overflow: hidden;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   background: #fff;
   margin-bottom: 20px;
   font-family: "Poppins", sans-serif;
@@ -82,15 +91,13 @@
   display: flex;
   border-bottom: 3px solid #fa4319;
 }
-.vehicle-header .icon{
+.vehicle-header .icon {
   margin-left: 100px;
   margin-top: 20px;
   margin-right: 50px;
-  
 }
-.vehicle-header .icon i{
+.vehicle-header .icon i {
   margin: 5px;
-
 }
 .content1 h2 {
   text-align: center;
@@ -98,16 +105,30 @@
   margin: 0px;
   padding: 10px;
   font-weight: 600;
+  color: #002a47;
+}
+
+.review-header {
+  padding-top: 5px;
+  border-bottom: 3px solid #fa4319;
+}
+.review-header h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: #002a47;
 }
 .content2 {
   height: 250px;
   border-radius: 5px;
 }
+
 .child {
   height: 100%;
   width: 100%;
   transition: 0.3s ease-in-out;
   overflow: hidden;
+  
 }
 .Againchild {
   height: 100%;
@@ -119,4 +140,59 @@
 .child img {
   height: 100%;
   width: 100%;
+  /* opacity: 0.5; */
+}
+.vehicle-text {
+  width: 70%;
+  margin-top: -300px;
+  margin-left: 100px;
+  font-size: 14px;
+  /* background: linear-gradient(
+    to left,
+    rgba(117, 117, 117, 0.137),
+    rgba(221, 221, 221, 0.651),
+    rgba(138, 138, 138, 0.521)
+    
+  ); */
+  padding: 40px;
+}
+.vehicle-text h4{
+  color: #002a47;
+  font-weight: 700;
+}
+.vehicle-text h4 span{
+  color: #fa4319;
+  font-weight: 700;
+}
+.vehicle-text p{
+  color: #002a47;
+}
+
+.review-user-content {
+  display: flex;
+}
+.review-user-content img {
+  margin-left: 80px;
+  margin-right: 20px;
+  width: 100px !important;
+}
+.review-user-content p {
+  width: 60%;
+  text-align: left;
+  margin-top: 10px;
+}
+.review-content img {
+  width: 70px;
+}
+.first{
+  float: left;
+  margin-left: 15px;
+  margin-top: 15px;
+  
+}
+.last {
+  transform: rotate(180deg);
+  float: right;
+  margin-top: -15px;
+  margin-right: 15px;
 }

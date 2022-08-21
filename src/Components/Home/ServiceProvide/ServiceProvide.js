@@ -6,6 +6,9 @@ import img3 from "../../../assets/img/Advantages-of-A-Motorcycle-Delivery-Servic
 import img4 from "../../../assets/img/New Project (3).jpg";
 import img5 from "../../../assets/img/8-Major-Types-of-Cargo-Transported-Through-the-Shipping-Industry.png";
 import img6 from "../../../assets/img/download.jpg";
+import userImg from "../../../assets/img/businessman-profile-cartoon_18591-58479.webp";
+import userImg2 from "../../../assets/img/man-profile-cartoon_18591-58482.webp";
+import quotation from "../../../assets/img/quotation-marks-removebg-preview.png";
 
 const ServiceProvide = () => {
   const tabs = document.querySelectorAll(".tabs");
@@ -40,7 +43,6 @@ const ServiceProvide = () => {
       </div>
       <div className=" serviceProvider-container">
         <div className="container">
-          {/* <div className="serviceProvide-navTab-content"> */}
           <div className="row">
             <div className="col-md-4">
               <div className="navTabs">
@@ -85,47 +87,188 @@ const ServiceProvide = () => {
                   </div>
                   <div className="child" id="child1">
                     <img src={img1} alt="" />
+                    <div className="vehicle-text">
+                      <h4>
+                        We Delivery <br /> <span>Product By Cycle</span>
+                      </h4>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum is simply dummy text
+                        of the printing and typesetting industry.
+                      </p>
+                    </div>
                   </div>
                   <div className="child" id="child2">
                     <img src={img2} alt="" />
+                    <div className="vehicle-text">
+                    <h4>
+                        We Delivery <br /> <span>Product By Cycle</span>
+                      </h4>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum is simply dummy text
+                        of the printing and typesetting industry.
+                      </p>
+                    </div>
                   </div>
                   <div className="child" id="child3">
                     <img src={img3} alt="" />
+                    <div className="vehicle-text">
+                    <h4>
+                        We Delivery <br /> <span>Product By Cycle</span>
+                      </h4>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum is simply dummy text
+                        of the printing and typesetting industry.
+                      </p>
+                    </div>
                   </div>
                   <div className="child" id="child4">
                     <img src={img4} alt="" />
+                    <div className="vehicle-text">
+                    <h4>
+                        We Delivery <br /> <span>Product By Cycle</span>
+                      </h4>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum is simply dummy text
+                        of the printing and typesetting industry.
+                      </p>
+                    </div>
                   </div>
                   <div className="child" id="child5">
                     <img src={img5} alt="" />
+                    <div className="vehicle-text">
+                    <h4>
+                        We Delivery <br /> <span>Product By Cycle</span>
+                      </h4>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum is simply dummy text
+                        of the printing and typesetting industry.
+                      </p>
+                      
+                    </div>
                   </div>
                   <div className="child" id="child6">
                     <img src={img6} alt="" />
+                    <div className="vehicle-text">
+                    <h4>
+                        We Delivery <br /> <span>Product By Cycle</span>
+                      </h4>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum is simply dummy text
+                        of the printing and typesetting industry.
+                      </p>
+                    </div>
                   </div>
                 </div>
 
                 <div className="containt content2">
+                  <div className="review-header">
+                    <h2>Customer Reviews</h2>
+                  </div>
                   <div className="Againchild" id="Againchild1">
-                    <h1>hello11</h1>
+                    <div className="review-content">
+                      <img className="first" src={quotation} alt="" />
+                      <br />
+                      <br />
+                      <div className="review-user-content">
+                        <img src={userImg} alt="" />
+                        <p>
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry. Lorem Ipsum is simply dummy text
+                          of the printing and typesetting industry.
+                        </p>
+                      </div>
+                      <img className="last" src={quotation} alt="" />
+                    </div>
                   </div>
                   <div className="Againchild" id="Againchild2">
-                    <h1>hello22</h1>
+                    <div className="review-content">
+                      <img className="first" src={quotation} alt="" />
+                      <br />
+                      <br />
+                      <div className="review-user-content">
+                        <img src={userImg2} alt="" />
+                        <p>
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry. Lorem Ipsum is simply dummy text
+                          of the printing and typesetting industry.
+                        </p>
+                      </div>
+                      <img className="last" src={quotation} alt="" />
+                    </div>
                   </div>
                   <div className="Againchild" id="Againchild3">
-                    <h1>hello33</h1>
+                    <div className="review-content">
+                      <img className="first" src={quotation} alt="" />
+                      <br />
+                      <br />
+                      <div className="review-user-content">
+                        <img src={userImg} alt="" />
+                        <p>
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry. Lorem Ipsum is simply dummy text
+                          of the printing and typesetting industry.
+                        </p>
+                      </div>
+                      <img className="last" src={quotation} alt="" />
+                    </div>
                   </div>
                   <div className="Againchild" id="Againchild4">
-                    <h1>hello44</h1>
+                    <div className="review-content">
+                      <img className="first" src={quotation} alt="" />
+                      <br />
+                      <br />
+                      <div className="review-user-content">
+                        <img src={userImg2} alt="" />
+                        <p>
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry. Lorem Ipsum is simply dummy text
+                          of the printing and typesetting industry.
+                        </p>
+                      </div>
+                      <img className="last" src={quotation} alt="" />
+                    </div>
                   </div>
                   <div className="Againchild" id="Againchild5">
-                    <h1>hello55</h1>
+                    <div className="review-content">
+                      <img className="first" src={quotation} alt="" />
+                      <br />
+                      <br />
+                      <div className="review-user-content">
+                        <img src={userImg} alt="" />
+                        <p>
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry. Lorem Ipsum is simply dummy text
+                          of the printing and typesetting industry.
+                        </p>
+                      </div>
+                      <img className="last" src={quotation} alt="" />
+                    </div>
                   </div>
                   <div className="Againchild" id="Againchild6">
-                    <h1>hello66</h1>
+                    <div className="review-content">
+                      <img className="first" src={quotation} alt="" />
+                      <br />
+                      <br />
+                      <div className="review-user-content">
+                        <img src={userImg2} alt="" />
+                        <p>
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry. Lorem Ipsum is simply dummy text
+                          of the printing and typesetting industry.
+                        </p>
+                      </div>
+                      <img className="last" src={quotation} alt="" />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            {/* </div> */}
           </div>
         </div>
       </div>

@@ -1,0 +1,165 @@
+.planAndPrice-section {
+  margin-top: 150px;
+}
+.pp-before {
+  width: 20px;
+  height: 66px;
+  background: #fa4319;
+  position: absolute;
+  margin-left: 41.7%;
+  margin-top: -4px;
+}
+.pp-after {
+  width: 20px;
+  height: 66px;
+  background: #fa4319;
+  position: absolute;
+  margin-left: 57.2%;
+  margin-top: -4px;
+}
+.pp-header {
+  text-align: center;
+  margin-bottom: 50px !important;
+  background: #002a47;
+  border-radius: 3px;
+  width: 300px;
+  padding: 5px;
+  margin: auto;
+  z-index: 1;
+}
+.pp-header h1 {
+  font-family: "Poppins", sans-serif !important;
+  color: #fff;
+  font-size: 34px;
+}
+
+.planAndPrice-container {
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(#6d6d6d6e, #d4d4d46e),
+    linear-gradient(#b1b1b16e, #b1b1b16e),
+    url(../../../assets/img/service-bg.png) center center;
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+.basic,
+.standard,
+.premium {
+  border: 10px solid #fa4319;
+  width: 125px;
+  height: 200px;
+  margin: auto;
+}
+.basic-container,
+.standard-container,
+.premium-container {
+  margin-left: -145px;
+  margin-top: 25px;
+}
+
+.basic-front-view,
+.standard-front-view,
+.premium-front-view {
+  width: 200px;
+  margin: 0px 100px;
+  padding: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  background: #fff;
+  color: #002a47;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  transition: all 1s;
+}
+
+.basic-front-view p,
+.standard-front-view p,
+.premium-front-view p {
+  margin-top: 5px;
+}
+.basic-front-view h3,
+.standard-front-view h3,
+.premium-front-view h3 {
+  margin: auto;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.basic-front-view span,
+.standard-front-view span,
+.premium-front-view span {
+  margin-top: 6.5px;
+}
+.basic-front-view small,
+.standard-front-view small,
+.premium-front-view small {
+  color: #a1a1a1;
+}
+
+.basic-back-view,
+.standard-back-view,
+.premium-back-view {
+  width: 200px;
+  height: 133px;
+  position: absolute;
+  margin: 0px 100px;
+  padding: 10px;
+  background: #002a47;
+  color: #ffffff;
+  margin-top: -132.5px;
+  transition: all 1s;
+  font-size: 14px;
+}
+.basic-back-view p,
+.standard-back-view p,
+.premium-back-view p {
+  margin: 3px;
+  transition: all 1s;
+}
+.basic-back-view p span,
+.standard-back-view p span,
+.premium-back-view p span {
+  margin-left: 15px;
+  font-weight: 700;
+}
+
+.basic:hover .basic-back-view {
+  margin-left: 300px;
+  width: 210px;
+  box-shadow: rgba(255, 44, 6, 0.3) 0px 1px 3px,
+    rgba(255, 44, 6, 0.3) 0px 1px 2px;
+}
+.premium:hover .premium-front-view {
+  margin-left: -10px;
+}
+.premium:hover .premium-back-view {
+  margin-left: 190px;
+  width: 210px;
+  box-shadow: rgba(255, 44, 6, 0.3) 0px 1px 3px,
+    rgba(255, 44, 6, 0.3) 0px 1px 2px;
+}
+.standard:hover .standard-back-view {
+  margin-left: -110px;
+  width: 210px;
+  box-shadow: rgba(255, 44, 6, 0.3) 0px 1px 3px,
+    rgba(255, 44, 6, 0.3) 0px 1px 2px;
+}
+
+.basic:hover .basic-back-view p,
+.standard:hover .standard-back-view p {
+  margin: 6px;
+}
+
+.basic-container-border1, .premium-container-border2{
+  width: 50px;
+  height: 70px;
+  border: 3px solid #002a47;
+  position: absolute;
+  margin-top: -130px;
+  margin-left: 400px;
+  
+}

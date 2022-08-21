@@ -73,14 +73,12 @@ const WhyChooseUs = () => {
 
             <div className="count-container">
               <div className="d-flex">
-                <div className="half-border"></div>
                 <div className="parcel-delivered-count">
                   <h2>15+</h2>
                   <p>Parcel Delivered</p>
                 </div>
               </div>
               <div className="d-flex">
-                <div className="half-border"></div>
                 <div className="Expert-employee-count">
                   <h2>700</h2>
                   <p>Expert Employee</p>
@@ -88,14 +86,12 @@ const WhyChooseUs = () => {
                 </div>
               </div>
               <div className="d-flex">
-                <div className="half-border"></div>
                 <div className="satisfied-client-count">
                   <h2>10k +</h2>
                   <p>Satisfied Clients</p>
                 </div>
               </div>
               <div className="d-flex">
-                <div className="half-border"></div>
                 <div className="branches-count">
                   <h2>500</h2>
                   <p>Branches</p>
