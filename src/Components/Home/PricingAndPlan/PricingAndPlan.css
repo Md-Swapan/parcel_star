@@ -4,17 +4,17 @@
 .pp-before {
   width: 20px;
   height: 66px;
-  background: #fa4319;
+  background: #FC0B0B;
   position: absolute;
-  margin-left: 41.7%;
+  margin-left: 794px;
   margin-top: -4px;
 }
 .pp-after {
   width: 20px;
   height: 66px;
-  background: #fa4319;
+  background: #FC0B0B;
   position: absolute;
-  margin-left: 57.2%;
+  margin-left: 1089px;
   margin-top: -4px;
 }
 .pp-header {
@@ -42,14 +42,14 @@
   /* background-attachment: fixed; */
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 60px 0px;
+  padding: 100px 0px;
   font-family: "Poppins", sans-serif;
 }
 
 .basic,
 .standard,
 .premium {
-  border: 10px solid #fa4319;
+  border: 10px solid #FC0B0B;
   width: 125px;
   height: 200px;
   margin: auto;
@@ -154,12 +154,12 @@
   margin: 6px;
 }
 
-.basic-container-border1, .premium-container-border2{
+.basic-container-border1,
+.premium-container-border2 {
   width: 50px;
   height: 70px;
   border: 3px solid #002a47;
   position: absolute;
   margin-top: -130px;
   margin-left: 400px;
-  
 }

@@ -7,40 +7,41 @@
     position: absolute;
     clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
     background: #fff;
-    text-align: center;
+    /* text-align: center; */
     font-family: "Poppins", sans-serif;
   }
 
   .productTracker-container h4{
     font-size: 15px;
     font-weight: 500;
-    margin-right: 260px;
+    margin-left: 260px;
   }
   .productTracker-container input{
-    width: 50%;
+    width: 350px;
     border: .1px solid gainsboro;
     border-radius: 3px;
     padding: 9px 20px;
     outline: none;
     font-size: 14px;
     color: gray;
+    margin-left: 260px;
   }
 
   .track-btn{
     border: none;
-    padding: 10px 40px;
+    padding: 10px 20px;
     background: #002a47;
     margin-top: 10px;
     border-radius: 3px;
     color: #fff;
-    margin-left: 179px;
+    margin-left: 412px;
     font-size: 14px;
     font-weight: 300;
     transition: all .2s;
   }
 
   .track-btn:hover{
-    background: #FA4319;
+    background: #FC0B0B;
    
   }
 
@@ -52,7 +53,7 @@
     height: 191.5px;
     position: absolute;
     clip-path: polygon(0 0, 81.5% 0, 100% 100%, 0 100%);
-    background: #FA4319;
+    background: #FC0B0B;
   }
   .productTracker-container-shadow2{
     margin-top: -191px;

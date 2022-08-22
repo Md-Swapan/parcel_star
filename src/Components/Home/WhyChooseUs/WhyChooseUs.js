@@ -1,6 +1,6 @@
 import React from "react";
 import "./WhyChooseUs.css";
-import deliveryManImg from "../../../assets/img/choose-us.png";
+import deliveryManImg from "../../../assets/img/Frame 10000024750.png";
 
 const WhyChooseUs = () => {
   return (
@@ -67,7 +67,7 @@ const WhyChooseUs = () => {
                 </div>
               </div>
               <div className="col-md-6">
-                <img src={deliveryManImg} alt="deliveryManImg" />
+                <img width={720} src={deliveryManImg} alt="deliveryManImg" />
               </div>
             </div>
 
