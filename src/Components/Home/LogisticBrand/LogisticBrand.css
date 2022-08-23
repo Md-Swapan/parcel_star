@@ -1,0 +1,104 @@
+.logisticBrand-section {
+  margin-bottom: 150px;
+}
+.brand-container {
+  display: flex;
+}
+.brand-container img {
+  width: 123px;
+  -webkit-filter: grayscale(0.9) invert(1);
+  filter: grayscale(0.9) invert(1);
+  transition: all 0.4s ease-in-out;
+}
+.brand-container img:hover {
+  width: 123px;
+  -webkit-filter: grayscale(0) invert(0);
+  filter: grayscale(0) invert(0);
+}
+
+.growUp-business-container {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  padding: 0px 40px;
+  margin-top: 70px;
+  position: relative;
+}
+
+.longTrUniqBusiness img{
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.ltb-container{
+  display: flex;
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.ltbIcon{
+  margin-right: 10px;
+  font-size: 20px;
+}
+.ltb-container h6{
+  font-weight: 600;
+  margin-bottom: -3px;
+}
+.ltb-container span{
+  font-size: 12px;
+}
+.growup-content {
+  font-family: "Poppins", sans-serif;
+  padding: 60px 0px;
+}
+.growup-content h3 {
+  color: #002a47;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.growup-content h3 span {
+  color: #fc0b0b;
+}
+.growup-content p {
+  width: 90%;
+  color: #757575;
+  font-size: 14px;
+}
+.growup-content button {
+  border: none;
+  background: #002a47;
+  color: #fff;
+  padding: 10px 40px;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: all 0.4s;
+}
+.growup-content button:hover {
+  background: #fc0b0b;
+}
+
+.redMiddleItalic_border {
+  background-color: #fc0b0b;
+  width: 600px;
+  height: 374px;
+  -webkit-clip-path: polygon(60% 0, 100% 0%, 40% 100%, 0% 100%);
+  clip-path: polygon(60% 0, 100% 0%, 40% 100%, 0% 100%);
+  position: absolute;
+  margin-top: -374px;
+  margin-left: 250px;
+}
+
+.redMiddleItalic_img {
+  background: linear-gradient(#c5d3dd00, #c5d3dd00),
+    linear-gradient(#c5d3dd00, #c5d3dd00),
+    url(../../../assets/img/growBusiness.jpg) center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 500px;
+  height: 374px;
+  position: absolute;
+  /* -webkit-clip-path: polygon(100% 0%, 63% 50%, 100% 100%, 40% 100%, 0% 50%, 40% 0);
+  clip-path: polygon(100% 0%, 63% 50%, 100% 100%, 40% 100%, 0% 50%, 40% 0); */
+
+  -webkit-clip-path: polygon(100% 0%, 60% 50%, 100% 100%, 40% 100%, 0% 50%, 40% 0);
+clip-path: polygon(100% 0%, 60% 50%, 100% 100%, 40% 100%, 0% 50%, 40% 0);
+  margin-top: -374px;
+  margin-left: 280px;
+  z-index: 2;
+}

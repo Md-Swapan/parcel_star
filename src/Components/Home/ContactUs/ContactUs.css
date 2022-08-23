@@ -1,0 +1,160 @@
+.contactUs-section {
+  background: linear-gradient(#c5d3dd85, #c5d3dd85),
+    linear-gradient(#c5d3dd85, #c5d3dd85),
+    url(../../../assets/img/service-bg.png) center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  margin: 150px 0px;
+}
+
+.contactImg{
+    margin-top: 52px !important;
+    margin-left: 60px;
+    width: 510px;
+}
+.contact-content-container{
+    width: 440px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 50px 40px;
+    margin-top: 70px !important;
+    font-family: "Poppins", sans-serif;
+    margin: auto;
+    transition: all .5s;
+}
+.contact-content-container h2{
+    margin-bottom: 40px;
+    border-bottom: 3px solid #fc0b0b;
+    color: #fc0b0b;
+    font-weight: 600;
+}
+.contact-content-container p{
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: gray;
+    font-weight: 300;
+}
+.contact-content-container p span{
+    font-size: 25px;
+    color: #002a47;
+    margin-right: 10px;
+}
+.letsTalkBtn{
+    border: none;
+    padding: 5px 10px;
+    background: #002a47;
+    color: #ffffff;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 200;
+    margin-left: 10px;
+    transition: all .4s;
+}
+.letsTalkBtn:hover{
+    background: #fc0b0b;
+}
+
+.letsTalk-container{
+    width: 5px;
+    background: #002a47;
+    border-radius: 10px;
+    margin-top: 70px;
+    overflow: hidden;
+    transition: all .6s;
+}
+.talk-content{
+    display: none;
+}
+.letsTalk-container img{
+    width: 100px;
+    margin: 10px 0px;
+}
+.talk-header{
+    border-bottom: 2px solid #002a47;
+}
+.talk-header span{
+    font-size: 24px;
+    float: right;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+.pslsc{
+    background: rgb(235, 235, 235);
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-family: "Poppins", sans-serif;
+}
+.pslsc h6{
+    font-size: 14px;
+    margin-bottom: -3px;
+    font-weight: 600;
+    color: #002a47;
+}
+.pslsc h6 span img{
+   width: 12px;
+   margin-left: 10px;
+}
+.pslsc span{
+    font-size: 12px;
+    font-weight: 400;
+    color: #777777ef;
+}
+
+.sms-body{
+    height: 80%;
+    /* background: gainsboro; */
+}
+.sms{
+    display: flex;
+}
+.profileImg{
+    width: 32px;
+    height: 32px;
+    border: 1px solid gainsboro;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+.profileImg img{
+    width: 30px;
+}
+.sms-text{
+    border: .5px solid gainsboro;
+    padding: 4px 15px;
+    margin: 10px;
+    margin-top: 20px;
+    border-radius: 30px;
+    font-family: "Poppins", sans-serif;
+}
+.sms-text span{
+    font-size: 14px;
+    color: gray;
+}
+.typeMessage{
+    /* height: 10%; */
+    margin-top: 85%;
+}
+.typeMessage input{
+    width: 100%;
+    border: .5px solid gainsboro;
+    outline: none;
+    padding: 5px 20px;
+    border-radius: 30px;
+    font-family: "Poppins",sans-serif;
+    font-size: 14px;
+    color: rgb(88, 88, 88);
+}
+.fileIcon{
+    position: absolute;
+    margin-left: -55px;
+    margin-top: 4px;
+    color: gray;
+}
+.emojiIcon{
+    position: absolute;
+    margin-top: 4px;
+    margin-left: -30px;
+    color: gray;
+}

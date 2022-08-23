@@ -1,8 +1,8 @@
 .serviceProvider-container {
   margin-top: 20px;
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(#d4d4d46e, #d4d4d46e),
-    linear-gradient(#b1b1b16e, #b1b1b16e),
+  background: linear-gradient(#c5d3dd85, #c5d3dd85),
+  linear-gradient(#c5d3dd85, #c5d3dd85),
     url(../../../assets/img/service-bg.png) center center fixed;
   background-attachment: fixed;
   background-repeat: no-repeat;

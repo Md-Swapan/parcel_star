@@ -33,12 +33,6 @@ const DeliveryCalculator = () => {
           </small>
         </div>
         <div className="container">
-          {/* <div className="row">
-            <div className="col-md-6">
-                
-            </div>
-          </div> */}
-
           <div className="calculator-form-container">
             <form className="form">
               <div className="d-flex">
@@ -92,7 +86,7 @@ const DeliveryCalculator = () => {
             </form>
 
             <div className="take-service-container">
-              <span className="close-tab" onClick={closeModal}>x</span>
+              <span className="close-tab" onClick={closeModal}><i class="bi bi-x-circle"></i></span>
                 <div className="d-flex">
                 <div className="planCategory">
                     <p>Plan Category</p>
