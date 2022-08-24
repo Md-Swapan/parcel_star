@@ -4,21 +4,26 @@ import "./DeliveryCalculator.css";
 const DeliveryCalculator = () => {
     const calculateToggle = (e) => {
         e.preventDefault();
-        const form = document.querySelector('.form')
+        const form = document.querySelector('.formdiv')
         const takeServiceContainer = document.querySelector('.take-service-container')
-        form.style.marginLeft = "60px"
-        takeServiceContainer.style.display = "block"
+        form.style.marginLeft = "50px "
+        // takeServiceContainer.style.display = "block"
+
+        setTimeout(()=>{
+          takeServiceContainer.style.display = "block"
+        }, 500)
     }
 
     const closeModal = () => {
       const takeServiceContainer = document.querySelector('.take-service-container')
-      const form = document.querySelector('.form')
+      const form = document.querySelector('.formdiv')
       takeServiceContainer.style.display = "none"
-      form.style.margin = "auto"
+      form.style.marginLeft = "300px"
     }
+    
   return (
     <>
-      <div className="deliveryCalculator-section">
+      <div className="deliveryCalculator-section " >
         <div className="deliveryCalculator-header">
           <div className="d-flex">
             <div className="dc-before"></div>
@@ -34,7 +39,7 @@ const DeliveryCalculator = () => {
         </div>
         <div className="container">
           <div className="calculator-form-container">
-            <form className="form">
+            <form className="formdiv">
               <div className="d-flex">
                 <div>
                   <label for="">Weight</label>

@@ -39,7 +39,6 @@
   color: #a0a0a0;
   margin-bottom: 40px;
 }
-
 .calculator-form-container {
   font-family: "Poppins", sans-serif;
   color: gray;
@@ -48,13 +47,15 @@
   border: 4px solid #002a47;
   display: flex;
 }
-.calculator-form-container form {
+.formdiv{
   width: 670px;
   padding: 40px 0px;
-  margin: auto;
+  margin-left: 300px;
+  transition: all 1s;
 }
 .calculator-form-container label {
   color: #002a47;
+  transition: all .6s;
 }
 .calculator-form-container input,
 .calculator-form-container select {
@@ -67,9 +68,11 @@
   color: gray;
   font-weight: 200 !important;
   border-radius: 5px;
+  transition: all .6s;
 }
 .form2 {
   margin-left: 30px;
+  transition: all .6s;
 }
 .form2 button {
   border: none;
@@ -83,8 +86,6 @@
 .form2 button:hover {
   background: #fc0b0b;
 }
-
-
 
 .take-service-container{
   height: 505px;

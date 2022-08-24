@@ -23,25 +23,34 @@
   position: relative;
 }
 
-.longTrUniqBusiness img{
+.longTrUniqBusiness img {
   margin-top: 60px;
   margin-bottom: 20px;
 }
-.ltb-container{
+.ltb-container {
   display: flex;
   margin-top: 20px;
   font-family: "Poppins", sans-serif;
 }
-.ltbIcon{
-  margin-right: 10px;
-  font-size: 20px;
+.ltbIcon {
+  margin-right: 15px;
+  font-size: 23px;
+  color: #ffffff;
+  background: #002a47;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 10px;
+  padding-top: 3.5px;
 }
-.ltb-container h6{
+.ltb-container h6 {
   font-weight: 600;
   margin-bottom: -3px;
+  color: #002a47;
 }
-.ltb-container span{
+.ltb-container span {
   font-size: 12px;
+  color: #757575;
 }
 .growup-content {
   font-family: "Poppins", sans-serif;
@@ -96,8 +105,15 @@
   /* -webkit-clip-path: polygon(100% 0%, 63% 50%, 100% 100%, 40% 100%, 0% 50%, 40% 0);
   clip-path: polygon(100% 0%, 63% 50%, 100% 100%, 40% 100%, 0% 50%, 40% 0); */
 
-  -webkit-clip-path: polygon(100% 0%, 60% 50%, 100% 100%, 40% 100%, 0% 50%, 40% 0);
-clip-path: polygon(100% 0%, 60% 50%, 100% 100%, 40% 100%, 0% 50%, 40% 0);
+  -webkit-clip-path: polygon(
+    100% 0%,
+    60% 50%,
+    100% 100%,
+    40% 100%,
+    0% 50%,
+    40% 0
+  );
+  clip-path: polygon(100% 0%, 60% 50%, 100% 100%, 40% 100%, 0% 50%, 40% 0);
   margin-top: -374px;
   margin-left: 280px;
   z-index: 2;

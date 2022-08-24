@@ -16,7 +16,7 @@ const ServiceProvide = () => {
   const Againchild = document.querySelectorAll(".Againchild");
   const current_position = 0;
 
-  tabs.forEach(function (tab) {
+  tabs.forEach((tab) => {
     tab.addEventListener("click", () => {
       let data_id = tab.getAttribute("data-id");
 
@@ -30,6 +30,27 @@ const ServiceProvide = () => {
     });
   });
 
+
+  const toggleItem = (elem) => {
+    for(var i = 0; i < elem.length; i++) {
+      elem[i].addEventListener("click", (e) => {
+        var current = this;
+        for (var i = 0; i < elem.length; i++) {
+          if (current != elem[i]) {
+            elem[i].classList.remove('active');
+          } else if (current.classList.contains('active') === true) {
+            current.classList.remove('active');
+          } else {
+            current.classList.add('active')
+          }
+        }
+        e.preventDefault();
+      });
+    };
+  }
+  toggleItem(document.querySelectorAll('.tabs'));
+
+
   return (
     <>
       <div className="container " style={{ marginTop: "150px" }}>
@@ -41,35 +62,41 @@ const ServiceProvide = () => {
           <div className="swp-after"></div>
         </div>
       </div>
-      <div className=" serviceProvider-container">
+      <div
+        className=" serviceProvider-container"
+        // data-aos="fade-up"
+        // data-aos-duration="100"
+      >
         <div className="container">
           <div className="row">
             <div className="col-md-4">
               <div className="navTabs">
                 <h2>Services</h2>
-                <p className="tabs" data-id="1">
-                  Hand to Hand Delivery
-                </p>
-                <br />
-                <p className="tabs" data-id="2">
-                  Bicycle Delivery
-                </p>
-                <br />
-                <p className="tabs" data-id="3">
-                  Bike Delivery
-                </p>
-                <br />
-                <p className="tabs" data-id="4">
-                  Truck Delivery
-                </p>
-                <br />
-                <p className="tabs" data-id="5">
-                  Ship Delivery
-                </p>
-                <br />
-                <p className="tabs" data-id="6">
-                  Air Delivery
-                </p>
+                <div id="navtabBtns">
+                  <p className="tabs active" data-id="1">
+                    Hand to Hand Delivery
+                  </p>
+                  <br />
+                  <p className="tabs" data-id="2">
+                    Bicycle Delivery
+                  </p>
+                  <br />
+                  <p className="tabs" data-id="3">
+                    Bike Delivery
+                  </p>
+                  <br />
+                  <p className="tabs" data-id="4">
+                    Truck Delivery
+                  </p>
+                  <br />
+                  <p className="tabs" data-id="5">
+                    Ship Delivery
+                  </p>
+                  <br />
+                  <p className="tabs" data-id="6">
+                    Air Delivery
+                  </p>
+                </div>
               </div>
             </div>
             <div className="col-md-8">
@@ -101,7 +128,7 @@ const ServiceProvide = () => {
                   <div className="child" id="child2">
                     <img src={img2} alt="" />
                     <div className="vehicle-text">
-                    <h4>
+                      <h4>
                         We Delivery <br /> <span>Product By Cycle</span>
                       </h4>
                       <p>
@@ -114,7 +141,7 @@ const ServiceProvide = () => {
                   <div className="child" id="child3">
                     <img src={img3} alt="" />
                     <div className="vehicle-text">
-                    <h4>
+                      <h4>
                         We Delivery <br /> <span>Product By Cycle</span>
                       </h4>
                       <p>
@@ -127,7 +154,7 @@ const ServiceProvide = () => {
                   <div className="child" id="child4">
                     <img src={img4} alt="" />
                     <div className="vehicle-text">
-                    <h4>
+                      <h4>
                         We Delivery <br /> <span>Product By Cycle</span>
                       </h4>
                       <p>
@@ -140,7 +167,7 @@ const ServiceProvide = () => {
                   <div className="child" id="child5">
                     <img src={img5} alt="" />
                     <div className="vehicle-text">
-                    <h4>
+                      <h4>
                         We Delivery <br /> <span>Product By Cycle</span>
                       </h4>
                       <p>
@@ -148,13 +175,12 @@ const ServiceProvide = () => {
                         typesetting industry. Lorem Ipsum is simply dummy text
                         of the printing and typesetting industry.
                       </p>
-                      
                     </div>
                   </div>
                   <div className="child" id="child6">
                     <img src={img6} alt="" />
                     <div className="vehicle-text">
-                    <h4>
+                      <h4>
                         We Delivery <br /> <span>Product By Cycle</span>
                       </h4>
                       <p>
