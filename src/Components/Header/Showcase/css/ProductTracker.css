@@ -41,7 +41,7 @@
   }
 
   .track-btn:hover{
-    background: #FC0B0B;
+    background: #FA4319;
    
   }
 
@@ -53,7 +53,7 @@
     height: 191.5px;
     position: absolute;
     clip-path: polygon(0 0, 81.5% 0, 100% 100%, 0 100%);
-    background: #FC0B0B;
+    background: #FA4319;
   }
   .productTracker-container-shadow2{
     margin-top: -191px;

@@ -19,7 +19,7 @@
 .wcu-before {
   width: 20px;
   height: 66px;
-  background: #FC0B0B;
+  background: #FA4319;
   position: absolute;
   margin-left: 480px;
   margin-top: -4px;
@@ -27,7 +27,7 @@
 .wcu-after {
   width: 20px;
   height: 66px;
-  background: #FC0B0B;
+  background: #FA4319;
   position: absolute;
   margin-left: 795px;
   margin-top: -4px;
@@ -46,7 +46,7 @@
 .Delivery-container .icon {
   font-size: 45px;
   margin: 0px 20px;
-  color: #FC0B0B;
+  color: #FA4319;
   display: flex;
 }
 .Delivery-content h3 {
@@ -74,7 +74,7 @@
   padding: 40px;
   margin: 0px 40px;
   text-align: center;
-  color: #FC0B0B;
+  color: #FA4319;
   position: relative;
 }
 .parcel-delivered-count p,
@@ -89,7 +89,7 @@
   position: absolute;
   width: 100px;
   height: 100px;
-  border: 5px solid #FC0B0B;
+  border: 5px solid #FA4319;
   border-bottom: none;
   border-right: none;
   left: 0px;
@@ -104,7 +104,7 @@
 }
 .Expert-employee-count small,
 .branches-count small{
-  color: #FC0B0B;
+  color: #FA4319;
 }
 .Expert-employee-count:hover small,
 .branches-count:hover small{
@@ -113,7 +113,7 @@
 .Expert-employee-count:hover,
 .branches-count:hover{
   cursor: pointer;
-  color: #FC0B0B;
+  color: #FA4319;
 }
 .Expert-employee-count:hover:after,
 .branches-count:hover:after{
@@ -121,7 +121,7 @@
   position: absolute;
   width: 100px;
   height: 100px;
-  border: 5px solid #FC0B0B;
+  border: 5px solid #FA4319;
   border-bottom: none;
   border-right: none;
   left: 0px;

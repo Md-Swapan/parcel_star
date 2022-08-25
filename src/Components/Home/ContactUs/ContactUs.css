@@ -26,8 +26,8 @@
 }
 .contact-content-container h2{
     margin-bottom: 40px;
-    border-bottom: 3px solid #fc0b0b;
-    color: #fc0b0b;
+    border-bottom: 3px solid #FA4319;
+    color: #FA4319;
     font-weight: 600;
 }
 .contact-content-container p{
@@ -53,12 +53,12 @@
     transition: all .4s;
 }
 .letsTalkBtn:hover{
-    background: #fc0b0b;
+    background: #FA4319;
 }
 
 .letsTalk-container{
     width: 5px;
-    
+
     background: #002a47;
     border-radius: 10px;
     margin-top: 70px;

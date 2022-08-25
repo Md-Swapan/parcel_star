@@ -4,7 +4,8 @@ import parcelLogo from "../../../assets/img/Rectangle 58.png";
 
 const TapToDeliveryProduct = () => {
   return (
-    <div className="tapToDeliveryProduct">
+    <div className="taptoDelivery-container">
+        <div className="tapToDeliveryProduct">
       <a href="">
         <div className="parcelCar">
           <div className="car">
@@ -15,7 +16,7 @@ const TapToDeliveryProduct = () => {
             <div className="parcel-carWheel2"></div>
             <div className="parcel-carWheel2In"></div>
             <img width={34} src={parcelLogo} alt="" />
-            <p><span>Tap</span> To Delivery Your Product</p>
+            <p className="pt-3"><span>Tap</span> To Delivery Your Product</p>
           </div>
 
           <div className="road-animation">
@@ -26,13 +27,11 @@ const TapToDeliveryProduct = () => {
             <div className="dash dash5"></div>
             <div className="dash dash6"></div>
             <div className="dash dash7"></div>
-            {/* <div className="d-flex"> */}
-            {/* <div className="dash dash9"></div> */}
             <div className="dash dash8"></div>
-            {/* </div> */}
           </div>
         </div>
       </a>
+    </div>
     </div>
   );
 };

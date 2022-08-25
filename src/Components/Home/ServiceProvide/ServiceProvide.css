@@ -13,7 +13,7 @@
 .swp-before {
   width: 20px;
   height: 66px;
-  background: #fc0b0b;
+  background: #FA4319;
   position: absolute;
   margin-left: 465px;
   margin-top: -4px;
@@ -21,7 +21,7 @@
 .swp-after {
   width: 20px;
   height: 66px;
-  background: #fc0b0b;
+  background: #FA4319;
   position: absolute;
   margin-left: 810px;
   margin-top: -4px;
@@ -56,14 +56,14 @@
   z-index: 1;
 }
 .navTab h2 {
-  color: #fc0b0b;
+  color: #FA4319;
   border-bottom: 4px solid #002a47;
   text-align: center;
   font-weight: 600;
   margin-bottom: 30px;
 }
 .btns{
-  border-bottom: 2px solid #fc0b0b;
+  border-bottom: 2px solid #FA4319;
   background: none;
   padding: 15px 10px;
   font-size: 20px;
@@ -114,7 +114,7 @@
 }
 .vehicle-header {
   display: flex;
-  border-bottom: 3px solid #fc0b0b;
+  border-bottom: 3px solid #FA4319;
 }
 .vehicle-header .icon {
   margin-left: 100px;
@@ -135,7 +135,7 @@
 
 .review-header {
   padding-top: 5px;
-  border-bottom: 3px solid #fc0b0b;
+  border-bottom: 3px solid #FA4319;
 }
 .review-header h2 {
   text-align: center;
@@ -196,7 +196,7 @@
   font-weight: 700;
 }
 .vehicle-text h4 span {
-  color: #fc0b0b;
+  color: #FA4319;
   font-weight: 700;
 }
 .vehicle-text p {

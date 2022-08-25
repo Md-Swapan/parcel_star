@@ -8,14 +8,14 @@
     font-family: "Poppins", sans-serif;
     border: none;
     border-radius: 5px;
-    background: #FC0B0B;
+    background: #FA4319;
     padding: 12px 40px;
     color: #ffffff;
     margin-right: 20px;
 }
 .contact-explore-btn button:hover{
     background: #ffffff;
-    color: #FC0B0B;
+    color: #FA4319;
     
 }
 .contact-explore-btn button:last-child{
@@ -24,7 +24,7 @@
     border-radius: 5px;
     background: #ffffff;
     padding: 12px 40px;
-    color: #FC0B0B;
+    color: #FA4319;
     margin-right: 10px;
 }
 .contact-explore-btn button:last-child:hover{

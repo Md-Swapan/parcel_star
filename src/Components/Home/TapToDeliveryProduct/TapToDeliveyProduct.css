@@ -1,17 +1,31 @@
+
 .tapToDeliveryProduct {
   position: fixed;
   bottom: 180px;
   margin-left: 90%;
   width: 130px;
   padding: 20px 10px;
-  border: 1px solid gainsboro;
   background: #fff;
   border-radius: 5px;
   text-align: center;
   font-family: "Poppins", sans-serif;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   overflow: hidden;
+  border: 1px solid gainsboro;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* box-shadow: 0 0 5px #fc0b0b,
+  0 0 5px #fc0b0b;
+  animation: shadowcolorChange 4s linear infinite; */
 }
+
+/* @keyframes shadowcolorChange{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%
+    {
+        filter: hue-rotate(360deg)
+    }
+} */
 .tapToDeliveryProduct a {
   text-decoration: none;
   color: gray;
@@ -35,7 +49,7 @@
 
 .parcelCar p {
   font-size: 12px;
-  margin-bottom: -5px;
+  margin-bottom: -10px;
   z-index: 9;
 }
 .parcel-carHead {
@@ -72,7 +86,6 @@
   position: absolute;
   margin-top: -30px;
   margin-left: 13px;
-
   -webkit-clip-path: ellipse(25% 25% at 50% 50%);
   clip-path: ellipse(25% 25% at 50% 50%);
 }
@@ -85,7 +98,6 @@
   position: absolute;
   margin-top: -22.5px;
   margin-left: 20.5px;
-
   -webkit-clip-path: ellipse(25% 25% at 50% 50%);
   clip-path: ellipse(25% 25% at 50% 50%);
 }
@@ -99,7 +111,6 @@
   position: absolute;
   margin-top: -30px;
   margin-left: 60px;
-
   -webkit-clip-path: ellipse(25% 25% at 50% 50%);
   clip-path: ellipse(25% 25% at 50% 50%);
 }
@@ -113,14 +124,13 @@
   position: absolute;
   margin-top: -22.5px;
   margin-left: 67.5px;
-
   -webkit-clip-path: ellipse(25% 25% at 50% 50%);
   clip-path: ellipse(25% 25% at 50% 50%);
 }
 
 .road-animation {
   position: absolute;
-  margin-top: -90px;
+  margin-top: -100px;
   z-index: -1;
   animation: movingRoad 0.8s infinite;
 }
@@ -140,7 +150,7 @@
 .dash2 {
   background-color: rgb(255, 81, 0);
   width: 20px;
-  margin-left: 0px;   
+  margin-left: -10px;   
 }
 .dash3 {
   margin-left: 35px;
@@ -157,7 +167,8 @@
   margin-left: 70px;
 }
 .dash6 {
-  margin-left: 20px;
+  margin-left: 0px;
+  width: 80px;
 }
 .dash7 {
   width: 90px;

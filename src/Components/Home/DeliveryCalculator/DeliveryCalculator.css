@@ -6,7 +6,7 @@
 .dc-before {
   width: 20px;
   height: 66px;
-  background: #fc0b0b;
+  background: #FA4319;
   position: absolute;
   margin-left: 460px;
   margin-top: -4px;
@@ -14,7 +14,7 @@
 .dc-after {
   width: 20px;
   height: 66px;
-  background: #fc0b0b;
+  background: #FA4319;
   position: absolute;
   margin-left: 815px;
   margin-top: -4px;
@@ -84,7 +84,7 @@
   transition: all 0.5s;
 }
 .form2 button:hover {
-  background: #fc0b0b;
+  background: #FA4319;
 }
 
 .take-service-container{
@@ -94,7 +94,7 @@
   margin-left: 820px;
   margin-top: -80px;
   padding: 40px 20px;
-  border: 10px solid #fc0b0b75;
+  border: 10px solid #fa42197e;
   background: #fc0b0b15;
   color: #002a47;
 }
@@ -128,7 +128,7 @@
   transition: all 0.5s;
 }
 .take-service-container button:hover {
-  background: #fc0b0b;
+  background: #FA4319;
 }
 
 .close-tab {
