@@ -24,6 +24,8 @@ const DeliveryCalculator = () => {
   return (
     <>
       <div className="deliveryCalculator-section " >
+        
+        <div className="container">
         <div className="deliveryCalculator-header">
           <div className="d-flex">
             <div className="dc-before"></div>
@@ -37,7 +39,7 @@ const DeliveryCalculator = () => {
             beforehand{" "}
           </small>
         </div>
-        <div className="container">
+        
           <div className="calculator-form-container">
             <form className="formdiv">
               <div className="d-flex">

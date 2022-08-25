@@ -18,6 +18,8 @@ const LogisticBrand = () => {
   return (
     <>
       <div className="logisticBrand-section">
+        
+        <div className="container">
         <div className="deliveryCalculator-header">
           <div className="d-flex">
             <div className="dc-before"></div>
@@ -27,7 +29,6 @@ const LogisticBrand = () => {
             <div className="dc-after"></div>
           </div>
         </div>
-        <div className="container">
           <div className="brand-container">
             <img src={brandLogo1} alt="" />
             <img src={brandLogo2} alt="" />

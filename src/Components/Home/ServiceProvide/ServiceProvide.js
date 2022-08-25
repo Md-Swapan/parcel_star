@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./ServiceProvide.css";
 import img1 from "../../../assets/img/service-pic.png";
 import img2 from "../../../assets/img/179-large_default (1).jpg";
@@ -11,44 +11,52 @@ import userImg2 from "../../../assets/img/man-profile-cartoon_18591-58482.webp";
 import quotation from "../../../assets/img/quotation-marks-removebg-preview.png";
 
 const ServiceProvide = () => {
-  const tabs = document.querySelectorAll(".tabs");
-  const children = document.querySelectorAll(".child");
-  const Againchild = document.querySelectorAll(".Againchild");
-  const current_position = 0;
-
-  tabs.forEach((tab) => {
-    tab.addEventListener("click", () => {
-      let data_id = tab.getAttribute("data-id");
-
-      for (let i = current_position; i < data_id; i++) {
-        children[i].style.height = "0%";
-        Againchild[i].style.height = "0%";
-      }
-
-      document.getElementById(`child${data_id}`).style.height = "100%";
-      document.getElementById(`Againchild${data_id}`).style.height = "100%";
-    });
-  });
-
-
-  const toggleItem = (elem) => {
-    for(var i = 0; i < elem.length; i++) {
-      elem[i].addEventListener("click", (e) => {
-        var current = this;
-        for (var i = 0; i < elem.length; i++) {
-          if (current != elem[i]) {
-            elem[i].classList.remove('active');
-          } else if (current.classList.contains('active') === true) {
-            current.classList.remove('active');
-          } else {
-            current.classList.add('active')
-          }
+  useEffect(()=>{
+    const btns = document.querySelectorAll(".btns");
+    const children = document.querySelectorAll(".child");
+    const Againchild = document.querySelectorAll(".Againchild");
+    const current_position = 0;
+  
+    btns.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        let data_id = tab.getAttribute("data-id");
+  
+        for (let i = current_position; i < data_id; i++) {
+          children[i].style.height = "0%";
+          Againchild[i].style.height = "0%";
         }
-        e.preventDefault();
+  
+        document.getElementById(`child${data_id}`).style.height = "100%";
+        document.getElementById(`Againchild${data_id}`).style.height = "100%";
       });
-    };
-  }
-  toggleItem(document.querySelectorAll('.tabs'));
+    });
+
+
+
+    const toggleItem = (elems) => {
+      elems.forEach(elem => {
+        elem.addEventListener("click", (event) => {
+          removeActiveClass(elems);
+          event.target.classList.add("active");
+        })
+      });
+
+    }
+    
+    function removeActiveClass(elems){
+      elems.forEach(elem =>{
+        if(elem.classList.contains("active")){
+          elem.classList.remove("active")
+        }
+      })
+    }
+       
+
+    toggleItem(btns)
+  }, [])
+  
+
+  
 
 
   return (
@@ -64,36 +72,29 @@ const ServiceProvide = () => {
       </div>
       <div
         className=" serviceProvider-container"
-        // data-aos="fade-up"
-        // data-aos-duration="100"
       >
         <div className="container">
           <div className="row">
             <div className="col-md-4">
-              <div className="navTabs">
+              <div className="navTab">
                 <h2>Services</h2>
                 <div id="navtabBtns">
-                  <p className="tabs active" data-id="1">
+                  <p className="btns active" data-id="1">
                     Hand to Hand Delivery
                   </p>
-                  <br />
-                  <p className="tabs" data-id="2">
+                  <p className="btns" data-id="2">
                     Bicycle Delivery
                   </p>
-                  <br />
-                  <p className="tabs" data-id="3">
+                  <p className="btns" data-id="3">
                     Bike Delivery
                   </p>
-                  <br />
-                  <p className="tabs" data-id="4">
+                  <p className="btns" data-id="4">
                     Truck Delivery
                   </p>
-                  <br />
-                  <p className="tabs" data-id="5">
+                  <p className="btns" data-id="5">
                     Ship Delivery
                   </p>
-                  <br />
-                  <p className="tabs" data-id="6">
+                  <p className="btns" data-id="6">
                     Air Delivery
                   </p>
                 </div>

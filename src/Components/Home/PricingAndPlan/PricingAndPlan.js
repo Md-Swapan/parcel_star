@@ -5,6 +5,7 @@ const PricingAndPlan = () => {
   return (
     <>
       <div className="planAndPrice-section">
+        <div className="container">
         <div className="planAndPrice-header">
           <div className="d-flex">
             <div className="pp-before"></div>
@@ -13,6 +14,7 @@ const PricingAndPlan = () => {
             </div>
             <div className="pp-after"></div>
           </div>
+        </div>
         </div>
         <div className="planAndPrice-container">
           <div className="container">

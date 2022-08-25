@@ -33,11 +33,11 @@ const ContactUs = () => {
             const letsTalkContainer = document.querySelector('.letsTalk-container')
 
             contactImg.style.marginLeft = "60px" 
-            contactContentContainer.style.margin = "auto" 
+            contactContentContainer.style.marginLeft = "60px" 
             contactContentContainer.style.width = "440px" 
             contactContentContainer.style.padding = "50px 40px" 
             letsTalkContainer.style.width = "5px" 
-            letsTalkContainer.style.marginLeft = "0px" 
+            letsTalkContainer.style.marginLeft = "60px" 
             letsTalkContainer.style.background = "#002a47" 
             letsTalkContainer.style.border = "none" 
             letsTalkContainer.style.padding = "0px";

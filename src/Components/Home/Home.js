@@ -7,12 +7,14 @@ import DeliveryCalculator from './DeliveryCalculator/DeliveryCalculator';
 import LogisticBrand from './LogisticBrand/LogisticBrand';
 import PricingAndPlan from './PricingAndPlan/PricingAndPlan';
 import ServiceProvide from './ServiceProvide/ServiceProvide';
+import TapToDeliveryProduct from './TapToDeliveryProduct/TapToDeliveryProduct';
 import WhyChooseUs from './WhyChooseUs/WhyChooseUs';
 
 const Home = () => {
     return (
         <div>
             <Header/>
+            <TapToDeliveryProduct/>
             <WhyChooseUs/>
             <ServiceProvide/>
             <PricingAndPlan/>
