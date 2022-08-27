@@ -1,6 +1,8 @@
 import React from "react";
 import "./Nav.css";
 import logo from "../../../assets/img/Rectangle 58.png";
+import { HashLink as Link } from 'react-router-hash-link';
+
 
 const Nav = () => {
   return (
@@ -59,24 +61,26 @@ const Nav = () => {
                 </a>
               </li>
               <li className="nav-item nav-menu">
-                <a className="nav-link" aria-current="page" href="/">
+                
+                <Link className="nav-link" aria-current="page" smooth to="#services">
                   Services
-                </a>
+                </Link>
+                
               </li>
               <li className="nav-item nav-menu">
-                <a className="nav-link" aria-current="page" href="/">
+                <Link className="nav-link" aria-current="page" smooth to="#deliveryCalculator">
                   Delivery calculator
-                </a>
+                </Link>
               </li>
               <li className="nav-item nav-menu">
-                <a className="nav-link" aria-current="page" href="/">
+                <Link className="nav-link" aria-current="page" smooth to="#priceAndPlan">
                   Pricing & Plan
-                </a>
+                </Link>
               </li>
               <li className="nav-item nav-menu">
-                <a className="nav-link" aria-current="page" href="/">
+                <Link className="nav-link" aria-current="page" smooth to="#whyChooseUs">
                   Why Choose Us
-                </a>
+                </Link>
               </li>
               <li className="nav-item nav-menu">
                 <a className="nav-link" aria-current="page" href="/">
@@ -84,9 +88,9 @@ const Nav = () => {
                 </a>
               </li>
               <li className="nav-item nav-menu">
-                <a className="nav-link" aria-current="page" href="/">
+                <Link className="nav-link" aria-current="page" smooth to="#contactUs">
                   Contact Us
-                </a>
+                </Link>
               </li>
               <li className="nav-item nav-menu login">
                 <a className="nav-link login-link" aria-current="page" href="/">

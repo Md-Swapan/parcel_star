@@ -4,7 +4,7 @@ import "./PricingAndPlan.css";
 const PricingAndPlan = () => {
   return (
     <>
-      <div className="planAndPrice-section">
+      <div className="planAndPrice-section" id="priceAndPlan">
         <div className="container">
         <div className="planAndPrice-header">
           <div className="d-flex">

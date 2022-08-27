@@ -23,7 +23,7 @@ const DeliveryCalculator = () => {
     
   return (
     <>
-      <div className="deliveryCalculator-section " >
+      <div className="deliveryCalculator-section " id="deliveryCalculator">
         
         <div className="container">
         <div className="deliveryCalculator-header">

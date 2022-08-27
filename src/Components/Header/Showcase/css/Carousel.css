@@ -1,5 +1,5 @@
 .carousel-container {
-  height: 85vh !important;
+  height: 100vh !important;
   overflow: hidden;
   font-family: "Poppins", sans-serif;
 }
@@ -21,7 +21,7 @@
   font-family: "Poppins", sans-serif;
 }
 .carousel-item img {
-  height: 90vh;
+  height: 100vh;
 }
 .carousel-item::before {
   content: "";
@@ -35,10 +35,11 @@
   opacity: 0.2;
 }
 .carousel-caption {
+  
   background: linear-gradient(
     to left,
     rgba(0, 0, 0, 0),
-    rgba(182, 182, 182, 0.651),
+    rgba(230, 230, 230, 0.651),
     rgba(0, 0, 0, 0)
   );
   bottom: 400px;
@@ -65,14 +66,14 @@
 
 .carousel-control-prev {
   margin-left: 82%;
-  margin-top: 710px;
+  margin-top: 840px;
   background: #002a47;
   width: 70px;
   height: 70px;
   border-radius: 50px;
 }
 .carousel-control-next {
-  margin-top: 710px;
+  margin-top: 840px;
   margin-right: 150px;
   background: #083a5e;
   width: 70px;

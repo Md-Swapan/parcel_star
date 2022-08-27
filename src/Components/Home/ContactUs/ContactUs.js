@@ -46,7 +46,7 @@ const ContactUs = () => {
 
   return (
     <>
-      <div className="contactUs-section">
+      <div className="contactUs-section" id="contactUs">
         
         <div className="container">
           <div className="row">

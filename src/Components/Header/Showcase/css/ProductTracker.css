@@ -50,7 +50,7 @@
     z-index: 9998;
     padding: 44px;
     width: 49%;
-    height: 191.5px;
+    height: 191px;
     position: absolute;
     clip-path: polygon(0 0, 81.5% 0, 100% 100%, 0 100%);
     background: #FA4319;
@@ -60,7 +60,7 @@
     z-index: 9997;
     padding: 44px;
     width: 50%;
-    height: 191.5px;
+    height: 191px;
     position: absolute;
     clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
     background: #002a47;

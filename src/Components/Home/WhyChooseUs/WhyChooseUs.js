@@ -1,11 +1,12 @@
 import React from "react";
 import "./WhyChooseUs.css";
 import deliveryManImg from "../../../assets/img/deliveryMan.png";
+import { Link } from 'react-router-dom';
 
 const WhyChooseUs = () => {
   return (
     <>
-      <div className="container">
+      <div className="container" id="whyChooseUs">
         <div className="whychooseus-container">
           <div className="d-flex">
             <div className="wcu-before"></div>
@@ -79,11 +80,14 @@ const WhyChooseUs = () => {
                 </div>
               </div>
               <div className="d-flex">
+                
+                <Link to="/bestEmployee">
                 <div className="Expert-employee-count">
                   <h2>700</h2>
                   <p>Expert Employee</p>
                   <small>Tap to see</small>
                 </div>
+                </Link>
               </div>
               <div className="d-flex">
                 <div className="satisfied-client-count">
