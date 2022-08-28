@@ -35,9 +35,9 @@ const Footer = () => {
                     <div className='get-in-touch'>
                             <h4>GET IN TOUCH</h4>
                             <div className='social-link'>
-                                <span><i class="bi bi-facebook"></i></span>
-                                <span><i class="bi bi-twitter"></i></span>
-                                <span><i class="bi bi-linkedin"></i></span>
+                                <span><i className="bi bi-facebook"></i></span>
+                                <span><i className="bi bi-twitter"></i></span>
+                                <span><i className="bi bi-linkedin"></i></span>
                                 <span><img src={googleIcon} alt=""/></span>
                             </div>
                             <p>Contact: +88012457896</p>

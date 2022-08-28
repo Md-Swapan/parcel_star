@@ -18,26 +18,26 @@ const Nav = () => {
 
           <div className="topBar-container">
             <small className="location-container">
-              <i class="bi bi-geo-alt"></i> House 405, Tejgaon industrial area
+              <i className="bi bi-geo-alt"></i> House 405, Tejgaon industrial area
               (near channel 24 ), 1208 Dhaka, Dhaka Division, Bangladesh
             </small>
             <small className="clock-container">
-              <i class="bi bi-clock"></i>{" "}
+              <i className="bi bi-clock"></i>{" "}
               <strong className="open">Open: </strong>Saturday - Thursday {" "} |
               <strong className="close">Close: </strong> Friday
             </small>
             <div className="social-container">
               <span>
-                <i class="bi bi-whatsapp"></i>
+                <i className="bi bi-whatsapp"></i>
               </span>
               <span>
-                <i class="bi bi-facebook"></i>
+                <i className="bi bi-facebook"></i>
               </span>
               <span>
-                <i class="bi bi-twitter"></i>
+                <i className="bi bi-twitter"></i>
               </span>
               <span>
-                <i class="bi bi-linkedin"></i>
+                <i className="bi bi-linkedin"></i>
               </span>
             </div>
 

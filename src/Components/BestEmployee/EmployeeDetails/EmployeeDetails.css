@@ -1,0 +1,41 @@
+.employeeDetailContainer h2{
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  color: #fa4319;
+  margin-bottom: 20px;
+}
+.employeeDetailContainer h2 span{
+  font-family: "Poppins", sans-serif;
+  color: #777777;
+  font-weight: 600;
+}
+
+.branch {
+  margin-top: 20px;
+}
+.branch-content {
+  font-family: "Poppins", sans-serif;
+}
+.branch-content-header {
+  background: #002a47;
+  padding: 15px 0px;
+}
+.branch-content-header h3 {
+  text-align: center;
+  color: #fff;
+}
+.nameDesignation1,
+.nameDesignation2,
+.nameDesignation3,
+.nameDesignation4 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 50px;
+  padding-top: 10px !important;
+}
+.nameDesignation1, .nameDesignation3{
+  background: rgba(209, 209, 209, 0.911);
+}
+.nameDesignation2, .nameDesignation4{
+  background: rgba(250, 66, 25, 0.164);
+}

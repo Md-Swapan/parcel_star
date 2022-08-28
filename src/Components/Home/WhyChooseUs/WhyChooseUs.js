@@ -20,7 +20,7 @@ const WhyChooseUs = () => {
               <div className="col-md-6">
                 <div className="Delivery-container">
                   <div className="icon">
-                    <i class="bi bi-truck"></i>
+                    <i className="bi bi-truck"></i>
                   </div>
                   <div className="Delivery-content">
                     <h3>On-Time Delivery</h3>
@@ -32,7 +32,7 @@ const WhyChooseUs = () => {
                 </div>
                 <div className="Delivery-container">
                   <div className="icon">
-                    <i class="bi bi-people"></i>
+                    <i className="bi bi-people"></i>
                   </div>
                   <div className="Delivery-content">
                     <h3>24/7 Support</h3>
@@ -44,7 +44,7 @@ const WhyChooseUs = () => {
                 </div>
                 <div className="Delivery-container">
                   <div className="icon">
-                    <i class="bi bi-pin-map"></i>
+                    <i className="bi bi-pin-map"></i>
                   </div>
                   <div className="Delivery-content">
                     <h3>Product Tracking</h3>
@@ -56,7 +56,7 @@ const WhyChooseUs = () => {
                 </div>
                 <div className="Delivery-container">
                   <div className="icon">
-                    <i class="bi bi-cart2"></i>
+                    <i className="bi bi-cart2"></i>
                   </div>
                   <div className="Delivery-content">
                     <h3>Careful Handover</h3>
@@ -96,11 +96,13 @@ const WhyChooseUs = () => {
                 </div>
               </div>
               <div className="d-flex">
+                <Link to='/bestBranch'>
                 <div className="branches-count">
                   <h2>500</h2>
                   <p>Branches</p>
                   <small>Tap to see</small>
                 </div>
+                </Link>
               </div>
             </div>
             <div className="d-flex">

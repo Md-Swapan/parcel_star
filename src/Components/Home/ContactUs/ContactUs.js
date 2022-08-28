@@ -58,18 +58,18 @@ const ContactUs = () => {
                 <div className="contact-content-container">
                     <h2>Contact Us</h2>
 
-                    <p><span><i class="bi bi-telephone"></i></span> +8801234567890, +8801234567894</p>
-                    <p><span><i class="bi bi-chat"></i></span> You can also message us <button onClick={LetsTalkToggle} className="letsTalkBtn" type="">Lets Talk</button></p>
-                    <p><span><i class="bi bi-facebook"></i></span> parcelstar/facebook.com</p>
-                    <p><span><i class="bi bi-linkedin"></i></span> parcelstar/linkedin.com</p>
-                    <p><span><i class="bi bi-twitter"></i></span> parcelstar/twitter.com</p>
+                    <p><span><i className="bi bi-telephone"></i></span> +8801234567890, +8801234567894</p>
+                    <p><span><i className="bi bi-chat"></i></span> You can also message us <button onClick={LetsTalkToggle} className="letsTalkBtn" type="">Lets Talk</button></p>
+                    <p><span><i className="bi bi-facebook"></i></span> parcelstar/facebook.com</p>
+                    <p><span><i className="bi bi-linkedin"></i></span> parcelstar/linkedin.com</p>
+                    <p><span><i className="bi bi-twitter"></i></span> parcelstar/twitter.com</p>
                 </div>
                 <div className="letsTalk-container">
                     <div className="talk-content">
                     <div className="talkHeading">
                         <div className="talk-header">
                             <img src={logoimg} alt=""/>
-                            <span onClick={closetalk}><i class="bi bi-x-circle"></i></span>
+                            <span onClick={closetalk}><i className="bi bi-x-circle"></i></span>
                         </div>
                         <div className="pslsc">
                             <h6>Parcel Star Support Live Chat <span><img src={dotImg} alt=""/></span></h6>
@@ -91,8 +91,8 @@ const ContactUs = () => {
 
                     <div className="typeMessage">
                         <input type="" name="" placeholder="Type Your Message"/>
-                        <span className="fileIcon"><i class="bi bi-card-image"></i></span>
-                        <span className="emojiIcon"><i class="bi bi-emoji-smile"></i></span>
+                        <span className="fileIcon"><i className="bi bi-card-image"></i></span>
+                        <span className="emojiIcon"><i className="bi bi-emoji-smile"></i></span>
                     </div>
                     </div>
                 </div>

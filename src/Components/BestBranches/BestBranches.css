@@ -1,0 +1,82 @@
+.bestBranches-section{
+    overflow: hidden;
+}
+.bestBranches-showcase {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 127px;
+    display: flex;
+  }
+  .bestBranches-content {
+    width: 40%;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+  }
+  .bestBranches-content-title {
+    width: 500px;
+    color: #002a47;
+    margin-top: 180px;
+    margin-left: 300px;
+  }
+  .bestBranches-content-title h1 {
+    width: 500px;
+    font-size: 50px;
+    font-weight: 700;
+    /* margin-bottom: 40px; */
+    color: #002a47;
+  }
+  .bestBranches-content h1 span {
+    font-weight: 700;
+    color: #fa4319;
+  }
+  .bestBranches-content h1 small {
+    font-size: 25px;
+    font-weight: 600;
+    color: #fa4319;
+  }
+  .bestBranches-content-title p {
+    color: #fa4319;
+    margin: 40px 0px;
+  }
+  .bestBranches-content-title p span {
+    color: #002a47;
+  }
+  
+  .list p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #09273d;
+  }
+  .list p::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #fa4319;
+    display: block;
+    float: left;
+    margin-right: -6px;
+    margin-top: 5px;
+  }
+  .list p::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #09273d;
+    display: block;
+    float: left;
+    margin-right: 13px;
+    margin-top: 2px;
+  }
+
+  
+  .bestBranches-img-container {
+    width: 60%;
+    height: 80vh;
+    margin-left: auto;
+  }
+  .bestBranches-img-container img {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }

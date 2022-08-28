@@ -44,22 +44,22 @@ const DeliveryCalculator = () => {
             <form className="formdiv">
               <div className="d-flex">
                 <div>
-                  <label for="">Weight</label>
+                  <label htmlFor="">Weight</label>
                   <br />
                   <input type="text" placeholder="Enter weight" />
                   <br />
 
-                  <label for="">Pickup Area</label>
+                  <label htmlFor="">Pickup Area</label>
                   <br />
                   <select>
                     <option selected>Select pickup area</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    <option value="One">One</option>
+                    <option value="Two">Two</option>
+                    <option value="Three">Three</option>
                   </select>
                   <br />
 
-                  <label for="">Quantity</label>
+                  <label htmlFor="">Quantity</label>
                   <br />
                   <input
                     type="text"
@@ -68,23 +68,23 @@ const DeliveryCalculator = () => {
                 </div>
 
                 <div className="form2">
-                  <label for="">Product Type</label>
+                  <label htmlFor="">Product Type</label>
                   <br />
                   <select aria-label="Default select example">
                     <option selected>Select product type</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    <option value="One">One</option>
+                    <option value="Two">Two</option>
+                    <option value="Three">Three</option>
                   </select>
                   <br />
 
-                  <label for="">Delivery Area</label>
+                  <label htmlFor="">Delivery Area</label>
                   <br />
                   <select aria-label="Default select example">
                     <option selected>Select delivery area</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    <option value="One">One</option>
+                    <option value="Two">Two</option>
+                    <option value="Three">Three</option>
                   </select>
                   <br />
                   <button onClick={calculateToggle} type="submit">Calculate</button>
@@ -93,7 +93,7 @@ const DeliveryCalculator = () => {
             </form>
 
             <div className="take-service-container">
-              <span className="close-tab" onClick={closeModal}><i class="bi bi-x-circle"></i></span>
+              <span className="close-tab" onClick={closeModal}><i className="bi bi-x-circle"></i></span>
                 <div className="d-flex">
                 <div className="planCategory">
                     <p>Plan Category</p>

@@ -1,7 +1,7 @@
 .contactUs-section {
   background: linear-gradient(#c5d3dd85, #c5d3dd85),
     linear-gradient(#c5d3dd85, #c5d3dd85),
-    url(../../../assets/img/service-bg.png) center center;
+    url(../../../assets/img/service-bg.png) center center fixed;
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;

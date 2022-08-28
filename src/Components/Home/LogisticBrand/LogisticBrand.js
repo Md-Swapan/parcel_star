@@ -51,7 +51,7 @@ const LogisticBrand = () => {
 
                   <div className="ltb-container">
                     <div className="ltbIcon">
-                      <i class="bi bi-info-square"></i>
+                      <i className="bi bi-info-square"></i>
                     </div>
                     <div>
                       <h6>LongTerm</h6>
@@ -60,7 +60,7 @@ const LogisticBrand = () => {
                   </div>
                   <div className="ltb-container">
                     <div className="ltbIcon">
-                    <i class="bi bi-award"></i>
+                    <i className="bi bi-award"></i>
                     </div>
                     <div>
                       <h6>LongTerm</h6>
@@ -69,7 +69,7 @@ const LogisticBrand = () => {
                   </div>
                   <div className="ltb-container">
                     <div className="ltbIcon">
-                    <i class="bi bi-briefcase"></i>
+                    <i className="bi bi-briefcase"></i>
                     </div>
                     <div>
                       <h6>LongTerm</h6>

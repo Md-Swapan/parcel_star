@@ -105,11 +105,11 @@ const ServiceProvide = () => {
                 <div className="containt content1">
                   <div className="vehicle-header">
                     <div className="icon">
-                      <i class="bi bi-star"></i>
-                      <i class="bi bi-star"></i>
-                      <i class="bi bi-star"></i>
-                      <i class="bi bi-star"></i>
-                      <i class="bi bi-star"></i>
+                      <i className="bi bi-star"></i>
+                      <i className="bi bi-star"></i>
+                      <i className="bi bi-star"></i>
+                      <i className="bi bi-star"></i>
+                      <i className="bi bi-star"></i>
                     </div>
                     <h2>Our Vehicles</h2>
                   </div>

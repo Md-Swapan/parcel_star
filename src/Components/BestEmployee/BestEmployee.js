@@ -7,6 +7,10 @@ import celebrateImg from "../../assets/img/party-confetti.png";
 import Nav from "./../SharedComponents/Nav/Nav";
 import { ActionKind, usePony } from "pony-props";
 import TapToDeliveryProduct from './../Home/TapToDeliveryProduct/TapToDeliveryProduct';
+import Employees from "./Employees/Employees";
+import Footer from './../SharedComponents/Footer/Footer';
+import CopyrightFooter from './../SharedComponents/Footer/CopyrightFooter';
+
 
 const BestEmployee = () => {
   const items = [
@@ -45,12 +49,12 @@ const BestEmployee = () => {
                 Best Employee Name: <span>Jhone Doe</span>
               </p>
 
-              <div class="list">
+              <div className="list">
                 <p>
-                  <span class="color">100%</span> Attendance
+                  <span className="color">100%</span> Attendance
                 </p>
                 <p>
-                  <span class="color">300</span> Delivery Successfully Completed
+                  <span className="color">300</span> Delivery Successfully Completed
                   in That Year
                 </p>
               </div>
@@ -66,11 +70,12 @@ const BestEmployee = () => {
 
         <div className="best-employee-carousel-slider">
           <div {...getSectionProps()}>
-            <h1 {...getHeadingProps()}></h1>
+          <h1 {...getHeadingProps()}></h1>
             <div {...getCarouselWrapperProps()}>
               <ul {...getCarouselProps()}>
                 {items.map((item, idx) => (
                   <li key={idx} {...getCarouselItemProps(idx)}>
+                    
                     <img width={620} src={item.img} alt="" />
                   </li>
                 ))}
@@ -88,11 +93,11 @@ const BestEmployee = () => {
             ))}
           </ul>
           <button {...getButtonProps(ActionKind.Previous)}>
-            <i class="bi bi-caret-left"></i>
+            <i className="bi bi-caret-left"></i>
           </button>
 
           <button className="nextBtn" {...getButtonProps(ActionKind.Next)}>
-            <i class="bi bi-caret-right"></i>
+            <i className="bi bi-caret-right"></i>
           </button>
           <div {...getAnnouncerProps()}>
             <p>{`Item ${state.activeSlideIndex + 1} of ${items.length}`}</p>
@@ -100,6 +105,9 @@ const BestEmployee = () => {
         </div>
       </div>
       <TapToDeliveryProduct/>
+      <Employees/>
+      <Footer/>
+      <CopyrightFooter/>
     </>
   );
 };

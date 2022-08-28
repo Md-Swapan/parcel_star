@@ -27,7 +27,7 @@ const PricingAndPlan = () => {
                       <div className="d-flex">
                         <h3>$50</h3>{" "}
                         <span>
-                          <i class="bi bi-chevron-right"></i>
+                          <i className="bi bi-chevron-right"></i>
                         </span>
                       </div>
                       <small>FOR SINGLE PRODUCT</small>
@@ -59,7 +59,7 @@ const PricingAndPlan = () => {
                       <div className="d-flex">
                         <h3>$150</h3>{" "}
                         <span>
-                          <i class="bi bi-chevron-right"></i>
+                          <i className="bi bi-chevron-right"></i>
                         </span>
                       </div>
                       <small>FOR SINGLE PRODUCT</small>
@@ -90,7 +90,7 @@ const PricingAndPlan = () => {
                       <p>STANDARD</p>
                       <div className="d-flex">
                         <span>
-                          <i class="bi bi-chevron-left"></i>
+                          <i className="bi bi-chevron-left"></i>
                         </span>
                         <h3>$100</h3>{" "}
                       </div>
