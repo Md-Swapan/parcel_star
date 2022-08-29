@@ -21,7 +21,8 @@ const BestEmployee = () => {
     {
       name: "Next Year",
       img: bestemployeeImg2,
-    },
+    }
+    
   ];
 
   const {

@@ -1,8 +1,4 @@
-/* .best_employee_section{
-  margin-bottom: 150px;
-} */
 .bestEmployee-showcase {
-  /* height: 100vh; */
   width: 100%;
   overflow: hidden;
   margin-top: 127px;
@@ -23,7 +19,6 @@
   width: 500px;
   font-size: 50px;
   font-weight: 700;
-  /* margin-bottom: 40px; */
   color: #002a47;
 }
 .bestEmployee-content h1 span {

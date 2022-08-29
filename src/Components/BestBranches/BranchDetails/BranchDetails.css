@@ -1,0 +1,119 @@
+.branchDetails-container {
+  margin-top: 40px;
+  font-family: "Poppins", sans-serif;
+}
+.branchDetails-container h2{
+  margin: 30px 0px;
+  color: #FA4319;
+}
+.branchDetails-container h2 span{
+  color: #002a47;
+  font-weight: 600;
+}
+
+.branchDetails-content1,
+.branchDetails-content2,
+.branchDetails-content3,
+.branchDetails-content4,
+.branchDetails-content5,
+.branchDetails-content6 {
+  display: flex;
+  color: #002a47;
+  justify-content: space-between;
+  padding: 0px 30px;
+}
+
+.branchDetails-content1{
+  display: flex;
+  color: #002a47;
+  background: #00294725;
+}
+.branchDetails-content2{
+  display: flex;
+  color: #002a47;
+  background: rgba(250, 66, 25, 0.164);
+}
+.branchDetails-content3{
+  display: flex;
+  color: #002a47;
+  background: #00294725;
+}
+.branchDetails-content4{
+  display: flex;
+  color: #002a47;
+  background: rgba(250, 66, 25, 0.164);
+}
+.branchDetails-content5{
+  display: flex;
+  color: #002a47;
+  background: #00294725;
+}
+.branchDetails-content6{
+  display: flex;
+  color: #002a47;
+  background: rgba(250, 66, 25, 0.164);
+}
+.branchDetails-content1 h4,
+.branchDetails-content2 h4,
+.branchDetails-content3 h4,
+.branchDetails-content4 h4,
+.branchDetails-content5 h4,
+.branchDetails-content6 h4 {
+  padding: 10px ;
+  font-size: 20px;
+  
+}
+.branchDetails-content1 span,
+.branchDetails-content2 span,
+.branchDetails-content3 span,
+.branchDetails-content4 span,
+.branchDetails-content5 span,
+.branchDetails-content6 span {
+  padding: 10px ;
+  font-size: 13px;
+  margin-top: 5px;
+}
+.branchDetails-content1 span i,
+.branchDetails-content2 span i,
+.branchDetails-content3 span i,
+.branchDetails-content4 span i,
+.branchDetails-content5 span i,
+.branchDetails-content6 span i {
+  color: #FA4319;
+  margin-right: 5px;
+  font-size: 16px;
+}
+.branchDetails-content1 button,
+.branchDetails-content2 button,
+.branchDetails-content3 button,
+.branchDetails-content4 button,
+.branchDetails-content5 button,
+.branchDetails-content6 button {
+  padding: 0px 20px;
+  margin: 10px 0px;
+  font-size: 13px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: #a11e00;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.branchDetails-content1 button:hover,
+.branchDetails-content2 button:hover,
+.branchDetails-content3 button:hover,
+.branchDetails-content4 button:hover,
+.branchDetails-content5 button:hover,
+.branchDetails-content6 button:hover {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+
+
+.modalContainer h2{
+    font-family: "Poppins", sans-serif;
+    color: #002a47;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.modalContainer h2 span{
+    color: #FA4319;
+}

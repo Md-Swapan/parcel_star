@@ -61,7 +61,7 @@ const ServiceProvide = () => {
 
   return (
     <>
-      <div id="services" className="container " style={{ marginTop: "150px" }}>
+      <div id="services" className="container " style={{ marginTop: "100px" }}>
         <div className="d-flex">
           <div className="swp-before"></div>
           <div className="swp-header">
