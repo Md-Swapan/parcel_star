@@ -11,7 +11,7 @@ import brandLogo9 from "../../../assets/Brands/Frame 28.png";
 import brandLogo10 from "../../../assets/Brands/Frame 29.png";
 import brandLogo11 from "../../../assets/Brands/Frame 30.png";
 import psLogo from "../../../assets/img/Rectangle 58.png";
-import poster from "../../../assets/img/poster.png";
+import poster from "../../../assets/img/growBusiness.jpg";
 import "./LogisticBrand.css";
 
 const LogisticBrand = () => {
@@ -79,7 +79,7 @@ const LogisticBrand = () => {
                 </div>
               </div>
               <div className="col-md-7">
-                <img src={poster} alt="" />
+                {/* <img src={poster} alt="" /> */}
               </div>
               <div className="col-md-3">
                 <div className="growup-content">
@@ -96,8 +96,8 @@ const LogisticBrand = () => {
               </div>
             </div>
           </div>
-          {/* <div className="redMiddleItalic_img"></div>
-          <div className="redMiddleItalic_border"></div> */}
+          <div className="redMiddleItalic_img"></div>
+          <div className="redMiddleItalic_border"></div>
         </div>
       </div>
     </>

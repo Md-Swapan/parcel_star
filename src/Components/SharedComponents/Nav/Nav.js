@@ -93,9 +93,9 @@ const Nav = () => {
                 </Link>
               </li>
               <li className="nav-item nav-menu login">
-                <a className="nav-link login-link" aria-current="page" href="/">
+                <Link className="nav-link login-link" aria-current="page" to="/login">
                   Login
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

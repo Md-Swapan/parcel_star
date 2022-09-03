@@ -1,0 +1,42 @@
+.signup-next-step{
+    display: none;
+}
+.signup-first-step{
+    text-align: center;
+}
+.signup-first-step h4{
+    color: #002a47;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.account-type{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    
+}
+.account-type input{
+    margin-right: 10px;
+    
+}
+.signup-first-step button{
+    padding: 8px 50px;
+    width: 80%;
+    border: .4px solid gainsboro;
+    border-radius: 5px;
+    outline: none;
+    color: #ffffff;
+    margin-top: 30px;
+    background: #002a47;
+    transition: all .3s ease-in-out;
+}
+.signup-first-step button:hover{
+    color: #002a47;
+    background: #ffffff;
+    
+}
+.signup-first-step a{
+    color: #fa4319;
+    
+}

@@ -58,20 +58,25 @@
 
 .letsTalk-container{
     width: 5px;
-
+    height: 470px;
     background: #002a47;
     border-radius: 10px;
     margin-top: 70px;
     margin-left: 60px;
     overflow: hidden;
     transition: all .6s;
+    overflow: hidden;
 }
 .talk-content{
     display: none;
+    height: 100%;
 }
 .letsTalk-container img{
     width: 100px;
     margin: 10px 0px;
+}
+.talkHeading{
+    height: 30%;
 }
 .talk-header{
     border-bottom: 2px solid #002a47;
@@ -84,11 +89,13 @@
 }
 
 .pslsc{
+    height: 65px;
     background: rgb(235, 235, 235);
     margin-top: 10px;
     border-radius: 5px;
     padding: 5px 10px;
     font-family: "Poppins", sans-serif;
+    overflow: hidden;
 }
 .pslsc h6{
     font-size: 14px;
@@ -107,7 +114,7 @@
 }
 
 .sms-body{
-    height: 80%;
+    height: 60%;
     /* background: gainsboro; */
 }
 .sms{
@@ -136,8 +143,8 @@
     color: gray;
 }
 .typeMessage{
-    /* height: 10%; */
-    margin-top: 85%;
+    height: 10%;
+    
 }
 .typeMessage input{
     width: 100%;

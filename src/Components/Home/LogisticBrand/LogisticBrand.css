@@ -62,7 +62,7 @@
   margin-bottom: 20px;
 }
 .growup-content h3 span {
-  color: #fc0b0b;
+  color: #fa4319;
 }
 .growup-content p {
   width: 90%;
@@ -79,18 +79,21 @@
   transition: all 0.4s;
 }
 .growup-content button:hover {
-  background: #fc0b0b;
+  background: #fa4319;
 }
 
 .redMiddleItalic_border {
-  background-color: #fc0b0b;
-  width: 600px;
-  height: 374px;
-  -webkit-clip-path: polygon(60% 0, 100% 0%, 40% 100%, 0% 100%);
-  clip-path: polygon(60% 0, 100% 0%, 40% 100%, 0% 100%);
+  background-color: #fa4319;
+  width: 660px;
+  height: 392px;
+  /* -webkit-clip-path: polygon(70% 0, 100% 0%, 30% 100%, 0% 100%);
+  clip-path: polygon(70% 0, 100% 0%, 30% 100%, 0% 100%); */
+
+  -webkit-clip-path: polygon(70% 0, 100% 0%, 30% 100%, 0% 100%);
+clip-path: polygon(70% 0, 100% 0%, 30% 100%, 0% 100%);
   position: absolute;
-  margin-top: -374px;
-  margin-left: 250px;
+  margin-top: -392px;
+  margin-left: 320px;
 }
 
 .redMiddleItalic_img {
@@ -99,11 +102,18 @@
     url(../../../assets/img/growBusiness.jpg) center center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 500px;
-  height: 374px;
+  width: 600px;
+  height: 392px;
   position: absolute;
-  /* -webkit-clip-path: polygon(100% 0%, 63% 50%, 100% 100%, 40% 100%, 0% 50%, 40% 0);
-  clip-path: polygon(100% 0%, 63% 50%, 100% 100%, 40% 100%, 0% 50%, 40% 0); */
+  -webkit-clip-path: polygon(
+    100% 0%,
+    83% 80%,
+    100% 100%,
+    60% 100%,
+    0% 60%,
+    60% 0
+  );
+  clip-path: polygon(100% 0%, 83% 80%, 100% 100%, 60% 100%, 0% 60%, 60% 0);
 
   -webkit-clip-path: polygon(
     100% 0%,
@@ -114,7 +124,7 @@
     40% 0
   );
   clip-path: polygon(100% 0%, 60% 50%, 100% 100%, 40% 100%, 0% 50%, 40% 0);
-  margin-top: -374px;
+  margin-top: -392px;
   margin-left: 280px;
   z-index: 2;
 }
