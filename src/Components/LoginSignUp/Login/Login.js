@@ -1,9 +1,14 @@
 import React from "react";
 import "./Login.css";
 import logo from "../../../assets/img/Rectangle 58.png";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import useAuth from "../../../Hooks/useAuth";
 
 const Login = () => {
+  const [loginData, setLoginData] = useState({});
+  const { user, loading, loginUser, googleSignIn, authError } = useAuth();
+
   // Email & password sign in method..................
   const handelBlur = (event) => {
     let isFormValid = true;
@@ -16,16 +21,15 @@ const Login = () => {
       isFormValid = isPasswordValid && passwordHasNumber;
     }
 
-    // if(isFormValid){
-    //   let newUserInfo = {...loginData};
-    //   newUserInfo[event.target.name] = event.target.value;
-    //   setLoginData(newUserInfo);
-
-    // }
+    if (isFormValid) {
+      let newUserInfo = { ...loginData };
+      newUserInfo[event.target.name] = event.target.value;
+      setLoginData(newUserInfo);
+    }
   };
 
   const handelSubmit = (e) => {
-    // loginUser(loginData.email, loginData.password, location, history);
+    loginUser(loginData.email, loginData.password);
     e.preventDefault();
   };
 
@@ -78,56 +82,74 @@ const Login = () => {
                 <h2>Login</h2>
                 <h4>Welcome To Parcel Star</h4>
               </div>
-              <div className="login-form">
-                <form onSubmit={handelSubmit}>
-                  <label>Email</label>
-                  <input
-                    type="email"
-                    onBlur={handelBlur}
-                    name="email"
-                    placeholder="Email"
-                    required
-                  />
-                  <br />
-                  <label>Password</label>
-                  <input
-                    type="password"
-                    onBlur={handelBlur}
-                    name="password"
-                    placeholder="Password"
-                    required
-                  />
-                  <br />
-                  <div className="check-forgotPass">
-                    <div className="check">
-                      <div>
-                        <input type="checkbox" name="" />
+              {/* {user?.email && (
+                <span style={{ marginBottom: "20px", color: "green" }}>
+                  User login successfully.
+                </span>
+              )} */}
+              {authError && (
+                <span style={{ marginBottom: "20px", color: "red" }}>
+                  {authError}
+                </span>
+              )}
+
+              {!loading && (
+                <div className="login-form">
+                  <form onSubmit={handelSubmit}>
+                    <label>Email</label>
+                    <input
+                      type="email"
+                      onBlur={handelBlur}
+                      name="email"
+                      placeholder="Email"
+                      required
+                    />
+                    <br />
+                    <label>Password</label>
+                    <input
+                      type="password"
+                      onBlur={handelBlur}
+                      name="password"
+                      placeholder="Password"
+                      required
+                    />
+                    <br />
+                    <div className="check-forgotPass">
+                      <div className="check">
+                        <div>
+                          <input type="checkbox" name="" />
+                        </div>
+                        <div>
+                          <span>Remember me</span>
+                        </div>
                       </div>
-                      <div>
-                        <span>Remember me</span>
-                      </div>
+
+                      <span className="forgotpass">Forgot Password?</span>
                     </div>
 
-                    <span className="forgotpass">Forgot Password?</span>
-                  </div>
-
-                  <br />
-                  <input id="submitBtn" type="submit" value="Login" />
-                  <br />
-                  <span className="registerSwitch">
-                    Need an Account?{" "}
-                    <Link to="/signup">
-                      <strong>Sign Up</strong>
-                    </Link>
-                  </span>
-                </form>
-              </div>
+                    <br />
+                    <input id="submitBtn" type="submit" value="Login" />
+                    <br />
+                    <span className="registerSwitch">
+                      Need an Account?{" "}
+                      <Link to="/signup">
+                        <strong>Sign Up</strong>
+                      </Link>
+                    </span>
+                  </form>
+                </div>
+              )}
+              {loading && (
+                <div class="spinner-border text-info" role="status">
+                  <span class="visually-hidden"></span>
+                </div>
+              )}
               <p className="mt-2 text-center">or</p>
               <button className="phoneSignInBtn" type="">
-                <span className="phone-icon"><i class="bi bi-telephone"></i></span>{" "}
-                <span className="phoneSignInBtn-content">
-                  login with Phone
-                </span>
+                <span className="phone-icon">
+                  <i className="bi bi-telephone"></i>
+                </span>{" "}
+                <span className="phoneSignInBtn-content">login with Phone</span>
               </button>
             </div>
             <div className="fastSaleAndRD-container">

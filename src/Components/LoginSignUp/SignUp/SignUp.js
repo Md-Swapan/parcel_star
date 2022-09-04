@@ -1,14 +1,17 @@
-import React, { useState } from "react";
+// import React, { useContext } from 'react';
+import { useState } from "react";
 import "./SignUp.css";
 import logo from "../../../assets/img/Rectangle 58.png";
 import { Link } from "react-router-dom";
-const SignUp = () => {
+import useAuth from "./../../../Hooks/useAuth";
 
-    const [selectedRadioBtn, setSelectedRadioBtn] = useState('personal')
-    const isRadioSelected = (value) => selectedRadioBtn === value;
-    const handleRadioClick = (event) => setSelectedRadioBtn(event.target.value);
-  // const [registerData, setRegisterData] = useState({});
-  // const {user, loading, registerUser, authError} = useAuth();
+const SignUp = () => {
+  const [selectedRadioBtn, setSelectedRadioBtn] = useState("personal");
+  const isRadioSelected = (value) => selectedRadioBtn === value;
+  const handleRadioClick = (event) => setSelectedRadioBtn(event.target.value);
+
+  const [registerData, setRegisterData] = useState({});
+  const { user, loading, registerUser, authError } = useAuth();
 
   // const history = useHistory();
   // const location = useLocation();
@@ -28,16 +31,16 @@ const SignUp = () => {
     if (event.target.name === "name") {
       isFormValid = event.target.value.length > 8;
     }
-    //   if(isFormValid){
-    //     let newUserInfo = {...registerData};
-    //     newUserInfo[event.target.name] = event.target.value;
-    //     console.log(newUserInfo)
-    //     setRegisterData(newUserInfo);
-    //   }
+    if (isFormValid) {
+      let newUserInfo = { ...registerData };
+      newUserInfo[event.target.name] = event.target.value;
+      console.log(newUserInfo);
+      setRegisterData(newUserInfo);
+    }
   };
 
   const handelSubmit = (e) => {
-    //   registerUser(registerData.email, registerData.password, registerData.name, location, history);
+    registerUser(registerData.email, registerData.password, registerData.name);
     e.preventDefault();
   };
 
@@ -81,13 +84,12 @@ const SignUp = () => {
     talkContent.style.display = "none";
   };
 
-  const callNextStep = () =>{
+  const callNextStep = () => {
     const signupFirstStep = document.querySelector(".signup-first-step");
     const signupNextStep = document.querySelector(".signup-next-step");
-    signupFirstStep.style.display = "none"
-    signupNextStep.style.display = "block"
-  }
-
+    signupFirstStep.style.display = "none";
+    signupNextStep.style.display = "block";
+  };
 
   return (
     <>
@@ -103,64 +105,98 @@ const SignUp = () => {
                 <h4>Account Type</h4>
                 <div className="account-type">
                   <div>
-                    <input type="radio" name="Personal" value='personal' checked={isRadioSelected('personal')} onChange={handleRadioClick} />
+                    <input
+                      type="radio"
+                      name="selectedRadioBtn"
+                      value="personal"
+                      checked={isRadioSelected("personal")}
+                      onChange={handleRadioClick}
+                    />
                     <label for="Personal">Personal</label>
                   </div>
                   <div>
-                    <input type="radio" name="merchant" value='merchant' checked={isRadioSelected('merchant')} onChange={handleRadioClick}/>
+                    <input
+                      type="radio"
+                      name="selectedRadioBtn"
+                      value="merchant"
+                      checked={isRadioSelected("merchant")}
+                      onChange={handleRadioClick}
+                    />
                     <label for="merchant">Merchant</label>
                   </div>
                 </div>
-                <button onClick={callNextStep} type="">Next</button>
+                <button onClick={callNextStep} type="">
+                  Next
+                </button>
 
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <p>By sign up in you agree to our <br/> <Link to="/termsCondition">terms & condition</Link></p>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <p>
+                  By sign up in you agree to our <br />{" "}
+                  <Link to="/termsCondition">terms & condition</Link>
+                </p>
               </div>
               <div className="signup-next-step">
                 <div className="login-form">
-                  <form onSubmit={handelSubmit}>
-                    <label>Name</label>
-                    <input
-                      type="text"
-                      onBlur={handelBlur}
-                      name="name"
-                      placeholder="Name"
-                      required
-                    />
-                    <br />
-                    <label>Email</label>
-                    <input
-                      type="email"
-                      onBlur={handelBlur}
-                      name="email"
-                      placeholder="Email"
-                      required
-                    />
-                    <br />
-                    <label>Password</label>
-                    <input
-                      type="password"
-                      onBlur={handelBlur}
-                      name="password"
-                      placeholder="Password"
-                      required
-                    />
-                    <br />
-                    <br />
-                    <input id="submitBtn" type="submit" value="Sign Up" />
-                    <br />
-                    <span className="registerSwitch">
-                      Alrady have an account?{" "}
-                      <Link to="/login">
-                        <strong>Login</strong>
-                      </Link>
+                  {user?.email && (
+                    <span style={{ marginBottom: "20px", color: "green" }}>
+                      User created successfully.
                     </span>
-                  </form>
+                  )}
+                  {/* {authError && (
+                    <span style={{ marginBottom: "20px", color: "red" }}>
+                      {authError}
+                    </span>
+                  )} */}
+                  {!loading && (
+                    <form onSubmit={handelSubmit}>
+                      <label>Name</label>
+                      <input
+                        type="text"
+                        onBlur={handelBlur}
+                        name="name"
+                        placeholder="Name"
+                        required
+                      />
+                      <br />
+                      <label>Email</label>
+                      <input
+                        type="email"
+                        onBlur={handelBlur}
+                        name="email"
+                        placeholder="Email"
+                        required
+                      />
+                      <br />
+                      <label>Password</label>
+                      <input
+                        type="password"
+                        onBlur={handelBlur}
+                        name="password"
+                        placeholder="Password"
+                        required
+                      />
+                      <br />
+                      <br />
+                      <input id="submitBtn" type="submit" value="Sign Up" />
+                      <br />
+                      <span className="registerSwitch">
+                        Alrady have an account?{" "}
+                        <Link to="/login">
+                          <strong>Login</strong>
+                        </Link>
+                      </span>
+                    </form>
+                  )}
+                  {loading && (
+                    <div class="spinner-border text-info" role="status">
+                      <span class="visually-hidden"></span>
+                    </div>
+                  )}
                 </div>
                 <p className="mt-2 text-center">or</p>
                 <button className="phoneSignInBtn" type="">
