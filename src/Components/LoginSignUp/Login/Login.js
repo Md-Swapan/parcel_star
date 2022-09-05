@@ -82,16 +82,16 @@ const Login = () => {
                 <h2>Login</h2>
                 <h4>Welcome To Parcel Star</h4>
               </div>
-              {/* {user?.email && (
+              {user?.email && (
                 <span style={{ marginBottom: "20px", color: "green" }}>
                   User login successfully.
                 </span>
-              )} */}
-              {authError && (
+              )}
+              {/* {authError && (
                 <span style={{ marginBottom: "20px", color: "red" }}>
                   {authError}
                 </span>
-              )}
+              )} */}
 
               {!loading && (
                 <div className="login-form">
