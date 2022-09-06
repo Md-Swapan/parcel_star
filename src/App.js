@@ -7,6 +7,8 @@ import Login from "./Components/LoginSignUp/Login/Login";
 import SignUp from "./Components/LoginSignUp/SignUp/SignUp";
 import TermsAndCondition from "./Components/TermsAndCondition/TermsAndCondition";
 import AuthProvider from "./Contexts/AuthProvider/AuthProvider";
+import PrivateRoute from "./Components/LoginSignUp/PrivateRoute/PrivateRoute";
+import Dashboard from "./Components/Dashboard/Dashboard";
 
 function App() {
   return (
@@ -20,6 +22,15 @@ function App() {
             <Route path="login" element={<Login />} />
             <Route path="signup" element={<SignUp />} />
             <Route path="termsCondition" element={<TermsAndCondition />} />
+            <Route
+              path="dashboard"
+              element={
+                <PrivateRoute>
+                  <Dashboard />
+                </PrivateRoute>
+              }
+            />
+          
           </Routes>
         </AuthProvider>
       </div>

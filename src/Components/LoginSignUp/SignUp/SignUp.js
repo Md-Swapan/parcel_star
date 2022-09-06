@@ -2,19 +2,20 @@
 import { useState } from "react";
 import "./SignUp.css";
 import logo from "../../../assets/img/Rectangle 58.png";
-import { Link } from "react-router-dom";
+import loadergif from "../../../assets/img/loader.gif";
+import { Link, useLocation, useNavigate  } from "react-router-dom";
 import useAuth from "./../../../Hooks/useAuth";
 
 const SignUp = () => {
-  const [selectedRadioBtn, setSelectedRadioBtn] = useState("personal");
-  const isRadioSelected = (value) => selectedRadioBtn === value;
-  const handleRadioClick = (event) => setSelectedRadioBtn(event.target.value);
+  const [userType, setUserType] = useState("personal");
+  const isRadioSelected = (value) => userType === value;
+  const handleRadioClick = (event) => setUserType(event.target.value);
 
   const [registerData, setRegisterData] = useState({});
-  const { user, loading, registerUser, authError } = useAuth();
+  const { user, loading, registerUser, authError, logOut } = useAuth();
 
-  // const history = useHistory();
-  // const location = useLocation();
+  const navigate = useNavigate();
+  const location = useLocation();
 
   // Email & password sign in method..................
   const handelBlur = (event) => {
@@ -40,7 +41,14 @@ const SignUp = () => {
   };
 
   const handelSubmit = (e) => {
-    registerUser(registerData.email, registerData.password, registerData.name);
+    registerUser(
+      registerData.email,
+      registerData.password,
+      registerData.name,
+      userType,
+      navigate,
+      location
+    );
     e.preventDefault();
   };
 
@@ -193,17 +201,17 @@ const SignUp = () => {
                     </form>
                   )}
                   {loading && (
-                    <div class="spinner-border text-info" role="status">
-                      <span class="visually-hidden"></span>
+                    <div className="loader-container" role="status">
+                      <img src={loadergif} alt="" />
                     </div>
                   )}
                 </div>
                 <p className="mt-2 text-center">or</p>
                 <button className="phoneSignInBtn" type="">
                   <span className="phone-icon">
-                    <i class="bi bi-telephone"></i>
+                    <i className="bi bi-telephone"></i>
                   </span>{" "}
-                  <span className="phoneSignInBtn-content">
+                  <span onClick={logOut} className="phoneSignInBtn-content">
                     Sing Up with Phone
                   </span>
                 </button>

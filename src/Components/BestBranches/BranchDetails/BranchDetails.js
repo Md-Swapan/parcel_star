@@ -40,7 +40,7 @@ const BranchDetails = (props) => {
         <div className="branchDetails-content1">
           <h4>{branch.branch1}</h4>
           <span>
-            <i class="bi bi-geo-alt"></i> {locations.Location1}
+            <i className="bi bi-geo-alt"></i> {locations.Location1}
           </span>
           <button type="" onClick={openModal}>
             See More{" "}
@@ -49,7 +49,7 @@ const BranchDetails = (props) => {
         <div className="branchDetails-content2">
           <h4>{branch.branch1}</h4>
           <span>
-            <i class="bi bi-geo-alt"></i> {locations.Location1}
+            <i className="bi bi-geo-alt"></i> {locations.Location1}
           </span>
           <button type="" onClick={openModal}>
             See More{" "}
@@ -58,7 +58,7 @@ const BranchDetails = (props) => {
         <div className="branchDetails-content3">
           <h4>{branch.branch1}</h4>
           <span>
-            <i class="bi bi-geo-alt"></i> {locations.Location1}
+            <i className="bi bi-geo-alt"></i> {locations.Location1}
           </span>
           <button type="" onClick={openModal}>
             See More{" "}
@@ -67,7 +67,7 @@ const BranchDetails = (props) => {
         <div className="branchDetails-content4">
           <h4>{branch.branch1}</h4>
           <span>
-            <i class="bi bi-geo-alt"></i> {locations.Location1}
+            <i className="bi bi-geo-alt"></i> {locations.Location1}
           </span>
           <button type="" onClick={openModal}>
             See More{" "}
@@ -76,7 +76,7 @@ const BranchDetails = (props) => {
         <div className="branchDetails-content5">
           <h4>{branch.branch1}</h4>
           <span>
-            <i class="bi bi-geo-alt"></i> {locations.Location1}
+            <i className="bi bi-geo-alt"></i> {locations.Location1}
           </span>
           <button type="" onClick={openModal}>
             See More{" "}
@@ -86,7 +86,7 @@ const BranchDetails = (props) => {
           <h4>{branch.branch1}</h4>
           <span>
             {" "}
-            <i class="bi bi-geo-alt"></i> {locations.Location1}
+            <i className="bi bi-geo-alt"></i> {locations.Location1}
           </span>
           <button type="" onClick={openModal}>
             See More{" "}

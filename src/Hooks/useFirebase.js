@@ -4,9 +4,7 @@ import {
   getAuth,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
-  signInWithPopup,
   onAuthStateChanged,
-  GoogleAuthProvider,
   updateProfile,
   getIdToken,
   signOut,
@@ -25,18 +23,18 @@ const UseFirebase = () => {
   const [authToken, setAuthToken] = useState("");
 
   const auth = getAuth();
-  const GoogleProvider = new GoogleAuthProvider();
+  // const GoogleProvider = new GoogleAuthProvider();
 
   // register
-  const registerUser = (email, password, name, location, history) => {
+  const registerUser = (email, password, name, userType, location, navigate) => {
     setLoading(true);
-    createUserWithEmailAndPassword(auth, email, password)
+    createUserWithEmailAndPassword(auth, email, password,)
       .then((userCredential) => {
         setAuthError("");
         const newUser = { email, displayName: name };
         setUser(newUser);
         // save user in to Db
-        saveUserInDB(email, name, "POST");
+        saveUserInDB(email, name, userType, "POST");
         // send name after creation
         updateProfile(auth.currentUser, {
           displayName: name,
@@ -50,8 +48,9 @@ const UseFirebase = () => {
             // ...
           });
 
-        const destination = location?.state?.from || "/";
-        history.replace(destination);
+        let from = location.state?.from?.pathname || "/";
+        navigate(from, {replace: true});
+        
       })
       .catch((error) => {
         const errorMessage = error.message;
@@ -62,12 +61,12 @@ const UseFirebase = () => {
   };
 
   // login
-  const loginUser = (email, password, location, history) => {
+  const loginUser = (email, password, location, navigate) => {
     setLoading(true);
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        const destination = location?.state?.from || "/";
-        history.replace(destination);
+        let from = location.state?.from?.pathname || "/";
+        navigate(from, {replace: true});
         setAuthError("");
       })
       .catch((error) => {
@@ -77,24 +76,7 @@ const UseFirebase = () => {
       .finally(() => setLoading(false));
   };
 
-  // google sign in method
-  const googleSignIn = (location, history) => {
-    setLoading(true);
-    signInWithPopup(auth, GoogleProvider)
-      .then((result) => {
-        const user = result.user;
-        saveUserInDB(user.email, user.displayName, "PUT");
-        setAuthError("");
-        const destination = location?.state?.from || "/";
-        history.replace(destination);
-      })
-      .catch((error) => {
-        const errorMessage = error.message;
-        setAuthError(errorMessage);
-      })
-      .finally(() => setLoading(false));
-  };
-
+  
   // logout
   const logOut = () => {
     setLoading(true);
@@ -109,9 +91,9 @@ const UseFirebase = () => {
   };
 
   // save user data in db
-  const saveUserInDB = (email, displayName, method) => {
-    const user = { email, displayName };
-    fetch("https://doctors-port.herokuapp.com/AddUsers", {
+  const saveUserInDB = (email, displayName, userType, method) => {
+    const user = { email, displayName , userType};
+    fetch("http://localhost:4050/AddUser", {
       method: method,
       headers: {
         "content-type": "application/json",
@@ -136,18 +118,18 @@ const UseFirebase = () => {
     return () => unSubscribe;
   }, []);
 
-  useEffect(() => {
-    fetch(`https://doctors-port.herokuapp.com/AddUsers/admin/${user.email}`)
-      .then((res) => res.json())
-      .then((data) => setAdmin(data.admin));
-  }, [user.email]);
+  // useEffect(() => {
+  //   fetch(`https://doctors-port.herokuapp.com/AddUsers/admin/${user.email}`)
+  //     .then((res) => res.json())
+  //     .then((data) => setAdmin(data.admin));
+  // }, [user.email]);
 
   return {
     user,
     loading,
     registerUser,
     loginUser,
-    googleSignIn,
+    // googleSignIn,
     admin,
     logOut,
     authError,

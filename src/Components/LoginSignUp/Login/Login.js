@@ -1,13 +1,16 @@
 import React from "react";
 import "./Login.css";
 import logo from "../../../assets/img/Rectangle 58.png";
-import { Link } from "react-router-dom";
+import loadergif from "../../../assets/img/loader.gif";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import useAuth from "../../../Hooks/useAuth";
 
 const Login = () => {
   const [loginData, setLoginData] = useState({});
-  const { user, loading, loginUser, googleSignIn, authError } = useAuth();
+  const { user, loading, loginUser } = useAuth();
+  const navigate = useNavigate();
+  const location = useLocation();
 
   // Email & password sign in method..................
   const handelBlur = (event) => {
@@ -29,7 +32,7 @@ const Login = () => {
   };
 
   const handelSubmit = (e) => {
-    loginUser(loginData.email, loginData.password);
+    loginUser(loginData.email, loginData.password, navigate, location);
     e.preventDefault();
   };
 
@@ -38,6 +41,7 @@ const Login = () => {
     const contactContentContainer = document.querySelector(
       ".contact-content-container"
     );
+
     const talkContent = document.querySelector(".talk-content");
     const letsTalkContainer = document.querySelector(".letsTalk-container");
 
@@ -72,6 +76,7 @@ const Login = () => {
     letsTalkContainer.style.padding = "0px";
     talkContent.style.display = "none";
   };
+
   return (
     <>
       <div className="login-container">
@@ -79,7 +84,9 @@ const Login = () => {
           <div className="login-container-content">
             <div className="login-form-container">
               <div className="login-header">
-                <h2>Login</h2>
+                <h2>
+                  Login <i className="fi fi-rr-home"></i>
+                </h2>
                 <h4>Welcome To Parcel Star</h4>
               </div>
               {user?.email && (
@@ -96,7 +103,9 @@ const Login = () => {
               {!loading && (
                 <div className="login-form">
                   <form onSubmit={handelSubmit}>
-                    <label>Email</label>
+                    <label>
+                      <i className="fi fi-br-check"></i> Email
+                    </label>
                     <input
                       type="email"
                       onBlur={handelBlur}
@@ -112,6 +121,7 @@ const Login = () => {
                       name="password"
                       placeholder="Password"
                       required
+                      autoComplete="off"
                     />
                     <br />
                     <div className="check-forgotPass">
@@ -133,15 +143,15 @@ const Login = () => {
                     <span className="registerSwitch">
                       Need an Account?{" "}
                       <Link to="/signup">
-                        <strong>Sign Up</strong>
+                        <strong>Sign Up </strong>
                       </Link>
                     </span>
                   </form>
                 </div>
               )}
               {loading && (
-                <div class="spinner-border text-info" role="status">
-                  <span class="visually-hidden"></span>
+                <div className="loader-container" role="status">
+                  <img src={loadergif} alt="" />
                 </div>
               )}
               <p className="mt-2 text-center">or</p>

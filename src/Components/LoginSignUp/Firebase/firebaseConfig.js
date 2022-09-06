@@ -6,14 +6,12 @@ const firebaseConfig = {
     // messagingSenderId: process.env.PARCEL_STAR_MESSAGING_SENDER_ID,
     // appId: process.env.PARCEL_STAR_APP_ID
 
-
-
-  apiKey: "AIzaSyCBluDZawsBKS_SqlAbSXUMSgqs9Do27Yk",
-  authDomain: "courier-parcelstar.firebaseapp.com",
-  projectId: "courier-parcelstar",
-  storageBucket: "courier-parcelstar.appspot.com",
-  messagingSenderId: "277938530513",
-  appId: "1:277938530513:web:ee5c67c1b137cbbca9bdf0"
+    apiKey: "AIzaSyD2LGR_JF2Sj_BUwzRyNFJ99BPnJtrOGh0",
+    authDomain: "parcelstar-66cb8.firebaseapp.com",
+    projectId: "parcelstar-66cb8",
+    storageBucket: "parcelstar-66cb8.appspot.com",
+    messagingSenderId: "221268885701",
+    appId: "1:221268885701:web:2604b15896c4d1fcd3b0ac"
   };
 
 export default firebaseConfig;
