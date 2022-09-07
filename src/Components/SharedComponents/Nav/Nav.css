@@ -77,10 +77,15 @@
   color: #FA4319 !important;
 }
 .login {
+  min-width: 135px !important;
+  text-align: center;
   margin-left: 135px;
   border-radius: 3px;
   background: #FA4319;
-  padding: 0px 40px !important;
+  padding: 0px !important;
+}
+.login:hover{
+  cursor: pointer;
 }
 .login:hover .login-link{
     color: #fff !important;

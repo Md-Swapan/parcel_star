@@ -17,11 +17,11 @@ function App() {
         <AuthProvider>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="bestEmployee" element={<BestEmployee />} />
-            <Route path="bestBranch" element={<BestBranches />} />
+            <Route path="best-employee" element={<BestEmployee />} />
+            <Route path="best-branch" element={<BestBranches />} />
             <Route path="login" element={<Login />} />
             <Route path="signup" element={<SignUp />} />
-            <Route path="termsCondition" element={<TermsAndCondition />} />
+            <Route path="terms-condition" element={<TermsAndCondition />} />
             <Route
               path="dashboard"
               element={

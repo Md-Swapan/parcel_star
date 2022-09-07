@@ -81,7 +81,7 @@ const WhyChooseUs = () => {
               </div>
               <div className="d-flex">
                 
-                <Link to="/bestEmployee">
+                <Link to="/best-employee">
                 <div className="Expert-employee-count">
                   <h2>700</h2>
                   <p>Expert Employee</p>
@@ -96,7 +96,7 @@ const WhyChooseUs = () => {
                 </div>
               </div>
               <div className="d-flex">
-                <Link to='/bestBranch'>
+                <Link to='/best-branch'>
                 <div className="branches-count">
                   <h2>500</h2>
                   <p>Branches</p>

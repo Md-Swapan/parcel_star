@@ -48,8 +48,8 @@ const UseFirebase = () => {
             // ...
           });
 
-        let from = location.state?.from?.pathname || "/";
-        navigate(from, {replace: true});
+          let from = location?.state?.from?.pathname || '/';
+          navigate(from, {replace: true});
         
       })
       .catch((error) => {

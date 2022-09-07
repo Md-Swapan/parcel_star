@@ -91,7 +91,7 @@ const LogisticBrand = () => {
                     customer, at the right location in the right time through
                     its efficient distribution management.
                   </p>
-                  <button type="">Become a Merchant</button>
+                  <button type="">Learn More</button>
                 </div>
               </div>
             </div>

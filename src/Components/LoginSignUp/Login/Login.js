@@ -8,7 +8,7 @@ import useAuth from "../../../Hooks/useAuth";
 
 const Login = () => {
   const [loginData, setLoginData] = useState({});
-  const { user, loading, loginUser } = useAuth();
+  const { user, loading, loginUser, authError } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -32,7 +32,7 @@ const Login = () => {
   };
 
   const handelSubmit = (e) => {
-    loginUser(loginData.email, loginData.password, navigate, location);
+    loginUser(loginData.email, loginData.password, location, navigate);
     e.preventDefault();
   };
 
@@ -94,11 +94,11 @@ const Login = () => {
                   User login successfully.
                 </span>
               )}
-              {/* {authError && (
+              {authError && (
                 <span style={{ marginBottom: "20px", color: "red" }}>
                   {authError}
                 </span>
-              )} */}
+              )}
 
               {!loading && (
                 <div className="login-form">

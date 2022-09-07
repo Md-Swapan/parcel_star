@@ -46,8 +46,8 @@ const SignUp = () => {
       registerData.password,
       registerData.name,
       userType,
-      navigate,
-      location
+      location,
+      navigate
     );
     e.preventDefault();
   };
