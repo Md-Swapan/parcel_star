@@ -12,7 +12,7 @@ const SignUp = () => {
   const handleRadioClick = (event) => setUserType(event.target.value);
 
   const [registerData, setRegisterData] = useState({});
-  const { user, loading, registerUser, authError, logOut } = useAuth();
+  const { user, loading, registerUser, authError } = useAuth();
 
   const navigate = useNavigate();
   const location = useLocation();
@@ -211,7 +211,7 @@ const SignUp = () => {
                   <span className="phone-icon">
                     <i className="bi bi-telephone"></i>
                   </span>{" "}
-                  <span onClick={logOut} className="phoneSignInBtn-content">
+                  <span className="phoneSignInBtn-content">
                     Sing Up with Phone
                   </span>
                 </button>

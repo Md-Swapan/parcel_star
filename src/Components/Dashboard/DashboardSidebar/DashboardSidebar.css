@@ -1,0 +1,138 @@
+#sidebarMenu {
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 320px;
+  /* margin-top: 80px; */
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background: rgb(255, 255, 255);
+  /* transform: translateX(-250px); */
+  transition: transform 250ms ease-in-out;
+  font-family: "Poppins", sans-serif;
+  color: #707070;
+}
+
+/* #openSidebarmenu {
+    display: none;
+  } */
+
+.sidebarIconToggle {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  z-index: 20;
+  top: 30px;
+  left: 67px;
+  cursor: pointer;
+}
+
+.dashboard-logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+}
+.dashboard-logo img {
+  width: 140px;
+}
+.dashboard-profile-show-container {
+  padding-top: 40px;
+  margin: 0px 10px;
+  border-image-slice: 1;
+  border-width: 1px;
+  border-image-source: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0),
+    rgb(148, 148, 148),
+    rgba(0, 0, 0, 0)
+  );
+  border-top: 2px solid saddlebrown;
+  border-bottom: 2px solid saddlebrown;
+}
+.Dashboard-profileImg {
+  justify-content: center;
+  display: flex;
+}
+.Dashboard-profileImg img {
+  width: 120px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.Dashboard-profileImg::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #afafaf;
+  border-bottom: none;
+  border-left: none;
+  right: 97px;
+  top: 132px;
+  /* bottom: 20px;
+    right: 20px;
+    z-index: -1; */
+}
+.Dashboard-profileImg::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #ffac9a;
+  border-top: none;
+  border-right: none;
+  left: 97px;
+  top: 198px;
+  /* bottom: 15px;
+    right: 15px;
+    z-index: -1; */
+}
+.profileName-shopQuantity {
+  margin: 20px 0px;
+  text-align: center;
+}
+
+.menuList{
+    padding: 0px !important;
+}
+.menu-item {
+  list-style: none;
+  margin: 20px;
+  background: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  color: #002a47;
+  border-radius: 5px;
+  z-index: 3;
+  transition: 0.5s;
+}
+.menu-item:hover {
+  color: #cf3f1e;
+}
+/* .menu-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  background: #002a47;
+  color: #fff;
+  z-index: -2;
+  transition: 0.8s;
+  border-radius: 50% 50% 50 50;
+}
+.menu-item:hover::before {
+  height: 180%;
+} */
+.active {
+  background: #002a47;
+  color: #fff;
+  transition: 0.5s;
+}
+.active:hover {
+  color: #fff;
+}

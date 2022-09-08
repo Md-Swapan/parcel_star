@@ -5,7 +5,7 @@
   /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px; */
 
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   height: 130px;
   width: 100%;
   position: fixed;
@@ -31,12 +31,17 @@
   color: gray;
   padding-bottom: 10px;
   border: 10px solid;
-    border-image-slice: 1;
-    border-width: 1px;
-    border-image-source: linear-gradient(to left, rgba(0, 0, 0, 0), rgb(148, 148, 148),rgba(0, 0, 0, 0));
-    border-top: none;
-    border-left: none;
-    border-right: none;
+  border-image-slice: 1;
+  border-width: 1px;
+  border-image-source: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0),
+    rgb(148, 148, 148),
+    rgba(0, 0, 0, 0)
+  );
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 
 .location-container {
@@ -50,7 +55,7 @@
   color: green;
 }
 .clock-container .close {
-  color: #FA4319;
+  color: #fa4319;
   margin-left: 10px;
 }
 .social-container {
@@ -60,7 +65,6 @@
   padding: 0px 7px;
   color: rgb(146, 146, 146);
 }
-
 
 /* nav menu css */
 .navbar-nav {
@@ -73,27 +77,26 @@
   color: rgb(145, 145, 145);
   font-weight: 500;
 }
-.nav-item:hover .nav-link{
-  color: #FA4319 !important;
+.nav-item:hover .nav-link {
+  color: #fa4319 !important;
 }
 .login {
   min-width: 135px !important;
   text-align: center;
   margin-left: 135px;
   border-radius: 3px;
-  background: #FA4319;
+  background: #fa4319;
   padding: 0px !important;
 }
-.login:hover{
+.login:hover {
   cursor: pointer;
 }
-.login:hover .login-link{
-    color: #fff !important;
+.login:hover .login-link {
+  color: #fff !important;
 }
 .login-link {
   color: #fff !important;
 }
-
 
 /* Resposive css */
 @media screen and (max-width: 786px) {
@@ -119,5 +122,4 @@
   .login {
     margin-top: 100px;
   }
-
 }
