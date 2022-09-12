@@ -9,7 +9,7 @@ const PrivateRoute = ({ children }) => {
 
   if (loading) {
     return (
-      <div className="loader-container" role="status">
+      <div className="loader-container d-flex justify-content-center" role="status" style={{marginTop: "40vh"}}>
         <img src={loadergif} alt="" />
       </div>
     );

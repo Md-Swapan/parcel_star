@@ -9,6 +9,14 @@ import TermsAndCondition from "./Components/TermsAndCondition/TermsAndCondition"
 import AuthProvider from "./Contexts/AuthProvider/AuthProvider";
 import PrivateRoute from "./Components/LoginSignUp/PrivateRoute/PrivateRoute";
 import Dashboard from "./Components/Dashboard/Dashboard";
+import DashboardHome from "./Components/Dashboard/DashboardHome/DashboardHome";
+import OrderHistory from "./Components/Dashboard/OrderHistory/OrderHistory";
+import TakeService from "./Components/Dashboard/TakeService/TakeService";
+import TrackProduct from "./Components/Dashboard/TrackProduct/TrackProduct";
+import Offers from "./Components/Dashboard/Offers/Offers";
+import Support from "./Components/Dashboard/Support/Support";
+import CoverageArea from "./Components/Dashboard/CoverageArea/CoverageArea";
+import CreateShopForm from "./Components/Dashboard/CreateShopForm/CreateShopForm";
 
 function App() {
   return (
@@ -22,6 +30,7 @@ function App() {
             <Route path="login" element={<Login />} />
             <Route path="signup" element={<SignUp />} />
             <Route path="terms-condition" element={<TermsAndCondition />} />
+
             <Route
               path="dashboard"
               element={
@@ -29,8 +38,16 @@ function App() {
                   <Dashboard />
                 </PrivateRoute>
               }
-            />
-          
+            >
+              <Route index element={<DashboardHome />}></Route>
+              <Route path="order-history" element={<OrderHistory />}></Route>
+              <Route path="take-service" element={<TakeService />}></Route>
+              <Route path="track-product" element={<TrackProduct />}></Route>
+              <Route path="offers" element={<Offers />}></Route>
+              <Route path="support" element={<Support />}></Route>
+              <Route path="coverage-area" element={<CoverageArea />}></Route>
+              <Route path="create-shop" element={<CreateShopForm />}></Route>
+            </Route>
           </Routes>
         </AuthProvider>
       </div>

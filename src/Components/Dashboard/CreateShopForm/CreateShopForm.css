@@ -1,0 +1,96 @@
+.createShop-form-container{
+    margin: 40px;
+    font-family: "Poppins", sans-serif;
+}
+.createShop-form-container h2{
+    color: #002a47;
+}
+.createShop-form-container form{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    margin: 40px 0px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: gray;
+}
+.createShop-form-container form label{
+    color: #002a47;
+}
+.createShop-form-container form input{
+    width: 100%;
+    outline: none;
+    border: .5px solid gainsboro;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.createShop-form-container form select{
+    width: 100%;
+    outline: none;
+    border: .5px solid gainsboro;
+    padding: 10px 10px;
+    border-radius: 5px;
+    color: gray;
+}
+
+.shopImgInput{
+    border-left: 3px solid gainsboro;
+    padding: 40px;
+    padding-top: 0;
+    
+}
+.shopImgInput label{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #002a47;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+.shopImgInput span{
+    border: 3px dashed gainsboro !important;
+    border-radius: 10px;
+    height: 160px;
+    width: 245px !important;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shopImgInput span i, .shopImgInput span small{
+    position: absolute;
+    color: gainsboro;
+}
+.shopImgInput span i{
+    font-size: 70px;
+    margin-top: -30px;
+}
+.shopImgInput span small{
+    font-size: 15px;
+    margin-top: 90px;
+}
+.shopImgInput input{
+    /* border: 2px dashed #FA4319 !important; */
+    height: 150px;
+    width: 245px !important;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.create-shop-btns button{
+    width: 200px;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    color: #fff;
+}
+.create-shop-btns button:first-child{
+    background: #FA4319 !important;
+}
+.create-shop-btns button:last-child{
+    background: #002a47
+}

@@ -1,0 +1,93 @@
+.shop-container{
+    font-family: "Poppins", sans-serif;
+}
+.shops{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin: 50px;
+
+}
+.shop{
+    background: #a36904e3;
+    display: flex;
+    padding: 20px 25px;
+    border-radius: 10px;
+    color: #ffff;
+    font-family: "Poppins", sans-serif;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.shop-profileImg{
+    margin-right: 20px;
+}
+.shop-profileImg img{
+    width: 100px;
+    border-radius: 10px;
+}
+.shop-content small{
+    font-size: 12px;
+}
+
+.create-shop{
+    display: flex;
+    justify-content: center;
+}
+.create-shop button{
+    width: 94%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid gainsboro;
+    font-size: 14px;
+    color: #8d8d8d;
+    
+}
+.create-shop a{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-decoration: none;
+}
+
+
+
+.performance-cards{
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+.performance-card{
+    color: #ffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+.performance-card h4{
+    margin-bottom: -2px;
+    font-size: 20px;
+}
+
+
+.bronze-month{
+    background: #724D3B;
+}
+.silver-month{
+    background: #8C8C97;
+}
+.gold-month{
+    background: #A46B05;
+}
+.qtyProduct{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 14px;
+    font-weight: 200;
+    margin-top: 15px;
+}
+.qtyProduct-content{
+    border-right: 1px solid #ffffff;
+    margin-right: 20px;
+}
+
+.performance-chart{
+    margin: 0px 50px;
+}

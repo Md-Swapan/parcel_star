@@ -1,0 +1,50 @@
+.coverage-area-container {
+  margin: 50px;
+  font-family: "Poppins", sans-serif;
+}
+.coverage-area-container h2 {
+  margin: 30px 0px;
+  font-weight: 600;
+}
+.branchs-content-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  width: 100%;
+}
+.branch-header {
+  display: flex;
+  justify-content: space-around;
+  background: #002a47;
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-top: 10px !important;
+}
+
+.branchsList {
+  font-size: 16px;
+  display: flex;
+  background: #0029472a;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  padding: 15px ;
+}
+.brName {
+  width: 30%;
+  display: flex;
+  margin-right: 40px;
+}
+.brName small{
+  margin-left: 10px;
+}
+.brNumber {
+    width: 30%;
+  display: flex;
+  margin-right: 40px;
+}
+.brLocation {
+  display: flex;
+}
+.brLocation small{
+  margin-left: 10px;
+}
