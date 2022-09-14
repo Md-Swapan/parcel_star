@@ -76,6 +76,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     opacity: 0;
 }
 
@@ -93,4 +94,19 @@
 }
 .create-shop-btns button:last-child{
     background: #002a47
+}
+
+
+.uploadedImgShow{
+    height: 156px;
+    width: 242px;
+    position: absolute;
+    margin-top: -200px;
+    overflow: hidden;
+    border-radius: 10px;
+    z-index: -1;
+}
+.uploadedImgShow img{
+    width: 100%;
+    height: 100%;
 }

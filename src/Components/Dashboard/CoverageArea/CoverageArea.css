@@ -2,6 +2,12 @@
   margin: 50px;
   font-family: "Poppins", sans-serif;
 }
+.branchContent{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+}
+
 .coverage-area-container h2 {
   margin: 30px 0px;
   font-weight: 600;
@@ -22,10 +28,14 @@
   padding-top: 10px !important;
 }
 
+/* .branchlist-container{
+  height: 0px;
+  transition: all 1s ease-in;
+} */
 .branchsList {
   font-size: 16px;
   display: flex;
-  background: #0029472a;
+  background: #fa421913;
   border-bottom: 1px solid rgb(255, 255, 255);
   padding: 15px ;
 }

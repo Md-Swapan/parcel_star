@@ -158,14 +158,15 @@ const CreateShopForm = () => {
           </span>
           <br />
           <br />
-          <div>
-            <p>
+          <div className="uploadedImgShow">
+            <img src={imageUrl} alt=""/>
+            {/* <p>
               {imageUrl}{" "}
               <i
                 style={{ fontSize: "20px", color: "#002a47" }}
                 class="bi bi-check-lg"
               ></i>
-            </p>
+            </p> */}
           </div>
         </div>
 

@@ -1,10 +1,12 @@
 import React from "react";
 import "./Nav.css";
 import logo from "../../../assets/img/Rectangle 58.png";
-import { HashLink as Link } from 'react-router-hash-link';
-
+import { HashLink as Link } from "react-router-hash-link";
+import useAuth from "./../../../Hooks/useAuth";
 
 const Nav = () => {
+  const { user, merchant, logOut } = useAuth();
+
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light p-0">
@@ -14,16 +16,15 @@ const Nav = () => {
               <img style={{ width: "200px" }} src={logo} />
             </div>
           </a>
-          
 
           <div className="topBar-container">
             <small className="location-container">
-              <i className="bi bi-geo-alt"></i> House 405, Tejgaon industrial area
-              (near channel 24 ), 1208 Dhaka, Dhaka Division, Bangladesh
+              <i className="bi bi-geo-alt"></i> House 405, Tejgaon industrial
+              area (near channel 24 ), 1208 Dhaka, Dhaka Division, Bangladesh
             </small>
             <small className="clock-container">
               <i className="bi bi-clock"></i>{" "}
-              <strong className="open">Open: </strong>Saturday - Thursday {" "} |
+              <strong className="open">Open: </strong>Saturday - Thursday |
               <strong className="close">Close: </strong> Friday
             </small>
             <div className="social-container">
@@ -40,7 +41,6 @@ const Nav = () => {
                 <i className="bi bi-linkedin"></i>
               </span>
             </div>
-
           </div>
           <button
             className="navbar-toggler shadow-none"
@@ -61,41 +61,87 @@ const Nav = () => {
                 </a>
               </li>
               <li className="nav-item nav-menu">
-                
-                <Link className="nav-link" aria-current="page" smooth to="#services">
+                <Link
+                  className="nav-link"
+                  aria-current="page"
+                  smooth
+                  to="#services"
+                >
                   Services
                 </Link>
-                
               </li>
               <li className="nav-item nav-menu">
-                <Link className="nav-link" aria-current="page" smooth to="#deliveryCalculator">
+                <Link
+                  className="nav-link"
+                  aria-current="page"
+                  smooth
+                  to="#deliveryCalculator"
+                >
                   Delivery calculator
                 </Link>
               </li>
               <li className="nav-item nav-menu">
-                <Link className="nav-link" aria-current="page" smooth to="#priceAndPlan">
+                <Link
+                  className="nav-link"
+                  aria-current="page"
+                  smooth
+                  to="#priceAndPlan"
+                >
                   Pricing & Plan
                 </Link>
               </li>
               <li className="nav-item nav-menu">
-                <Link className="nav-link" aria-current="page" smooth to="#whyChooseUs">
+                <Link
+                  className="nav-link"
+                  aria-current="page"
+                  smooth
+                  to="#whyChooseUs"
+                >
                   Why Choose Us
                 </Link>
               </li>
+              {merchant ? (
+                <li className="nav-item nav-menu">
+                  <a className="nav-link " href="/dashboard">
+                    DASHBOARD
+                  </a>
+                </li>
+              ) : (
+                <li className="nav-item nav-menu">
+                  <a className="nav-link" aria-current="page" href="/">
+                    Become a Merchant
+                  </a>
+                </li>
+              )}
+
               <li className="nav-item nav-menu">
-                <a className="nav-link" aria-current="page" href="/">
-                  Become a Merchant
-                </a>
-              </li>
-              <li className="nav-item nav-menu">
-                <Link className="nav-link" aria-current="page" smooth to="#contactUs">
+                <Link
+                  className="nav-link"
+                  aria-current="page"
+                  smooth
+                  to="#contactUs"
+                >
                   Contact Us
                 </Link>
               </li>
               <li className="nav-item nav-menu login">
-                <Link className="nav-link login-link" aria-current="page" to="/login">
-                  Login
-                </Link>
+                {!user.email ? (
+                  <Link
+                    className="nav-link login-link"
+                    aria-current="page"
+                    to="/login"
+                  >
+                    Login
+                  </Link>
+                ) : (
+                  <span
+                    className="nav-link login-link"
+                    aria-current="page"
+                    onClick={logOut}
+                  >
+                    {user.displayName}
+                  </span>
+                )}
               </li>
             </ul>
           </div>

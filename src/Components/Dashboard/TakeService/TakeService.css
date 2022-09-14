@@ -1,0 +1,97 @@
+.takeService-section {
+  font-family: "Poppins", sans-serif;
+  color: #002a47;
+  /* text-align: center; */
+  padding: 50px;
+}
+.takeService-section h2 {
+  width: 210px;
+  font-weight: 600;
+  border-image-slice: 1;
+  border-width: 1px;
+  border-image-source: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0),
+    #fa4319,
+    rgba(0, 0, 0, 0)
+  );
+  border-bottom: 3px solid #002a47;
+  margin: auto;
+  margin-top: 30px;
+  padding: 5px 0px;
+  text-align: center;
+}
+
+.takeService-form{
+    width: 70%;
+    margin: auto;
+}
+.takeService-form form{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px 40px;
+}
+.takeService-form form input, select{
+    width: 100%;
+    border: .5px solid gainsboro;
+    border-radius: 4px;
+    padding: 12px 15px;
+    outline: none;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.percelService-btns button{
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    width: 100%;
+    margin-top: 24px;
+    color: #fff;
+    background: #002a47;
+    font-size: 14px;
+}
+
+.parceldata-submit-modal{
+    font-family: "Poppins", sans-serif;
+    color: #002a47;
+}
+.parceldata-submit-modal span{
+    cursor: pointer;
+}
+.parceldata-submit-modal span i{
+    color: #fa4319;
+}
+.parceldata-submit-modal h6{
+    margin-top: 40px;
+}
+.parceldata-submit-modal h6 span{
+    color: #fa4319;
+}
+.plan-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.serviceCost{
+    margin-top: 50px;
+}
+.haveToPay{
+    border-left: 1px solid gainsboro;
+}
+.haveToPay h4{
+    font-weight: 600;
+    margin-top: -5px;
+}
+.haveToPay h2{
+    color: #fa4319;
+    margin: 22px 0px;
+}
+.haveToPay button{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background: #002a47;
+    color: #fff;
+
+}

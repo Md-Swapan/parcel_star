@@ -1,4 +1,4 @@
-import InitFirebase from './../Components/LoginSignUp/Firebase/FirebaseInit';
+import InitFirebase from "./../Components/LoginSignUp/Firebase/FirebaseInit";
 import { useState, useEffect } from "react";
 import {
   getAuth,
@@ -9,8 +9,7 @@ import {
   getIdToken,
   signOut,
 } from "firebase/auth";
-// import axios from 'axios';
-
+import * as axios from "axios";
 
 // firebase init app
 InitFirebase();
@@ -19,16 +18,24 @@ const UseFirebase = () => {
   const [user, setUser] = useState({});
   const [loading, setLoading] = useState(true);
   const [authError, setAuthError] = useState("");
-  const [admin, setAdmin] = useState(false);
+  const [merchant, setMerchant] = useState(false);
   const [authToken, setAuthToken] = useState("");
 
+  
   const auth = getAuth();
   // const GoogleProvider = new GoogleAuthProvider();
 
   // register
-  const registerUser = (email, password, name, userType, location, navigate) => {
+  const registerUser = (
+    email,
+    password,
+    name,
+    userType,
+    location,
+    navigate
+  ) => {
     setLoading(true);
-    createUserWithEmailAndPassword(auth, email, password,)
+    createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         setAuthError("");
         const newUser = { email, displayName: name };
@@ -48,9 +55,8 @@ const UseFirebase = () => {
             // ...
           });
 
-          let from = location?.state?.from?.pathname || '/';
-          navigate(from, {replace: true});
-        
+        let from = location?.state?.from?.pathname || "/";
+        navigate(from, { replace: true });
       })
       .catch((error) => {
         const errorMessage = error.message;
@@ -66,7 +72,7 @@ const UseFirebase = () => {
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         let from = location.state?.from?.pathname || "/";
-        navigate(from, {replace: true});
+        navigate(from, { replace: true });
         setAuthError("");
       })
       .catch((error) => {
@@ -76,7 +82,6 @@ const UseFirebase = () => {
       .finally(() => setLoading(false));
   };
 
-  
   // logout
   const logOut = () => {
     setLoading(true);
@@ -92,7 +97,7 @@ const UseFirebase = () => {
 
   // save user data in db
   const saveUserInDB = (email, displayName, userType, method) => {
-    const user = { email, displayName , userType};
+    const user = { email, displayName, userType };
     fetch("http://localhost:4050/AddUser", {
       method: method,
       headers: {
@@ -118,19 +123,29 @@ const UseFirebase = () => {
     return () => unSubscribe;
   }, []);
 
+
+
+  // const [usersType, setUsersType] = useState([]);
+  // console.log(usersType)
   // useEffect(() => {
-  //   fetch(`https://doctors-port.herokuapp.com/AddUsers/admin/${user.email}`)
-  //     .then((res) => res.json())
-  //     .then((data) => setAdmin(data.admin));
-  // }, [user.email]);
+  //   axios("http://localhost:4050/users")
+  //   .then((res) => setUsersType(res.data[0].userType));
+  // }, []);
+
+
+  useEffect(() => {
+    fetch(`http://localhost:4050/Users/merchant/${user.email}`)
+      .then((res) => res.json())
+      .then((data) => setMerchant(data.merchant));
+  }, [user.email]);
+
 
   return {
     user,
     loading,
     registerUser,
     loginUser,
-    // googleSignIn,
-    admin,
+    merchant,
     logOut,
     authError,
     authToken,
