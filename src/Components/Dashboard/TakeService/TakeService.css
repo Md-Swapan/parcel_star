@@ -21,77 +21,239 @@
   padding: 5px 0px;
   text-align: center;
 }
+.takeService-container {
+  font-family: "Poppins", sans-serif;
+  color: #002a47;
+}
+.takeService-container h2 {
+  width: 250px;
+  margin: auto;
+  text-align: center;
+  /* margin-top: 20vh; */
+  border-image-slice: 1;
+  border-width: 1px;
+  border-image-source: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0),
+    #fa4319,
+    rgba(0, 0, 0, 0)
+  );
+  border-bottom: 3px solid #002a47;
+}
+.takeService-form {
+  width: 70%;
+  margin: auto;
+}
+.takeService-form form {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px 40px;
+}
+.takeService-form form input,
+select {
+  width: 100%;
+  border: 0.5px solid gainsboro;
+  border-radius: 4px;
+  padding: 12px 15px;
+  outline: none;
+  font-size: 13px;
+  font-weight: 400;
+}
 
-.takeService-form{
-    width: 70%;
-    margin: auto;
-}
-.takeService-form form{
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px 40px;
-}
-.takeService-form form input, select{
-    width: 100%;
-    border: .5px solid gainsboro;
-    border-radius: 4px;
-    padding: 12px 15px;
-    outline: none;
-    font-size: 13px;
-    font-weight: 400;
+.percelService-btns button {
+  border: none;
+  border-radius: 5px;
+  padding: 12px;
+  width: 100%;
+  margin-top: 24px;
+  color: #fff;
+  background: #002a47;
+  font-size: 14px;
 }
 
-.percelService-btns button{
-    border: none;
-    border-radius: 5px;
-    padding: 12px;
-    width: 100%;
-    margin-top: 24px;
-    color: #fff;
-    background: #002a47;
-    font-size: 14px;
+.parceldata-submit-modal {
+  font-family: "Poppins", sans-serif;
+  color: #002a47;
+}
+.parceldata-submit-modal span {
+  cursor: pointer;
+}
+.parceldata-submit-modal span i {
+  color: #fa4319;
+}
+.parceldata-submit-modal h4 {
+  margin-top: 20px;
+}
+.parceldata-submit-modal h4 span {
+  color: #fa4319;
+}
+.plan-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.serviceCost {
+  margin-top: 50px;
+  margin-right: 10px;
+  font-size: 14px;
+  color: #002a47;
+}
+.serviceCost span {
+  float: right !important;
+  margin-right: 20px;
+}
+.serviceCost strong {
+  color: #fa4319;
+  margin: 0px 10px;
+}
+.subtotal {
+  border-top: 2px solid gainsboro;
+  margin-right: 20px;
+  padding: 5px 0px;
+}
+.subtotal span {
+  margin-right: 0px;
+}
+.haveToPay {
+  border-left: 5px solid gray;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0),
+    #fa4319,
+    rgba(0, 0, 0, 0)
+  );
+}
+.haveToPay h4 {
+  font-weight: 600;
+  margin-top: -5px;
+}
+.haveToPay h2 {
+  color: #fa4319;
+  margin: 22px 0px;
+}
+.haveToPay button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background: #002a47;
+  color: #fff;
 }
 
-.parceldata-submit-modal{
-    font-family: "Poppins", sans-serif;
-    color: #002a47;
+.paymentLedger-container {
+  display: none;
 }
-.parceldata-submit-modal span{
-    cursor: pointer;
-}
-.parceldata-submit-modal span i{
-    color: #fa4319;
-}
-.parceldata-submit-modal h6{
-    margin-top: 40px;
-}
-.parceldata-submit-modal h6 span{
-    color: #fa4319;
-}
-.plan-content{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-.serviceCost{
-    margin-top: 50px;
-}
-.haveToPay{
-    border-left: 1px solid gainsboro;
-}
-.haveToPay h4{
-    font-weight: 600;
-    margin-top: -5px;
-}
-.haveToPay h2{
-    color: #fa4319;
-    margin: 22px 0px;
-}
-.haveToPay button{
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    background: #002a47;
-    color: #fff;
 
+.paymentLedger-container h2 {
+  width: 300px;
+  margin: auto;
+  padding: 5px 0px;
+  text-align: center;
+  border-image-slice: 1;
+  border-width: 1px;
+  border-image-source: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0),
+    #fa4319,
+    rgba(0, 0, 0, 0)
+  );
+  border-bottom: 3px solid #002a47;
+}
+.payBy {
+  margin: 0px 40px;
+}
+.payBy h4 {
+  margin-bottom: 20px;
+}
+
+.paymentLedger-container {
+  margin: 50px 30px;
+}
+.paymentLedger-container h4 {
+  margin-top: 50px;
+}
+
+.havtoPay-container .haveToPay {
+  padding-left: 40px;
+}
+.havtoPay-container h4 {
+  font-size: 17px;
+}
+.havtoPay-container h3 {
+  /* font-size: 17px; */
+  margin: 20px 0px;
+  font-weight: 600;
+}
+.havtoPay-container button {
+  font-size: 14px;
+  background: #fa4319;
+}
+
+.sender-pay-container {
+  display: none;
+  margin-top: 40px;
+}
+.sender-pay-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.sender-pay-content h4 {
+  margin-top: 20px;
+}
+
+.payment-way {
+  border-left: 5px solid gray;
+  padding-left: 40px;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0),
+    #fa4319,
+    rgba(0, 0, 0, 0)
+  );
+}
+.cashOnDeliVery {
+  margin-right: 30px;
+}
+.sender-pay-content label {
+  margin: 10px;
+  font-size: 14px;
+}
+.sender-pay-container h3 {
+  font-size: 24px;
+  margin-top: 15px;
+}
+.sender-pay-container h4 {
+  font-size: 20px;
+}
+.sender-pay-container span {
+  color: #fa4319;
+}
+.sender-pay-container button {
+  font-size: 14px;
+  background: #fa4319;
+  padding: 10px 20px;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-left: 41.5%;
+}
+
+.payment-option-way-content {
+  display: none;
+}
+.payment-option-way {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-gap: 10px; */
+}
+.payment-option-way img {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  padding: 5px 15px;
+  margin-top: 10px;
+  border-radius: 5px;
 }

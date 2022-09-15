@@ -17,6 +17,10 @@ import Offers from "./Components/Dashboard/Offers/Offers";
 import Support from "./Components/Dashboard/Support/Support";
 import CoverageArea from "./Components/Dashboard/CoverageArea/CoverageArea";
 import CreateShopForm from "./Components/Dashboard/CreateShopForm/CreateShopForm";
+import TakeServiceForm from "./Components/Dashboard/TakeService/TakeServiceForm";
+import TrackProductModal from './Components/Dashboard/TrackProduct/TrackProductModal';
+import ProductTracker from './Components/Header/Showcase/ProductTracker';
+import TakeServiceAll from './Components/Dashboard/TakeService/TakeServiceall';
 
 function App() {
   return (
@@ -48,6 +52,8 @@ function App() {
               <Route path="coverage-area" element={<CoverageArea />}></Route>
               <Route path="create-shop" element={<CreateShopForm />}></Route>
             </Route>
+            <Route path="take-service" element={<PrivateRoute> <TakeServiceAll /> </PrivateRoute>} />
+            <Route path="track-products" element={<PrivateRoute> <TrackProductModal /> </PrivateRoute>} />
           </Routes>
         </AuthProvider>
       </div>

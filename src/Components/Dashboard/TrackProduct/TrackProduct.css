@@ -61,12 +61,12 @@
   outline: none;
 }
 .track-parcel-input button {
-  border: none;
+  /* border: none;
   background: #002a47;
   color: aliceblue;
   margin-left: 20px;
   border-radius: 5px;
-  padding: 0px 20px;
+  padding: 0px 20px; */
 }
 
 .offers-content{
@@ -76,4 +76,32 @@
 .offers-content span{
     margin-right: 10px;
 
+}
+
+.trackProduct-modal-content{
+  height: 44vh;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.trackProduct-modal-content h2{
+  margin-top: 250px;
+  margin-bottom: 40px;
+  font-family: "Poppins", sans-serif;
+  color: #002a47;
+  font-weight: 600;
+
+}
+.trackProduct-modal-content button{
+  border: none;
+  border-radius: 5px;
+  padding: 12px 40px;
+  font-family: "Poppins", sans-serif;
+  background: #002a47;
+  color: #fff;
+}
+
+
+.tracking-content{
+  font-family: "Poppins", sans-serif;
+  color: #002a47;
 }

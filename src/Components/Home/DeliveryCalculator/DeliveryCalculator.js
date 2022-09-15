@@ -1,45 +1,49 @@
 import React from "react";
 import "./DeliveryCalculator.css";
+import { Link } from "react-router-dom";
 
 const DeliveryCalculator = () => {
-    const calculateToggle = (e) => {
-        e.preventDefault();
-        const form = document.querySelector('.formdiv')
-        const takeServiceContainer = document.querySelector('.take-service-container')
-        form.style.marginLeft = "50px "
-        // takeServiceContainer.style.display = "block"
+  const calculateToggle = (e) => {
+    e.preventDefault();
+    const form = document.querySelector(".formdiv");
+    const takeServiceContainer = document.querySelector(
+      ".take-service-container"
+    );
+    form.style.marginLeft = "50px ";
+    // takeServiceContainer.style.display = "block"
 
-        setTimeout(()=>{
-          takeServiceContainer.style.display = "block"
-        }, 500)
-    }
+    setTimeout(() => {
+      takeServiceContainer.style.display = "block";
+    }, 500);
+  };
 
-    const closeModal = () => {
-      const takeServiceContainer = document.querySelector('.take-service-container')
-      const form = document.querySelector('.formdiv')
-      takeServiceContainer.style.display = "none"
-      form.style.marginLeft = "300px"
-    }
-    
+  const closeModal = () => {
+    const takeServiceContainer = document.querySelector(
+      ".take-service-container"
+    );
+    const form = document.querySelector(".formdiv");
+    takeServiceContainer.style.display = "none";
+    form.style.marginLeft = "300px";
+  };
+
   return (
     <>
       <div className="deliveryCalculator-section " id="deliveryCalculator">
-        
         <div className="container">
-        <div className="deliveryCalculator-header">
-          <div className="d-flex">
-            <div className="dc-before"></div>
-            <div className="dc-header">
-              <h1>Delivery Calculator</h1>
+          <div className="deliveryCalculator-header">
+            <div className="d-flex">
+              <div className="dc-before"></div>
+              <div className="dc-header">
+                <h1>Delivery Calculator</h1>
+              </div>
+              <div className="dc-after"></div>
             </div>
-            <div className="dc-after"></div>
+            <small>
+              Plan your shipments with ease as you estimate delivery costs
+              beforehand{" "}
+            </small>
           </div>
-          <small>
-            Plan your shipments with ease as you estimate delivery costs
-            beforehand{" "}
-          </small>
-        </div>
-        
+
           <div className="calculator-form-container">
             <form className="formdiv">
               <div className="d-flex">
@@ -87,28 +91,34 @@ const DeliveryCalculator = () => {
                     <option value="Three">Three</option>
                   </select>
                   <br />
-                  <button onClick={calculateToggle} type="submit">Calculate</button>
+                  <button onClick={calculateToggle} type="submit">
+                    Calculate
+                  </button>
                 </div>
               </div>
             </form>
 
             <div className="take-service-container">
-              <span className="close-tab" onClick={closeModal}><i className="bi bi-x-circle"></i></span>
-                <div className="d-flex">
+              <span className="close-tab" onClick={closeModal}>
+                <i className="bi bi-x-circle"></i>
+              </span>
+              <div className="d-flex">
                 <div className="planCategory">
-                    <p>Plan Category</p>
-                    <small>Standard</small>
+                  <p>Plan Category</p>
+                  <small>Standard</small>
                 </div>
                 <div className="costPerKg">
-                    <p>Cost Per Kg</p>
-                    <small>0 Tk</small>
+                  <p>Cost Per Kg</p>
+                  <small>0 Tk</small>
                 </div>
-                </div>
-                <div className="haveToPay">
-                    <h4>You Have To Pay</h4>
-                    <h4>0 tk</h4>
-                </div>
+              </div>
+              <div className="haveToPay">
+                <h4>You Have To Pay</h4>
+                <h4>0 tk</h4>
+              </div>
+              <Link to="/take-service">
                 <button type="">Take Service</button>
+              </Link>
             </div>
           </div>
         </div>
