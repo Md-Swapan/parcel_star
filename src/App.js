@@ -21,6 +21,9 @@ import TakeServiceForm from "./Components/Dashboard/TakeService/TakeServiceForm"
 import TrackProductModal from './Components/Dashboard/TrackProduct/TrackProductModal';
 import ProductTracker from './Components/Header/Showcase/ProductTracker';
 import TakeServiceAll from './Components/Dashboard/TakeService/TakeServiceall';
+import Settings from './Components/Settings/Settings';
+import Help from './Components/Help/Help';
+import Faq from './Components/Faq/Faq';
 
 function App() {
   return (
@@ -54,6 +57,9 @@ function App() {
             </Route>
             <Route path="take-service" element={<PrivateRoute> <TakeServiceAll /> </PrivateRoute>} />
             <Route path="track-products" element={<PrivateRoute> <TrackProductModal /> </PrivateRoute>} />
+            <Route path="settings" element={<PrivateRoute> <Settings /> </PrivateRoute>} />
+            <Route path="help" element={<PrivateRoute> <Help /> </PrivateRoute>} />
+            <Route path="faq" element={<PrivateRoute> <Faq /> </PrivateRoute>} />
           </Routes>
         </AuthProvider>
       </div>

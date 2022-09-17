@@ -3,7 +3,7 @@ import "./Nav.css";
 import logo from "../../../assets/img/Rectangle 58.png";
 import { HashLink as Link } from "react-router-hash-link";
 import useAuth from "./../../../Hooks/useAuth";
-
+import profileDemoImg from "../../../assets/img/profile1.jpg";
 const Nav = () => {
   const { user, merchant, logOut } = useAuth();
 
@@ -124,8 +124,9 @@ const Nav = () => {
                   Contact Us
                 </Link>
               </li>
-              <li className="nav-item nav-menu login">
-                {!user.email ? (
+
+              {!user.email ? (
+                <li className="nav-item nav-menu login">
                   <Link
                     className="nav-link login-link"
                     aria-current="page"
@@ -133,16 +134,67 @@ const Nav = () => {
                   >
                     Login
                   </Link>
-                ) : (
-                  <span
-                    className="nav-link login-link"
-                    aria-current="page"
-                    onClick={logOut}
+                </li>
+              ) : (
+                <li className="nav-item nav-menu">
+                  <div
+                    className="d-flex"
+                    style={{ cursor: "pointer", marginLeft: "180px" }}
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
                   >
-                    {user.displayName}
-                  </span>
-                )}
-              </li>
+                    <div className=" afterLogin">
+                      <span className="nav-link " aria-current="page">
+                        <img src={profileDemoImg} alt="" />
+                      </span>
+                    </div>
+                    <i
+                      style={{
+                        marginTop: "10px",
+                        marginLeft: "10px",
+                        color: "#002a47",
+                        fontWeight: "600",
+                      }}
+                      className="bi bi-chevron-down"
+                    ></i>
+                  </div>
+                  <div className="dropdown-menu profile-dropdown">
+                    <ul>
+                      {/* <li>
+                        <a className="dropdown-item" href="#">
+                          View Profile
+                        </a>
+                      </li> */}
+                      <li>
+                        <a className="dropdown-item" href="/settings">
+                        <i className="bi bi-gear"></i> Settings
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="/help">
+                        <i className="bi bi-info-circle"></i>  Help
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="/faq">
+                        <i className="bi bi-question-circle"></i> FAQ
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="#">
+                        <i className="bi bi-twitch"></i> Terms & Condition
+                        </a>
+                      </li>
+                      <li onClick={logOut}>
+                        <a className="dropdown-item" href="#">
+                        <i className="bi bi-box-arrow-left"></i> Logout
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              )}
             </ul>
           </div>
         </div>

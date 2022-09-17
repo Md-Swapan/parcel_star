@@ -152,22 +152,23 @@ const CreateShopForm = () => {
           <label htmlFor="">Add Your Shop Logo</label>
           <br />
           <span>
-            <i class="bi bi-file-earmark-arrow-down"></i>
-            <small>Upload File</small>
+          <i className="bi bi-image"></i>
+            <small>Upload Image</small>
             <input onChange={handelImgUpload} type="file" name="" />
           </span>
           <br />
           <br />
           <div className="uploadedImgShow">
             <img src={imageUrl} alt=""/>
-            {/* <p>
+            
+          </div>
+          <p>
               {imageUrl}{" "}
-              <i
+              {/* <i
                 style={{ fontSize: "20px", color: "#002a47" }}
                 class="bi bi-check-lg"
-              ></i>
-            </p> */}
-          </div>
+              ></i> */}
+            </p>
         </div>
 
         <div className="create-shop-btns">

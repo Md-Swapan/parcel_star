@@ -2,7 +2,8 @@
   font-family: "Poppins", sans-serif;
   color: #002a47;
   /* text-align: center; */
-  padding: 50px;
+  padding: 30px 50px;
+  
 }
 .takeService-section h2 {
   width: 210px;
@@ -40,8 +41,9 @@
   );
   border-bottom: 3px solid #002a47;
 }
+
 .takeService-form {
-  width: 70%;
+  width: 90%;
   margin: auto;
 }
 .takeService-form form {

@@ -2,10 +2,11 @@ import React from "react";
 import Footer from "../../SharedComponents/Footer/Footer";
 import Nav from "./../../SharedComponents/Nav/Nav";
 import Modal from "react-modal";
+import "./TrackProduct.css";
 
 const customStyles = {
   content: {
-    borderRadius: "5px",
+    borderRadius: "10px",
     top: "50%",
     left: "50%",
     right: "auto",
@@ -14,8 +15,8 @@ const customStyles = {
     transform: "translate(-50%, -50%)",
     boxShadow: "0 0 0 500vmax rgb(0 0 0 / 0.2)",
     padding: "40px",
-    paddingTop: "40px",
-    width: "900px",
+    paddingTop: "30px",
+    width: "1000px",
     zIndex: "10000000",
   },
 };
@@ -34,7 +35,7 @@ const TrackProductModal = () => {
     <div>
       <Nav />
       <main className="trackProduct-modal-content">
-        <h2>Show Your Parcel Tracking Details</h2>
+        <h2>SHOW YOUR PARCEL TRACKING DETAILS</h2>
         <button className="glow-on-hover" onClick={openModal} type="">
           Show
         </button>
@@ -46,18 +47,32 @@ const TrackProductModal = () => {
           style={customStyles}
           contentLabel="Example Modal"
         >
+          <div
+            style={{
+              textAlign: "end",
+              margin: "auto",
+              cursor: "pointer",
+              fontSize: "25px",
+              color: "#a11e00",
+            }}
+          >
+            <span onClick={closeModal}>
+              <i class="bi bi-x-circle"></i>
+            </span>
+          </div>
           <div className="tracking-content">
-            <h1>Your Product is On The Way To delivery</h1>
+            <h1>Your Product is On The Way To Delivery</h1>
 
-            <div>
-              <p>Delivery Man Name: </p>
-              <p>Delivery Man Number: </p>
-
-              <p>Product Name:</p>
-              <p>Parcel Qty: </p>
-              <p>Pickup Area</p>
-              <p>Delivery Area</p>
+            <div className="trackingContents">
+              
+              <p>Product Name : Eye Frame</p>
+              <p>Parcel Qty : 5</p>
+              <p>Pickup Area : Dhaka</p>
+              <p>Delivery Area : Rajshahi</p>
+              <p>Delivery Man Name : Tarek</p>
+              <p>Delivery Man Number : 012435678957</p>
             </div>
+            <h2>Estimated Time To Delivery Your Product : 25 Min.</h2>
           </div>
         </Modal>
       </main>

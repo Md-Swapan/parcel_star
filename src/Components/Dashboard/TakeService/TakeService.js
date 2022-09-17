@@ -25,7 +25,6 @@ const customStyles = {
 };
 
 const TakeService = () => {
-  
   const [shops, setShops] = useState([]);
 
   useEffect(() => {
@@ -34,12 +33,10 @@ const TakeService = () => {
     });
   }, []);
 
-  
-
   return (
     <>
       <div className="takeService-section">
-        <h2>Your Shops</h2>
+        <h2 style={{ marginBottom: "40px" }}>Your Shops</h2>
         {shops.map((shop) => (
           <div className="track-product-shop-content">
             <div className="shop-details">
@@ -54,7 +51,9 @@ const TakeService = () => {
           </div>
         ))}
 
-        <TakeServiceForm/>
+        <div style={{ marginTop: "30px" }}>
+          <TakeServiceForm />
+        </div>
       </div>
     </>
   );
