@@ -3,8 +3,11 @@ import "./Settings.css";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import useAuth from "./../../Hooks/useAuth";
+import personalImg from '../../assets/img/profile1.jpg'
 
 const Settings = () => {
+  const { user, merchant } = useAuth();
   const { register, handleSubmit, errors } = useForm();
   const [imageUrl, setImageUrl] = useState(null);
 
@@ -110,57 +113,68 @@ const Settings = () => {
           </div>
         </div>
         <div className="general-settings shop-settings">
-          <h3>Shop Settings</h3>
+          {merchant ? (
+            <>
+              <h3>Shop Settings</h3>
 
-          <div className="general-form">
-            <form onSubmit={handleSubmit(onSubmit)}>
-              <div>
-                <label htmlFor="">Change Shop Name</label>
-                <br />
-                <input
-                  type="text"
-                  name=""
-                  placeholder="Enter New Name"
-                  {...register("parcelName")}
-                  required
-                />
+              <div className="general-form">
+                <form onSubmit={handleSubmit(onSubmit)}>
+                  <div>
+                    <label htmlFor="">Change Shop Name</label>
+                    <br />
+                    <input
+                      type="text"
+                      name=""
+                      placeholder="Enter New Name"
+                      {...register("parcelName")}
+                      required
+                    />
 
-                <button type="">Change Request</button>
-              </div>
-              <br />
-              <div>
-                <label htmlFor="">Change Shop Phone Number</label>
-                <br />
-                <input
-                  type="number"
-                  name=""
-                  placeholder="Enter Phone Number"
-                  {...register("parcelQty")}
-                  required
-                />
-                <button type="">Change Request</button>
-              </div>
-              <br />
+                    <button type="">Change Request</button>
+                  </div>
+                  <br />
+                  <div>
+                    <label htmlFor="">Change Shop Phone Number</label>
+                    <br />
+                    <input
+                      type="number"
+                      name=""
+                      placeholder="Enter Phone Number"
+                      {...register("parcelQty")}
+                      required
+                    />
+                    <button type="">Change Request</button>
+                  </div>
+                  <br />
 
-              <div className="generalImgInput">
-                <label htmlFor="">Change Shop Photo</label>
-                <br />
-                <span>
-                  <i className="bi bi-image"></i>
-                  <small>Upload Image</small>
-                  <input type="file" name="" />
-                </span>
-                <div className="uploadedImgShow">
-                  <img src={imageUrl} alt="" />
-                </div>
-                <p>{imageUrl} </p>
-                <button type="">Change Request</button>
+                  <div className="generalImgInput">
+                    <label htmlFor="">Change Shop Photo</label>
+                    <br />
+                    <span>
+                      <i className="bi bi-image"></i>
+                      <small>Upload Image</small>
+                      <input type="file" name="" />
+                    </span>
+                    <div className="uploadedImgShow">
+                      <img src={imageUrl} alt="" />
+                    </div>
+                    <p>{imageUrl} </p>
+                    <button type="">Change Request</button>
+                  </div>
+                  {/* <div className="percelService-btns">
+      <button type="submit">Submit</button>
+    </div> */}
+                </form>
               </div>
-              {/* <div className="percelService-btns">
-                <button type="submit">Submit</button>
-              </div> */}
-            </form>
-          </div>
+            </>
+          ) : (
+            <div style={{width: "100%", marginTop: "50px", overflow: "hidden"}}>
+              <img style={{ borderRadius: "50%"}} src={personalImg} alt=""/>
+
+              <p className="mt-4">{user.displayName}</p>
+              
+            </div>
+          )}
         </div>
       </div>
     </div>

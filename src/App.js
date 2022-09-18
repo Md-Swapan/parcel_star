@@ -36,8 +36,6 @@ function App() {
             <Route path="best-branch" element={<BestBranches />} />
             <Route path="login" element={<Login />} />
             <Route path="signup" element={<SignUp />} />
-            <Route path="terms-condition" element={<TermsAndCondition />} />
-
             <Route
               path="dashboard"
               element={
@@ -60,6 +58,7 @@ function App() {
             <Route path="settings" element={<PrivateRoute> <Settings /> </PrivateRoute>} />
             <Route path="help" element={<PrivateRoute> <Help /> </PrivateRoute>} />
             <Route path="faq" element={<PrivateRoute> <Faq /> </PrivateRoute>} />
+            <Route path="terms-condition" element={<PrivateRoute> <TermsAndCondition /> </PrivateRoute>} />
           </Routes>
         </AuthProvider>
       </div>

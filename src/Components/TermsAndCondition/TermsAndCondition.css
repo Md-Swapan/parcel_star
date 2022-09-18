@@ -1,0 +1,51 @@
+.terms-condition-container {
+  background: linear-gradient(#ffffff00, #ffffff00),
+    linear-gradient(#ffffff00, #ffffff00),
+    url(../../assets/img/Frame\ 1000005149.png) center center fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.terms-condition h2 {
+  width: 400px;
+  margin: auto;
+  padding-top: 7vh;
+  padding-bottom: 5px;
+  border-image-slice: 1;
+  border-width: 1px;
+  border-image-source: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0),
+    #fa4319,
+    rgba(0, 0, 0, 0)
+  );
+  border-bottom: 3px solid #002a47;
+  text-align: center;
+  color: #002a47;
+}
+.terms-body {
+  width: 70%;
+  height: 60%;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 80px;
+  overflow: scroll;
+}
+.terms-condition-content {
+  background: #fff;
+  color: #002a47;
+  padding: 40px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.terms-body::-webkit-scrollbar {
+  display: none;
+}
+.terms-body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

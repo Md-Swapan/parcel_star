@@ -108,7 +108,7 @@ const Nav = () => {
                 </li>
               ) : (
                 <li className="nav-item nav-menu">
-                  <a className="nav-link" aria-current="page" href="/">
+                  <a className="nav-link" aria-current="page" href="/signup">
                     Become a Merchant
                   </a>
                 </li>
@@ -182,7 +182,7 @@ const Nav = () => {
                         </a>
                       </li>
                       <li>
-                        <a className="dropdown-item" href="#">
+                        <a className="dropdown-item" href="/terms-condition">
                         <i className="bi bi-twitch"></i> Terms & Condition
                         </a>
                       </li>

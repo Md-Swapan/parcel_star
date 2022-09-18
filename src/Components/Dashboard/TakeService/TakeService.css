@@ -1,3 +1,13 @@
+.takeServiceForm-section{
+  background: linear-gradient(#ffffff00, #ffffff00),
+    linear-gradient(#ffffff00, #ffffff00),
+    url(../../../assets/img/Frame\ 1000005149.png) center center fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: #002a47;
+  font-family: "Poppins", sans-serif;
+}
 .takeService-section {
   font-family: "Poppins", sans-serif;
   color: #002a47;

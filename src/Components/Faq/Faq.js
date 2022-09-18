@@ -4,6 +4,7 @@ import "./Faq.css";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import { useState } from "react";
+import { Line } from "react-chartjs-2";
 
 const Faq = () => {
   const { register, handleSubmit, errors } = useForm();
@@ -54,15 +55,188 @@ const Faq = () => {
                 color: "#002a47",
               }}
             >
-              <i class="bi bi-caret-left-fill"></i> Back
+              <i className="bi bi-caret-left-fill"></i> Back
             </span>
           </Link>
           <h3>FAQ</h3>
         </div>
         <div className="settings-content">
           <div className="general-settings">
-            {/* <h3>General Settings</h3> */}
-            <div className="general-form"></div>
+            <div className="general-form">
+              <div className="faq-ans-container">
+                <div className="dropdown ">
+                  <span
+                    className=" dropdown-toggle"
+                    // type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    HOW LONG HAVE YOU BEEN DOING THIS?
+                  </span>
+                  <ul className="dropdown-menu">
+                    <li className="dropdown-item">
+                      It is a long established fact that a reader will be
+                      distracted <br/> by the readable content of a page when looking
+                      at its layout.
+                    </li>
+                  </ul>
+                </div>
+                <div className="dropdown">
+                  <span
+                    className=" dropdown-toggle"
+                    // type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    WHAT KIND OF SERVICES DOES YOUR BUSINESS OFFER?
+                  </span>
+                  <ul className="dropdown-menu">
+                    <li className="dropdown-item">
+                      It is a long established fact that a reader will be
+                      distracted <br/> by the readable content of a page when looking
+                      at its layout.
+                    </li>
+                  </ul>
+                </div>
+                <div className="dropdown">
+                  <span
+                    className=" dropdown-toggle"
+                    // type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    DO YOU HAVE GOOD DRIVERS?
+                  </span>
+                  <ul className="dropdown-menu">
+                    <li className="dropdown-item">
+                      It is a long established fact that a reader will be
+                      distracted <br/> by the readable content of a page when looking
+                      at its layout.
+                    </li>
+                  </ul>
+                </div>
+                <div className="dropdown">
+                  <span
+                    className=" dropdown-toggle"
+                    // type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    HOW DO YOU SECURE SHIPMENTS?
+                  </span>
+                  <ul className="dropdown-menu">
+                    <li className="dropdown-item">
+                      It is a long established fact that a reader will be
+                      distracted <br/> by the readable content of a page when looking
+                      at its layout.
+                    </li>
+                  </ul>
+                </div>
+                <div className="dropdown">
+                  <span
+                    className=" dropdown-toggle"
+                    // type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    HOW WILL YOU STAY IN TOUCH WITH ME?
+                  </span>
+                  <ul className="dropdown-menu">
+                    <li className="dropdown-item">
+                      It is a long established fact that a reader will be
+                      distracted <br/> by the readable content of a page when looking
+                      at its layout.
+                    </li>
+                  </ul>
+                </div>
+                <div className="dropdown">
+                  <span
+                    className=" dropdown-toggle"
+                    // type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    IS YOUR PRICE BETTER THEN OTHER COMPETITORS?
+                  </span>
+                  <ul className="dropdown-menu">
+                    <li className="dropdown-item">
+                      It is a long established fact that a reader will be
+                      distracted <br/> by the readable content of a page when looking
+                      at its layout.
+                    </li>
+                  </ul>
+                </div>
+                <div className="dropdown">
+                  <span
+                    className=" dropdown-toggle"
+                    // type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    DO YOU OFFER PACKAGE PICK-UP?
+                  </span>
+                  <ul className="dropdown-menu">
+                    <li className="dropdown-item">
+                      It is a long established fact that a reader will be
+                      distracted <br/> by the readable content of a page when looking
+                      at its layout.
+                    </li>
+                  </ul>
+                </div>
+                <div className="dropdown">
+                  <span
+                    className=" dropdown-toggle"
+                    // type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    WHAT'S THE SIZE OF YOUR FLEET?
+                  </span>
+                  <ul className="dropdown-menu">
+                    <li className="dropdown-item">
+                      It is a long established fact that a reader will be
+                      distracted <br/> by the readable content of a page when looking
+                      at its layout.
+                    </li>
+                  </ul>
+                </div>
+                <div className="dropdown">
+                  <span
+                    className=" dropdown-toggle"
+                    // type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    WHAT IS THE TIME FRAME FOR DELIVERIES AND ARE THEY
+                    GUARANTEED?
+                  </span>
+                  <ul className="dropdown-menu">
+                    <li className="dropdown-item">
+                      It is a long established fact that a reader will be
+                      distracted <br/> by the readable content of a page when looking
+                      at its layout.
+                    </li>
+                  </ul>
+                </div>
+                <div className="dropdown">
+                  <span
+                    className=" dropdown-toggle"
+                    // type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    HOW ELSE WILL I BE NOTIFIED?
+                  </span>
+                  <ul className="dropdown-menu">
+                    <li className="dropdown-item">
+                      It is a long established fact that a reader will be
+                      distracted <br/> by the readable content of a page when looking
+                      at its layout.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="general-settings shop-settings">
             <h3>Ask Question?</h3>
@@ -99,9 +273,9 @@ const Faq = () => {
                   <br />
                   <textarea placeholder="Text Here...." />
                 </div>
-                {/* <div className="percelService-btns">
-                <button type="submit">Submit</button>
-              </div> */}
+                <div className="faq-btns">
+                  <button type="submit">Send</button>
+                </div>
               </form>
             </div>
           </div>

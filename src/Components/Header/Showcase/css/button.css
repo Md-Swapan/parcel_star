@@ -4,7 +4,7 @@
     position: absolute;
     margin-left: 305px;
 }
-.contact-explore-btn button{
+.contactUsBtn {
     font-family: "Poppins", sans-serif;
     border: none;
     border-radius: 5px;
@@ -13,21 +13,19 @@
     color: #ffffff;
     margin-right: 20px;
 }
-.contact-explore-btn button:hover{
-    background: #ffffff;
-    color: #FA4319;
-    
+.contactUsBtn:hover{
+    background: #002a47;
 }
-.contact-explore-btn button:last-child{
+.servicesBtn{
     font-family: "Poppins", sans-serif;
     border: none;
     border-radius: 5px;
-    background: #ffffff;
+    background: #ffffff ;
     padding: 12px 40px;
     color: #FA4319;
     margin-right: 10px;
 }
-.contact-explore-btn button:last-child:hover{
+.servicesBtn:hover{
     background: #002a47;
     color: #ffffff;
 }

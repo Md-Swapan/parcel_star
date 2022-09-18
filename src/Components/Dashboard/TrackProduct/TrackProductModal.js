@@ -3,6 +3,7 @@ import Footer from "../../SharedComponents/Footer/Footer";
 import Nav from "./../../SharedComponents/Nav/Nav";
 import Modal from "react-modal";
 import "./TrackProduct.css";
+import { Link } from 'react-router-dom';
 
 const customStyles = {
   content: {
@@ -32,13 +33,15 @@ const TrackProductModal = () => {
     setIsOpen(false);
   }
   return (
-    <div>
-      <Nav />
+    <div className="trackProductShowDetail-section">
+      {/* <Nav /> */}
       <main className="trackProduct-modal-content">
+        <div>
         <h2>SHOW YOUR PARCEL TRACKING DETAILS</h2>
         <button className="glow-on-hover" onClick={openModal} type="">
           Show
         </button>
+        </div>
         <Modal
           ariaHideApp={false}
           isOpen={modalIsOpen}
@@ -56,9 +59,9 @@ const TrackProductModal = () => {
               color: "#a11e00",
             }}
           >
-            <span onClick={closeModal}>
+            <Link to='/' style={{color: "#fa4319"}}>
               <i class="bi bi-x-circle"></i>
-            </span>
+            </Link>
           </div>
           <div className="tracking-content">
             <h1>Your Product is On The Way To Delivery</h1>
@@ -76,7 +79,7 @@ const TrackProductModal = () => {
           </div>
         </Modal>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
