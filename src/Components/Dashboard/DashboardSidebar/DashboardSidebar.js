@@ -7,6 +7,7 @@ import useAuth from "./../../../Hooks/useAuth";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import * as axios from "axios";
+import { NavLink } from "react-router-dom";
 
 const DashboardSidebar = () => {
   const { user, logOut } = useAuth();
@@ -61,41 +62,41 @@ const DashboardSidebar = () => {
           </div>
         </div>
         <ul className="menuList">
-          <Link to="/dashboard">
+          <NavLink to="/dashboard">
             <li className="menu-item active">
               <i className="bi bi-grid-1x2-fill"></i> Dashboard
             </li>
-          </Link>
-          <Link to="order-history">
+          </NavLink>
+          <NavLink to="order-history">
             <li className="menu-item">
               <i className="bi bi-clock-fill"></i> Order History
             </li>
-          </Link>
-          <Link to="take-service">
+          </NavLink>
+          <NavLink to="take-service">
             <li className="menu-item">
               <i className="bi bi-terminal-fill"></i> Take Service
             </li>
-          </Link>
-          <Link to="track-product">
+          </NavLink>
+          <NavLink to="track-product">
             <li className="menu-item">
               <i className="bi bi-map-fill"></i> Track Product
             </li>
-          </Link>
-          <Link to="offers">
+          </NavLink>
+          <NavLink to="offers">
             <li className="menu-item">
               <i className="bi bi-bookmark-star-fill"></i> Offers
             </li>
-          </Link>
-          <Link to="support">
+          </NavLink>
+          <NavLink to="support">
             <li className="menu-item">
               <i className="bi bi-headset"></i> Support
             </li>
-          </Link>
-          <Link to="coverage-area">
+          </NavLink>
+          <NavLink to="coverage-area">
             <li className="menu-item">
               <i className="bi bi-pin-map-fill"></i> Coverage Area
             </li>
-          </Link>
+          </NavLink>
           <li onClick={logOut} className="menu-item">
             <i className="bi bi-box-arrow-left"></i> Logout
           </li>

@@ -33,7 +33,7 @@
 }
 .social-link span {
   font-size: 30px;
-  margin-right: 15px;
+  margin-left: 15px;
   cursor: pointer;
 }
 .social-link img {
@@ -47,6 +47,10 @@
 }
 .social-link span:nth-child(3) {
   color: #0077b5;
+}
+
+.get-in-touch{
+  text-align: end;
 }
 
 .copyright-footer-section {
@@ -64,4 +68,16 @@
   width: 15px;
   -webkit-filter: grayscale(1) invert(1);
   filter: grayscale(1) invert(1);
+}
+
+
+@media screen and (max-width: 786px) {
+  .logoContainer{
+    display: flex;
+    justify-content: center !important;
+    padding-bottom: 40px;
+  }
+  .quick-link, .important-link, .get-in-touch{
+    text-align: center;
+  }
 }

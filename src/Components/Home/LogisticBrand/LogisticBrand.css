@@ -128,3 +128,47 @@ clip-path: polygon(70% 0, 100% 0%, 30% 100%, 0% 100%);
   margin-left: 280px;
   z-index: 2;
 }
+
+
+@media screen and (max-width: 786px) {
+  .growUp-business-container {
+    padding: 0px;
+  }
+  .brand-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .redMiddleItalic_img, .redMiddleItalic_border{
+    display: none;
+  }
+  .longTrUniqBusiness img{
+    margin-left: 32%;
+  }
+  .longTrUniqBusiness-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 0px 10px;
+    margin-top: -20px;
+  }
+  .growup-content{
+    text-align: center;
+  }
+  .ltb-container{
+    padding: 10px;
+  }
+  .ltbIcon {
+    margin-right: 10px;
+    font-size: 15px;
+    color: #ffffff;
+    background: #002a47;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 3.5px;
+  }
+  .ltb-container h6{
+    font-size: 14px;
+  }
+}

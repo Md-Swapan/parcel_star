@@ -1,67 +1,74 @@
-.productTracker-container{
-    margin-top: -191px;
-    z-index: 9999;
-    padding: 44px;
-    width: 48.5%;
-    /* height: 191.5px; */
-    position: absolute;
-    clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
-    background: #fff;
-    /* text-align: center; */
-    font-family: "Poppins", sans-serif;
-  }
+.productTracker-container {
+  margin-top: -191px;
+  z-index: 9999;
+  padding: 44px;
+  width: 48.5%;
+  /* height: 191.5px; */
+  position: absolute;
+  clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
+  background: #fff;
+  /* text-align: center; */
+  font-family: "Poppins", sans-serif;
+}
 
-  .productTracker-container h4{
-    font-size: 15px;
-    font-weight: 500;
-    margin-left: 260px;
-  }
-  .productTracker-container input{
-    width: 350px;
-    border: .1px solid gainsboro;
-    border-radius: 3px;
-    padding: 9px 20px;
-    outline: none;
-    font-size: 14px;
-    color: gray;
-    margin-left: 260px;
-  }
+.productTracker-container h4 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 260px;
+}
+.productTracker-container input {
+  width: 350px;
+  border: 0.1px solid gainsboro;
+  border-radius: 3px;
+  padding: 9px 20px;
+  outline: none;
+  font-size: 14px;
+  color: gray;
+  margin-left: 260px;
+}
 
-  .track-btn{
-    border: none;
-    padding: 10px 20px;
-    background: #002a47;
-    margin-top: 10px;
-    border-radius: 3px;
-    color: #fff;
-    margin-left: 412px;
-    font-size: 14px;
-    font-weight: 300;
-    transition: all .2s;
-  }
+.track-btn {
+  border: none;
+  padding: 10px 20px;
+  background: #002a47;
+  margin-top: 10px;
+  border-radius: 3px;
+  color: #fff;
+  margin-left: 412px;
+  font-size: 14px;
+  font-weight: 300;
+  transition: all 0.2s;
+}
 
-  .track-btn:hover{
-    background: #FA4319;
-   
-  }
+.track-btn:hover {
+  background: #fa4319;
+}
 
-  .productTracker-container-shadow1{
-    margin-top: -191px;
-    z-index: 9998;
-    padding: 44px;
-    width: 49%;
-    height: 191px;
-    position: absolute;
-    clip-path: polygon(0 0, 81.5% 0, 100% 100%, 0 100%);
-    background: #FA4319;
+.productTracker-container-shadow1 {
+  margin-top: -191px;
+  z-index: 9998;
+  padding: 44px;
+  width: 49%;
+  height: 191px;
+  position: absolute;
+  clip-path: polygon(0 0, 81.5% 0, 100% 100%, 0 100%);
+  background: #fa4319;
+}
+.productTracker-container-shadow2 {
+  margin-top: -191px;
+  z-index: 9997;
+  padding: 44px;
+  width: 50%;
+  height: 191px;
+  position: absolute;
+  clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
+  background: #002a47;
+}
+
+@media screen and (max-width: 786px) {
+  .productTracker-container,
+  .productTracker-container-shadow1,
+  .productTracker-container-shadow2 {
+    display: none;
   }
-  .productTracker-container-shadow2{
-    margin-top: -191px;
-    z-index: 9997;
-    padding: 44px;
-    width: 50%;
-    height: 191px;
-    position: absolute;
-    clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
-    background: #002a47;
-  }
+}

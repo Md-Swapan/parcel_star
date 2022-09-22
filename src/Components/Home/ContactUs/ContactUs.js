@@ -1,6 +1,6 @@
 import React from "react";
 import "./ContactUs.css";
-import contactImg from "../../../assets/img/Frame 1000004750.png";
+import contactImg from "../../../assets/img/Frame 1000004750 (2).png";
 import logoimg from "../../../assets/img/Rectangle 58.png";
 import dotImg from "../../../assets/img/1_nZ9VwHTLxAfNCuCjYAkajg.png";
 

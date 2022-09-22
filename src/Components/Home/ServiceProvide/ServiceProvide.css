@@ -231,3 +231,14 @@
   margin-top: -15px;
   margin-right: 15px;
 }
+
+@media screen and (max-width: 786px) {
+  .swp-before {
+    position: absolute;
+    margin-left: 47px;
+  }
+  .swp-after {
+    position: absolute;
+    margin-left: 392px;
+  }
+}

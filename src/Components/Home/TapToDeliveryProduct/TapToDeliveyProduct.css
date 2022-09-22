@@ -1,7 +1,6 @@
-
 .tapToDeliveryProduct {
   position: fixed;
-  bottom: 180px;
+  bottom: 70px;
   margin-left: 90%;
   width: 140px;
   padding: 20px 10px;
@@ -55,6 +54,8 @@
 .parcel-carHead {
   width: 50px;
   height: 50px;
+  margin-left: 4px;
+  margin-bottom: -3px;
   z-index: 2;
   border: 1px solid rgb(46, 46, 46);
   background: rgb(218, 218, 218);
@@ -67,14 +68,16 @@
   border: 1px solid rgb(46, 46, 46);
   background: rgb(218, 218, 218);
   position: absolute;
-  margin-top: -68px;
-  margin-left: 12px;
+  margin-top: -65px;
+  margin-left: 15px;
   -webkit-clip-path: polygon(19% 17%, 71% 17%, 71% 51%, 19% 50%);
   clip-path: polygon(19% 17%, 71% 17%, 71% 51%, 19% 50%);
 }
 .parcelCar img {
+  width: 40px;
   position: absolute;
   margin-top: -40px;
+  margin-left: -7px;
 }
 
 .parcel-carWheel {
@@ -85,7 +88,7 @@
   background: rgb(99, 99, 99);
   position: absolute;
   margin-top: -30px;
-  margin-left: 13px;
+  margin-left: 20px;
   -webkit-clip-path: ellipse(25% 25% at 50% 50%);
   clip-path: ellipse(25% 25% at 50% 50%);
 }
@@ -97,7 +100,7 @@
   background: rgb(224, 224, 224);
   position: absolute;
   margin-top: -22.5px;
-  margin-left: 20.5px;
+  margin-left: 27.5px;
   -webkit-clip-path: ellipse(25% 25% at 50% 50%);
   clip-path: ellipse(25% 25% at 50% 50%);
 }
@@ -110,7 +113,7 @@
   background: rgb(124, 124, 124);
   position: absolute;
   margin-top: -30px;
-  margin-left: 60px;
+  margin-left: 65px;
   -webkit-clip-path: ellipse(25% 25% at 50% 50%);
   clip-path: ellipse(25% 25% at 50% 50%);
 }
@@ -123,7 +126,7 @@
   background: rgb(224, 224, 224);
   position: absolute;
   margin-top: -22.5px;
-  margin-left: 67.5px;
+  margin-left: 72.5px;
   -webkit-clip-path: ellipse(25% 25% at 50% 50%);
   clip-path: ellipse(25% 25% at 50% 50%);
 }
@@ -150,7 +153,7 @@
 .dash2 {
   background-color: rgb(255, 81, 0);
   width: 20px;
-  margin-left: -10px;   
+  margin-left: -10px;
 }
 .dash3 {
   margin-left: 35px;
@@ -180,8 +183,8 @@
   width: 250px;
   background-color: #222;
 }
-.dash9{
-    margin-right: 30px;
+.dash9 {
+  margin-right: 30px;
 }
 @keyframes movingRoad {
   0% {
@@ -198,5 +201,430 @@
   }
   100% {
     left: 70px;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .tapToDeliveryProduct {
+    right: 15px;
+    height: 90px;
+    width: 100px;
+    padding: 10px;
+    z-index: 9999999999;
+    border-radius: 12px;
+    border: 1px solid rgb(94, 94, 94);
+  }
+  .parcelCar p {
+    font-size: 9px;
+    /* margin-bottom: -2px; */
+    line-height: 10px;
+    margin-top: 8px;
+  }
+
+  .parcel-carHead {
+    width: 40px;
+    height: 40px;
+    margin-left: -5px;
+    margin-bottom: -15px;
+  }
+  .parcel-carBody {
+    width: 100px;
+    height: 80px;
+    border: 1px solid rgb(46, 46, 46);
+    background: rgb(218, 218, 218);
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 5px;
+  }
+  .parcelCar img {
+    position: absolute;
+    margin-top: -20px;
+    margin-left: -5px;
+    width: 30px;
+  }
+
+  .parcel-carWheel {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-top: -14px;
+    margin-left: 8px;
+  }
+  .parcel-carWheelIn {
+    width: 15px;
+    height: 15px;
+    z-index: 3;
+    border: 1px solid rgb(46, 46, 46);
+    background: rgb(224, 224, 224);
+    position: absolute;
+    margin-top: -6.5px;
+    margin-left: 15.5px;
+    -webkit-clip-path: ellipse(25% 25% at 50% 50%);
+    clip-path: ellipse(25% 25% at 50% 50%);
+  }
+
+  .parcel-carWheel2 {
+    width: 30px;
+    height: 30px;
+    z-index: 3;
+    border: 1px solid rgb(46, 46, 46);
+    background: rgb(124, 124, 124);
+    position: absolute;
+    margin-top: -14px;
+    margin-left: 45px;
+    -webkit-clip-path: ellipse(25% 25% at 50% 50%);
+    clip-path: ellipse(25% 25% at 50% 50%);
+  }
+
+  .parcel-carWheel2In {
+    width: 15px;
+    height: 15px;
+    z-index: 3;
+    border: 1px solid rgb(46, 46, 46);
+    background: rgb(224, 224, 224);
+    position: absolute;
+    margin-top: -6.5px;
+    margin-left: 52.5px;
+    -webkit-clip-path: ellipse(25% 25% at 50% 50%);
+    clip-path: ellipse(25% 25% at 50% 50%);
+  }
+
+  .road-animation {
+    position: absolute;
+    margin-top: -73px;
+    z-index: -1;
+    animation: movingRoad 0.8s infinite;
+  }
+
+  .dash {
+    width: 70px;
+    height: 1px;
+    background: rgb(83, 83, 83);
+    margin: 5px 0px;
+  }
+  
+  .dash1 {
+    margin-left: 30px;
+    background-color: rgb(197, 141, 38);
+  }
+  
+  .dash2 {
+    background-color: rgb(255, 81, 0);
+    width: 20px;
+    margin-left: -10px;
+  }
+  .dash3 {
+    margin-left: 35px;
+    width: 35px;
+    background-color: rgb(145, 19, 11);
+  }
+  
+  .dash4 {
+    margin-left: -40px;
+    width: 50px;
+    background-color: rgb(0, 75, 0);
+  }
+  .dash5 {
+    margin-left: 70px;
+  }
+  .dash6 {
+    margin-left: 0px;
+    width: 80px;
+  }
+  .dash7 {
+    width: 90px;
+    margin-left: -50px;
+  }
+  
+  .dash8 {
+    margin-left: -100px;
+    width: 250px;
+    background-color: #222;
+  }
+  .dash9 {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .tapToDeliveryProduct {
+    right: 20px;
+    height: 90px;
+    width: 100px;
+    padding: 10px;
+    z-index: 9999999999;
+    border-radius: 12px;
+    border: 1px solid rgb(94, 94, 94);
+  }
+  .parcelCar p {
+    font-size: 9px;
+    /* margin-bottom: -2px; */
+    line-height: 10px;
+    margin-top: 8px;
+  }
+
+  .parcel-carHead {
+    width: 40px;
+    height: 40px;
+    margin-left: -5px;
+    margin-bottom: -15px;
+  }
+  .parcel-carBody {
+    width: 100px;
+    height: 80px;
+    border: 1px solid rgb(46, 46, 46);
+    background: rgb(218, 218, 218);
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 5px;
+  }
+  .parcelCar img {
+    position: absolute;
+    margin-top: -20px;
+    margin-left: -5px;
+    width: 30px;
+  }
+
+  .parcel-carWheel {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-top: -14px;
+    margin-left: 8px;
+  }
+  .parcel-carWheelIn {
+    width: 15px;
+    height: 15px;
+    z-index: 3;
+    border: 1px solid rgb(46, 46, 46);
+    background: rgb(224, 224, 224);
+    position: absolute;
+    margin-top: -6.5px;
+    margin-left: 15.5px;
+    -webkit-clip-path: ellipse(25% 25% at 50% 50%);
+    clip-path: ellipse(25% 25% at 50% 50%);
+  }
+
+  .parcel-carWheel2 {
+    width: 30px;
+    height: 30px;
+    z-index: 3;
+    border: 1px solid rgb(46, 46, 46);
+    background: rgb(124, 124, 124);
+    position: absolute;
+    margin-top: -14px;
+    margin-left: 45px;
+    -webkit-clip-path: ellipse(25% 25% at 50% 50%);
+    clip-path: ellipse(25% 25% at 50% 50%);
+  }
+
+  .parcel-carWheel2In {
+    width: 15px;
+    height: 15px;
+    z-index: 3;
+    border: 1px solid rgb(46, 46, 46);
+    background: rgb(224, 224, 224);
+    position: absolute;
+    margin-top: -6.5px;
+    margin-left: 52.5px;
+    -webkit-clip-path: ellipse(25% 25% at 50% 50%);
+    clip-path: ellipse(25% 25% at 50% 50%);
+  }
+
+  .road-animation {
+    position: absolute;
+    margin-top: -73px;
+    z-index: -1;
+    animation: movingRoad 0.8s infinite;
+  }
+
+  .dash {
+    width: 70px;
+    height: 1px;
+    background: rgb(83, 83, 83);
+    margin: 5px 0px;
+  }
+  
+  .dash1 {
+    margin-left: 30px;
+    background-color: rgb(197, 141, 38);
+  }
+  
+  .dash2 {
+    background-color: rgb(255, 81, 0);
+    width: 20px;
+    margin-left: -10px;
+  }
+  .dash3 {
+    margin-left: 35px;
+    width: 35px;
+    background-color: rgb(145, 19, 11);
+  }
+  
+  .dash4 {
+    margin-left: -40px;
+    width: 50px;
+    background-color: rgb(0, 75, 0);
+  }
+  .dash5 {
+    margin-left: 70px;
+  }
+  .dash6 {
+    margin-left: 0px;
+    width: 80px;
+  }
+  .dash7 {
+    width: 90px;
+    margin-left: -50px;
+  }
+  
+  .dash8 {
+    margin-left: -100px;
+    width: 250px;
+    background-color: #222;
+  }
+  .dash9 {
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .tapToDeliveryProduct {
+    right: 20px;
+    height: 90px;
+    width: 100px;
+    padding: 10px;
+    z-index: 9999999999;
+    border-radius: 12px;
+    border: 1px solid rgb(94, 94, 94);
+  }
+  .parcelCar p {
+    font-size: 9px;
+    /* margin-bottom: -2px; */
+    line-height: 10px;
+    margin-top: 8px;
+  }
+
+  .parcel-carHead {
+    width: 40px;
+    height: 40px;
+    margin-left: -5px;
+    margin-bottom: -15px;
+  }
+  .parcel-carBody {
+    width: 100px;
+    height: 80px;
+    border: 1px solid rgb(46, 46, 46);
+    background: rgb(218, 218, 218);
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 5px;
+  }
+  .parcelCar img {
+    position: absolute;
+    margin-top: -20px;
+    margin-left: -5px;
+    width: 30px;
+  }
+
+  .parcel-carWheel {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-top: -14px;
+    margin-left: 8px;
+  }
+  .parcel-carWheelIn {
+    width: 15px;
+    height: 15px;
+    z-index: 3;
+    border: 1px solid rgb(46, 46, 46);
+    background: rgb(224, 224, 224);
+    position: absolute;
+    margin-top: -6.5px;
+    margin-left: 15.5px;
+    -webkit-clip-path: ellipse(25% 25% at 50% 50%);
+    clip-path: ellipse(25% 25% at 50% 50%);
+  }
+
+  .parcel-carWheel2 {
+    width: 30px;
+    height: 30px;
+    z-index: 3;
+    border: 1px solid rgb(46, 46, 46);
+    background: rgb(124, 124, 124);
+    position: absolute;
+    margin-top: -14px;
+    margin-left: 45px;
+    -webkit-clip-path: ellipse(25% 25% at 50% 50%);
+    clip-path: ellipse(25% 25% at 50% 50%);
+  }
+
+  .parcel-carWheel2In {
+    width: 15px;
+    height: 15px;
+    z-index: 3;
+    border: 1px solid rgb(46, 46, 46);
+    background: rgb(224, 224, 224);
+    position: absolute;
+    margin-top: -6.5px;
+    margin-left: 52.5px;
+    -webkit-clip-path: ellipse(25% 25% at 50% 50%);
+    clip-path: ellipse(25% 25% at 50% 50%);
+  }
+
+  .road-animation {
+    position: absolute;
+    margin-top: -73px;
+    z-index: -1;
+    animation: movingRoad 0.8s infinite;
+  }
+
+  .dash {
+    width: 70px;
+    height: 1px;
+    background: rgb(83, 83, 83);
+    margin: 5px 0px;
+  }
+  
+  .dash1 {
+    margin-left: 30px;
+    background-color: rgb(197, 141, 38);
+  }
+  
+  .dash2 {
+    background-color: rgb(255, 81, 0);
+    width: 20px;
+    margin-left: -10px;
+  }
+  .dash3 {
+    margin-left: 35px;
+    width: 35px;
+    background-color: rgb(145, 19, 11);
+  }
+  
+  .dash4 {
+    margin-left: -40px;
+    width: 50px;
+    background-color: rgb(0, 75, 0);
+  }
+  .dash5 {
+    margin-left: 70px;
+  }
+  .dash6 {
+    margin-left: 0px;
+    width: 80px;
+  }
+  .dash7 {
+    width: 90px;
+    margin-left: -50px;
+  }
+  
+  .dash8 {
+    margin-left: -100px;
+    width: 250px;
+    background-color: #222;
+  }
+  .dash9 {
+    margin-right: 30px;
   }
 }

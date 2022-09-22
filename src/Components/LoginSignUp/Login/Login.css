@@ -138,3 +138,22 @@
 .loader-container img{
     margin-left: 80px;
 }
+
+@media screen and (max-width: 786px) {
+    .login-container-content {
+        height: auto;
+        padding-bottom: 30px;
+        margin-bottom: 50px;
+        /* background: none;
+        box-shadow: none; */
+      }
+    .login-container-content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .login-form-container{
+        margin: 50px 20px;
+        padding: 30px 40px;
+    }
+  }

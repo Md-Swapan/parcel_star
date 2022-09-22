@@ -17,7 +17,7 @@ const WhyChooseUs = () => {
           </div>
           <div className="whyChooseUs-content">
             <div className="row">
-              <div className="col-md-6">
+              <div className="col-md-6 m-0 p-0">
                 <div className="Delivery-container">
                   <div className="icon">
                     <i className="bi bi-truck"></i>
@@ -68,7 +68,7 @@ const WhyChooseUs = () => {
                 </div>
               </div>
               <div className="col-md-6">
-                <img className="mt-3" width={720} src={deliveryManImg} alt="deliveryManImg" />
+                <img className="mt-3 wcu-deliveryManImg" src={deliveryManImg} alt="deliveryManImg" />
               </div>
             </div>
 
@@ -79,6 +79,7 @@ const WhyChooseUs = () => {
                   <p>Parcel Delivered</p>
                 </div>
               </div>
+              <div className="count-container-border1"></div>
               <div className="d-flex">
                 
                 <Link to="/best-employee">
@@ -89,12 +90,14 @@ const WhyChooseUs = () => {
                 </div>
                 </Link>
               </div>
+              <div className="count-container-border2"></div>
               <div className="d-flex">
                 <div className="satisfied-client-count">
                   <h2>10k +</h2>
                   <p>Satisfied Clients</p>
                 </div>
               </div>
+              <div className="count-container-border3"></div>
               <div className="d-flex">
                 <Link to='/best-branch'>
                 <div className="branches-count">
@@ -105,11 +108,11 @@ const WhyChooseUs = () => {
                 </Link>
               </div>
             </div>
-            <div className="d-flex">
+            {/* <div className="d-flex">
               <div className="count-container-border1"></div>
               <div className="count-container-border2"></div>
               <div className="count-container-border3"></div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

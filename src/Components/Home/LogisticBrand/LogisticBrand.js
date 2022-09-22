@@ -18,17 +18,16 @@ const LogisticBrand = () => {
   return (
     <>
       <div className="logisticBrand-section">
-        
         <div className="container">
-        <div className="deliveryCalculator-header">
-          <div className="d-flex">
-            <div className="dc-before"></div>
-            <div className="dc-header">
-              <h1>Our Logistic Brand</h1>
+          <div className="deliveryCalculator-header">
+            <div className="d-flex">
+              <div className="dc-before"></div>
+              <div className="dc-header">
+                <h1>Our Logistic Brand</h1>
+              </div>
+              <div className="dc-after"></div>
             </div>
-            <div className="dc-after"></div>
           </div>
-        </div>
           <div className="brand-container">
             <img src={brandLogo1} alt="" />
             <img src={brandLogo2} alt="" />
@@ -49,31 +48,33 @@ const LogisticBrand = () => {
                 <div className="longTrUniqBusiness">
                   <img width={150} src={psLogo} alt="" />
 
-                  <div className="ltb-container">
-                    <div className="ltbIcon">
-                      <i className="bi bi-info-square"></i>
+                  <div className="longTrUniqBusiness-content">
+                    <div className="ltb-container">
+                      <div className="ltbIcon">
+                        <i className="bi bi-info-square"></i>
+                      </div>
+                      <div>
+                        <h6>LongTerm</h6>
+                        <span>Support</span>
+                      </div>
                     </div>
-                    <div>
-                      <h6>LongTerm</h6>
-                      <span>Support</span>
+                    <div className="ltb-container">
+                      <div className="ltbIcon">
+                        <i className="bi bi-award"></i>
+                      </div>
+                      <div>
+                        <h6>LongTerm</h6>
+                        <span>Support</span>
+                      </div>
                     </div>
-                  </div>
-                  <div className="ltb-container">
-                    <div className="ltbIcon">
-                    <i className="bi bi-award"></i>
-                    </div>
-                    <div>
-                      <h6>LongTerm</h6>
-                      <span>Support</span>
-                    </div>
-                  </div>
-                  <div className="ltb-container">
-                    <div className="ltbIcon">
-                    <i className="bi bi-briefcase"></i>
-                    </div>
-                    <div>
-                      <h6>LongTerm</h6>
-                      <span>Support</span>
+                    <div className="ltb-container">
+                      <div className="ltbIcon">
+                        <i className="bi bi-briefcase"></i>
+                      </div>
+                      <div>
+                        <h6>LongTerm</h6>
+                        <span>Support</span>
+                      </div>
                     </div>
                   </div>
                 </div>

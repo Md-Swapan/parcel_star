@@ -19,7 +19,7 @@
 .wcu-before {
   width: 20px;
   height: 66px;
-  background: #FA4319;
+  background: #fa4319;
   position: absolute;
   margin-left: 480px;
   margin-top: -4px;
@@ -27,7 +27,7 @@
 .wcu-after {
   width: 20px;
   height: 66px;
-  background: #FA4319;
+  background: #fa4319;
   position: absolute;
   margin-left: 795px;
   margin-top: -4px;
@@ -35,8 +35,13 @@
 
 .whyChooseUs-content {
   margin-top: 20px;
+  /* overflow: hidden; */
 }
 
+.wcu-deliveryManImg {
+  margin-left: -47px;
+  width: 700px;
+}
 .Delivery-container {
   width: 80%;
   padding: 5px 0px;
@@ -46,7 +51,7 @@
 .Delivery-container .icon {
   font-size: 45px;
   margin: 0px 20px;
-  color: #FA4319;
+  color: #fa4319;
   display: flex;
 }
 .Delivery-content h3 {
@@ -61,9 +66,10 @@
 
 .count-container {
   margin-top: 50px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 40px;
+  display: flex;
+  justify-content: space-between;
+  /* grid-template-columns: repeat(4, 1fr); */
+  /* grid-gap: 100px; */
 }
 .parcel-delivered-count,
 .Expert-employee-count,
@@ -72,11 +78,26 @@
   width: 210px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 40px;
-  margin: 0px 40px;
   text-align: center;
-  color: #FA4319;
+  color: #fa4319;
   position: relative;
 }
+
+/* .parcel-delivered-count {
+  
+}
+.Expert-employee-count {
+  margin-left: 40px;
+}
+
+.satisfied-client-count {
+  margin-left: 40px;
+}
+
+.branches-count {
+  margin-left: 40px;
+} */
+
 .parcel-delivered-count p,
 .Expert-employee-count p,
 .satisfied-client-count p,
@@ -84,12 +105,12 @@
   font-size: 14px;
 }
 .parcel-delivered-count::after,
-.satisfied-client-count::after{
+.satisfied-client-count::after {
   content: "";
   position: absolute;
   width: 100px;
   height: 100px;
-  border: 5px solid #FA4319;
+  border: 5px solid #fa4319;
   border-bottom: none;
   border-right: none;
   left: 0px;
@@ -99,29 +120,29 @@
   z-index: -1;
 }
 .Expert-employee-count,
-.branches-count{
+.branches-count {
   color: #002a47;
 }
 .Expert-employee-count small,
-.branches-count small{
-  color: #FA4319;
+.branches-count small {
+  color: #fa4319;
 }
 .Expert-employee-count:hover small,
-.branches-count:hover small{
+.branches-count:hover small {
   color: #002a47;
 }
 .Expert-employee-count:hover,
-.branches-count:hover{
+.branches-count:hover {
   cursor: pointer;
-  color: #FA4319;
+  color: #fa4319;
 }
 .Expert-employee-count:hover:after,
-.branches-count:hover:after{
+.branches-count:hover:after {
   content: "";
   position: absolute;
   width: 100px;
   height: 100px;
-  border: 5px solid #FA4319;
+  border: 5px solid #fa4319;
   border-bottom: none;
   border-right: none;
   left: 0px;
@@ -136,10 +157,10 @@
   background: rgb(182, 182, 182);
   width: 3px !important;
   height: 70px;
-  margin: 0px 20px;
-  position: absolute;
+  margin-top: 59px;
+  /* position: absolute; */
 }
-.count-container-border1 {
+/* .count-container-border1 {
   margin-left: 310px;
   margin-top: -120px;
 }
@@ -150,8 +171,52 @@
 .count-container-border3 {
   margin-left: 977px;
   margin-top: -120px;
+} */
+
+a {
+  text-decoration: none;
 }
 
-a{
-  text-decoration: none;
+/* Resposive css */
+@media screen and (max-width: 786px) {
+  .wcu-before {
+    position: absolute;
+    margin-left: 62px;
+    margin-top: -4px;
+  }
+  .wcu-after {
+    position: absolute;
+    margin-left: 377px;
+    margin-top: -4px;
+  }
+  .Delivery-container {
+    margin: auto;
+  }
+  .wcu-deliveryManImg {
+    margin-left: 0px;
+    width: 450px;
+  }
+
+  .count-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px 25px;
+    margin-left: 50px;
+  }
+  .count-container-border1,
+  .count-container-border2,
+  .count-container-border3 {
+    display: none;
+  }
+  .parcel-delivered-count,
+  .Expert-employee-count,
+  .satisfied-client-count,
+  .branches-count {
+    width: 360px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 40px;
+    text-align: center;
+    color: #fa4319;
+    position: relative;
+  }
 }

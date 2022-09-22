@@ -46,7 +46,7 @@ const DeliveryCalculator = () => {
 
           <div className="calculator-form-container">
             <form className="formdiv">
-              <div className="d-flex">
+              <div className="formdiv-container">
                 <div>
                   <label htmlFor="">Weight</label>
                   <br />

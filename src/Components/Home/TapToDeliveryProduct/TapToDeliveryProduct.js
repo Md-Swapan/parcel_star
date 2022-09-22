@@ -17,7 +17,7 @@ const TapToDeliveryProduct = () => {
                 <div className="parcel-carWheelIn"></div>
                 <div className="parcel-carWheel2"></div>
                 <div className="parcel-carWheel2In"></div>
-                <img width={34} src={parcelLogo} alt="" />
+                <img src={parcelLogo} alt="" />
                 <p className="pt-3">
                   <span>Tap</span> To Delivery Your Product
                 </p>

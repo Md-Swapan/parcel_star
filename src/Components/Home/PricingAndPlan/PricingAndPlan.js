@@ -19,7 +19,7 @@ const PricingAndPlan = () => {
         <div className="planAndPrice-container">
           <div className="container">
             <div className="row">
-              <div className="col-md-4">
+              <div className="col-md-4 mb-4">
                 <div className="basic">
                   <div className="basic-container">
                     <div className="basic-front-view">
@@ -51,7 +51,7 @@ const PricingAndPlan = () => {
 
                 <div className="basic-container-border1"></div>
               </div>
-              <div className="col-md-4">
+              <div className="col-md-4 mb-4">
                 <div className="premium">
                   <div className="premium-container">
                     <div className="premium-front-view">

@@ -4,18 +4,19 @@ import logo from "../../../assets/img/Rectangle 58.png";
 import { HashLink as Link } from "react-router-hash-link";
 import useAuth from "./../../../Hooks/useAuth";
 import profileDemoImg from "../../../assets/img/profile1.jpg";
+import { NavLink } from "react-router-dom";
 const Nav = () => {
   const { user, merchant, logOut } = useAuth();
 
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light p-0">
-        <div className="container-fluid navbar-container">
-          <a className="navbar-brand" href="#">
+        <div className="container navbar-container">
+          <Link className="navbar-brand" to="/">
             <div id="mainlogo">
-              <img style={{ width: "200px" }} src={logo} />
+              <img src={logo} />
             </div>
-          </a>
+          </Link>
 
           <div className="topBar-container">
             <small className="location-container">
@@ -56,9 +57,9 @@ const Nav = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mb-2 mb-lg-0">
               <li className="nav-item nav-menu">
-                <a className="nav-link" aria-current="page" href="/">
+                <Link  className="nav-link" aria-current="page" to="/">
                   HOME
-                </a>
+                </Link>
               </li>
               <li className="nav-item nav-menu">
                 <Link
@@ -137,9 +138,9 @@ const Nav = () => {
                 </li>
               ) : (
                 <li className="nav-item nav-menu">
-                  <div
+                  {merchant? <div
                     className="d-flex"
-                    style={{ cursor: "pointer", marginLeft: "180px" }}
+                    style={{ cursor: "pointer", marginLeft: "140px" }}
                     type="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
@@ -158,7 +159,28 @@ const Nav = () => {
                       }}
                       className="bi bi-chevron-down"
                     ></i>
-                  </div>
+                  </div> : <div
+                    className="d-flex"
+                    style={{ cursor: "pointer", marginLeft: "84px" }}
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <div className=" afterLogin">
+                      <span className="nav-link " aria-current="page">
+                        <img src={profileDemoImg} alt="" />
+                      </span>
+                    </div>
+                    <i
+                      style={{
+                        marginTop: "10px",
+                        marginLeft: "10px",
+                        color: "#002a47",
+                        fontWeight: "600",
+                      }}
+                      className="bi bi-chevron-down"
+                    ></i>
+                  </div>}
                   <div className="dropdown-menu profile-dropdown">
                     <ul>
                       {/* <li>

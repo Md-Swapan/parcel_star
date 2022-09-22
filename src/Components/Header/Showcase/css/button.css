@@ -29,3 +29,21 @@
     background: #002a47;
     color: #ffffff;
 }
+
+@media screen and (max-width: 786px) {
+    .contact-explore-btn{
+        margin-top: -80px !important;
+        z-index: 9999;
+        position: absolute;
+        margin-left: 85px;
+        /* display: none; */
+    }
+    .contactUsBtn {
+        padding: 9px 30px;
+        margin-right: 10px;
+    }
+    .servicesBtn{
+        padding: 9px 20px;
+        margin-right: 0px;
+    }
+  }
