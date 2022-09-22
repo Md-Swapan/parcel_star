@@ -179,15 +179,31 @@ a {
 
 /* Resposive css */
 @media screen and (max-width: 786px) {
+  .wcu-header {
+    text-align: center;
+    margin-bottom: 50px !important;
+    background: #002a47;
+    border-radius: 3px;
+    width: 220px;
+    padding: 10px;
+    margin: auto;
+    z-index: 1;
+  }
+  .wcu-header h1 {
+    color: #fff;
+    font-size: 20px;
+  }
   .wcu-before {
     position: absolute;
-    margin-left: 62px;
+    margin-left: 50px;
     margin-top: -4px;
+    height: 60px;
   }
   .wcu-after {
     position: absolute;
-    margin-left: 377px;
+    margin-left: 265px;
     margin-top: -4px;
+    height: 60px;
   }
   .Delivery-container {
     margin: auto;
@@ -213,8 +229,172 @@ a {
   .satisfied-client-count,
   .branches-count {
     width: 360px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
     padding: 40px;
+    text-align: center;
+    color: #fa4319;
+    position: relative;
+  }
+}
+@media screen and (max-width: 576px) {
+  .wcu-header {
+    text-align: center;
+    margin-bottom: 50px !important;
+    background: #002a47;
+    border-radius: 3px;
+    width: 220px;
+    padding: 10px;
+    margin: auto;
+    z-index: 1;
+  }
+  .wcu-header h1 {
+    color: #fff;
+    font-size: 20px;
+  }
+  .wcu-before {
+    position: absolute;
+    margin-left: 50px;
+    margin-top: -4px;
+    height: 60px;
+  }
+  .wcu-after {
+    position: absolute;
+    margin-left: 265px;
+    margin-top: -4px;
+    height: 60px;
+  }
+
+  .whyChooseUs-content {
+    margin-top: 0px;
+  }
+  .Delivery-container {
+    width: 100%;
+    padding: 5px 0px;
+    display: flex;
+    margin: 10px 0px;
+  }
+  .Delivery-container .icon {
+    font-size: 35px;
+    margin: 0px 20px;
+    color: #fa4319;
+    display: flex;
+  }
+  .Delivery-content h3 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #002a47;
+    margin-bottom: 10px;
+  }
+  .Delivery-content p {
+    color: #757575;
+    font-size: 12px;
+  }
+
+  .wcu-deliveryManImg {
+    margin-left: 0px;
+    width: 340px;
+  }
+
+  .count-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px 20px;
+    margin-left: 0px;
+  }
+  .count-container-border1,
+  .count-container-border2,
+  .count-container-border3 {
+    display: none;
+  }
+  .parcel-delivered-count,
+  .Expert-employee-count,
+  .satisfied-client-count,
+  .branches-count {
+    width: 335px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    padding: 40px 20px;
+    text-align: center;
+    color: #fa4319;
+    position: relative;
+  }
+}
+@media screen and (max-width: 360px) {
+  .wcu-header {
+    text-align: center;
+    margin-bottom: 50px !important;
+    background: #002a47;
+    border-radius: 3px;
+    width: 220px;
+    padding: 10px;
+    margin: auto;
+    z-index: 1;
+  }
+  .wcu-header h1 {
+    color: #fff;
+    font-size: 20px;
+  }
+  .wcu-before {
+    position: absolute;
+    margin-left: 50px;
+    margin-top: -4px;
+    height: 60px;
+  }
+  .wcu-after {
+    position: absolute;
+    margin-left: 265px;
+    margin-top: -4px;
+    height: 60px;
+  }
+
+  .whyChooseUs-content {
+    margin-top: 0px;
+  }
+  .Delivery-container {
+    width: 100%;
+    padding: 5px 10px;
+    display: flex;
+    margin: 10px 0px;
+  }
+  .Delivery-container .icon {
+    font-size: 35px;
+    margin: 0px 20px;
+    color: #fa4319;
+    display: flex;
+  }
+  .Delivery-content h3 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #002a47;
+    margin-bottom: 10px;
+  }
+  .Delivery-content p {
+    color: #757575;
+    font-size: 12px;
+  }
+
+  .wcu-deliveryManImg {
+    margin-left: 0px;
+    width: 340px;
+  }
+
+  .count-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px 20px;
+    margin-left: 0px;
+  }
+  .count-container-border1,
+  .count-container-border2,
+  .count-container-border3 {
+    display: none;
+  }
+  .parcel-delivered-count,
+  .Expert-employee-count,
+  .satisfied-client-count,
+  .branches-count {
+    width: 335px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    padding: 40px 20px;
     text-align: center;
     color: #fa4319;
     position: relative;

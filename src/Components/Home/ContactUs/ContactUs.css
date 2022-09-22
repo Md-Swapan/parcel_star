@@ -190,3 +190,25 @@
     margin-left: 12px; 
   }
 }
+@media screen and (max-width: 360px) {
+  .contactUs-section {
+    height: auto;
+    margin: 100px 0px;
+    padding-bottom: 50px;
+  }
+  .contactImg {
+    margin-top: 40px;
+    margin-left: 0px;
+    width: 300px;
+  }
+  .contact-content-container {
+    width: 300px;
+    padding: 50px 30px;
+    margin-top: 40px !important;
+    margin-left: 0px;
+  }
+  .letsTalk-container {
+    margin-top: 40px;
+    margin-left: 12px; 
+  }
+}

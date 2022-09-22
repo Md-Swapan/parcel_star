@@ -35,8 +35,7 @@
         margin-top: -80px !important;
         z-index: 9999;
         position: absolute;
-        margin-left: 85px;
-        /* display: none; */
+
     }
     .contactUsBtn {
         padding: 9px 30px;
@@ -45,5 +44,39 @@
     .servicesBtn{
         padding: 9px 20px;
         margin-right: 0px;
+    }
+  }
+@media screen and (max-width: 576px) {
+    .contact-explore-btn{
+        margin-top: -80px !important;
+        z-index: 9999;
+        position: absolute;
+        margin-left: 17vw;
+    }
+    .contactUsBtn {
+        padding: 9px 30px;
+        margin-right: 10px;
+    }
+    .servicesBtn{
+        padding: 9px 20px;
+        margin-right: 0px;
+    }
+  }
+@media screen and (max-width: 360px) {
+    .contact-explore-btn{
+        margin-top: -70px !important;
+        z-index: 9999;
+        position: absolute;
+        margin-left: 18vw;
+    }
+    .contactUsBtn {
+        padding: 7px 10px;
+        margin-right: 10px;
+        font-size: 10px;
+    }
+    .servicesBtn{
+        padding: 7px 10px;
+        margin-right: 0px;
+        font-size: 10px;
     }
   }

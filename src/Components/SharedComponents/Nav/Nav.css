@@ -146,7 +146,7 @@
   }
   .navbar {
     height: 90px !important;
-    width: 100%;
+    width: 100vw;
     z-index: 99999999999999999999999999;
   }
   .navbar-container {
@@ -182,8 +182,8 @@
     display: none;
   }
   .navbar {
-    height: 90px !important;
-    width: 100%;
+    height: 70px !important;
+    width: 100vw;
     z-index: 99999999999999999999999999;
   }
   .navbar-container {
@@ -219,8 +219,8 @@
     display: none;
   }
   .navbar {
-    height: 90px !important;
-    width: 100%;
+    height: 70px !important;
+    width: 100vw;
     z-index: 99999999999999999999999999;
   }
   .navbar-container {

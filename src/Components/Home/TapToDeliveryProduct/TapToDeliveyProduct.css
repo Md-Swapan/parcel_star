@@ -110,7 +110,7 @@
   height: 35px;
   z-index: 3;
   border: 1px solid rgb(46, 46, 46);
-  background: rgb(124, 124, 124);
+  background: rgb(99, 99, 99);
   position: absolute;
   margin-top: -30px;
   margin-left: 65px;
@@ -206,8 +206,8 @@
 
 @media screen and (max-width: 786px) {
   .tapToDeliveryProduct {
-    right: 15px;
-    height: 90px;
+    margin-left: 70vw;
+    height: 95px;
     width: 100px;
     padding: 10px;
     z-index: 9999999999;
@@ -215,7 +215,7 @@
     border: 1px solid rgb(94, 94, 94);
   }
   .parcelCar p {
-    font-size: 9px;
+    font-size: 10px;
     /* margin-bottom: -2px; */
     line-height: 10px;
     margin-top: 8px;
@@ -266,14 +266,9 @@
   .parcel-carWheel2 {
     width: 30px;
     height: 30px;
-    z-index: 3;
-    border: 1px solid rgb(46, 46, 46);
-    background: rgb(124, 124, 124);
     position: absolute;
     margin-top: -14px;
     margin-left: 45px;
-    -webkit-clip-path: ellipse(25% 25% at 50% 50%);
-    clip-path: ellipse(25% 25% at 50% 50%);
   }
 
   .parcel-carWheel2In {
@@ -348,8 +343,9 @@
 
 @media screen and (max-width: 576px) {
   .tapToDeliveryProduct {
-    right: 20px;
-    height: 90px;
+    bottom: 180px;
+    margin-left: 70vw;
+    height: 95px;
     width: 100px;
     padding: 10px;
     z-index: 9999999999;
@@ -357,7 +353,7 @@
     border: 1px solid rgb(94, 94, 94);
   }
   .parcelCar p {
-    font-size: 9px;
+    font-size: 10px;
     /* margin-bottom: -2px; */
     line-height: 10px;
     margin-top: 8px;
@@ -408,14 +404,9 @@
   .parcel-carWheel2 {
     width: 30px;
     height: 30px;
-    z-index: 3;
-    border: 1px solid rgb(46, 46, 46);
-    background: rgb(124, 124, 124);
     position: absolute;
     margin-top: -14px;
     margin-left: 45px;
-    -webkit-clip-path: ellipse(25% 25% at 50% 50%);
-    clip-path: ellipse(25% 25% at 50% 50%);
   }
 
   .parcel-carWheel2In {
@@ -487,10 +478,10 @@
     margin-right: 30px;
   }
 }
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 360px) {
   .tapToDeliveryProduct {
-    right: 20px;
-    height: 90px;
+    margin-left: 70vw;
+    height: 95px;
     width: 100px;
     padding: 10px;
     z-index: 9999999999;
@@ -498,7 +489,7 @@
     border: 1px solid rgb(94, 94, 94);
   }
   .parcelCar p {
-    font-size: 9px;
+    font-size: 10px;
     /* margin-bottom: -2px; */
     line-height: 10px;
     margin-top: 8px;
@@ -549,14 +540,9 @@
   .parcel-carWheel2 {
     width: 30px;
     height: 30px;
-    z-index: 3;
-    border: 1px solid rgb(46, 46, 46);
-    background: rgb(124, 124, 124);
     position: absolute;
     margin-top: -14px;
     margin-left: 45px;
-    -webkit-clip-path: ellipse(25% 25% at 50% 50%);
-    clip-path: ellipse(25% 25% at 50% 50%);
   }
 
   .parcel-carWheel2In {
