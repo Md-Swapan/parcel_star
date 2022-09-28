@@ -5,15 +5,37 @@ import logoimg from "../../../assets/img/Rectangle 58.png";
 import dotImg from "../../../assets/img/1_nZ9VwHTLxAfNCuCjYAkajg.png";
 
 const ContactUs = () => {
+  const mediaQuery = window.matchMedia("(max-width: 360px)");
+  const mediaQuery576 = window.matchMedia("(max-width: 576px)");
+  const mediaQueryDesktop = window.matchMedia("(min-width: 1240px)");
+
+
   const LetsTalkToggle = () => {
-    const contactImg = document.querySelector(".contactImg");
-    const contactContentContainer = document.querySelector(
-      ".contact-content-container"
-    );
+    if(mediaQuery.matches){
+      const contactUsSection = document.querySelector(".contactUs-section");
+      const contactContentContainer = document.querySelector(".contact-content-container");
+      const talkContent = document.querySelector(".talk-content");
+      const letsTalkContainer = document.querySelector(".letsTalk-container");
+
+      contactUsSection.style.height = "1300px";
+      contactContentContainer.style.marginLeft = "0px";
+      // contactContentContainer.style.width = "410px";
+      // contactContentContainer.style.padding = "50px 30px";
+      letsTalkContainer.style.width = "335px";
+      letsTalkContainer.style.marginLeft = "0px";
+      letsTalkContainer.style.background = "#fff";
+      letsTalkContainer.style.border = ".2px solid #002a47";
+      letsTalkContainer.style.padding = "0px 20px";
+      talkContent.style.display = "block";
+    }
+
+
+    if(mediaQueryDesktop.matches){
+    const contactContentContainer = document.querySelector(".contact-content-container");
     const talkContent = document.querySelector(".talk-content");
     const letsTalkContainer = document.querySelector(".letsTalk-container");
 
-    contactImg.style.marginLeft = "0px";
+   
     contactContentContainer.style.marginLeft = "0px";
     contactContentContainer.style.width = "410px";
     contactContentContainer.style.padding = "50px 30px";
@@ -23,17 +45,42 @@ const ContactUs = () => {
     letsTalkContainer.style.border = ".2px solid #002a47";
     letsTalkContainer.style.padding = "0px 20px";
     talkContent.style.display = "block";
+    }
+
   };
 
+
   const closetalk = () => {
-    const contactImg = document.querySelector(".contactImg");
-    const contactContentContainer = document.querySelector(
+    if(mediaQuery.matches){
+      const contactUsSection = document.querySelector(".contactUs-section");
+      const contactContentContainer = document.querySelector(
+        ".contact-content-container"
+      );
+      const talkContent = document.querySelector(".talk-content");
+      const letsTalkContainer = document.querySelector(".letsTalk-container");
+      setTimeout(() => {
+        contactUsSection.style.height = "auto";
+      }, 800);
+      
+      contactContentContainer.style.marginLeft = "0px";
+      contactContentContainer.style.width = "400px";
+      // contactContentContainer.style.padding = "50px 40px";
+      letsTalkContainer.style.width = "0px";
+      letsTalkContainer.style.marginLeft = "0px";
+      letsTalkContainer.style.background = "#002a47";
+      letsTalkContainer.style.border = "none";
+      letsTalkContainer.style.padding = "0px";
+      talkContent.style.display = "none";
+    }
+
+
+    if(mediaQueryDesktop.matches){
+      const contactContentContainer = document.querySelector(
       ".contact-content-container"
     );
     const talkContent = document.querySelector(".talk-content");
     const letsTalkContainer = document.querySelector(".letsTalk-container");
 
-    contactImg.style.marginLeft = "60px";
     contactContentContainer.style.marginLeft = "60px";
     contactContentContainer.style.width = "440px";
     contactContentContainer.style.padding = "50px 40px";
@@ -43,6 +90,8 @@ const ContactUs = () => {
     letsTalkContainer.style.border = "none";
     letsTalkContainer.style.padding = "0px";
     talkContent.style.display = "none";
+    }
+    
   };
 
   return (

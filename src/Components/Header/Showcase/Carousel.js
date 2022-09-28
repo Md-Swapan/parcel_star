@@ -51,7 +51,7 @@ const Carousel = () => {
           </div>
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src={img1} className="d-block w-100" alt="cover" />
+              <img src={img1} className=" img-fluid d-block w-100" alt="cover" />
               <div className="carousel-caption d-md-block">
                 <div className="text-overlay">
                   <h1>
@@ -67,7 +67,7 @@ const Carousel = () => {
               </div>
             </div>
             <div className="carousel-item">
-              <img src={img2} className="d-block w-100" alt="cover" />
+              <img src={img2} className="img-fluid d-block w-100" alt="cover" />
               <div className="carousel-caption d-md-block">
                 <h1>
                   <span className="text-color">WE TAKE CARE</span> OF <br />{" "}
@@ -81,7 +81,7 @@ const Carousel = () => {
               </div>
             </div>
             <div className="carousel-item">
-              <img src={img3} className="d-block w-100" alt="cover" />
+              <img src={img3} className="img-fluid d-block w-100" alt="cover" />
               <div className="carousel-caption d-md-block">
                 <h1>
                   <span className="text-color">KEEP</span> YOUR <br /> PRODUCT{" "}
@@ -95,7 +95,7 @@ const Carousel = () => {
               </div>
             </div>
             <div className="carousel-item">
-              <img src={img4} className="d-block w-100" alt="cover" />
+              <img src={img4} className="img-fluid d-block w-100" alt="cover" />
               <div className="carousel-caption d-md-block">
                 <h1>
                   <span className="text-color">SAFE</span> DELIVERY
@@ -108,7 +108,7 @@ const Carousel = () => {
               </div>
             </div>
             <div className="carousel-item">
-              <img src={img5} className="d-block w-100" alt="cover" />
+              <img src={img5} className="img-fluid d-block w-100" alt="cover" />
               <div className="carousel-caption d-md-block">
                 <h1>
                   CUSTOMER <span className="text-color">SATISFACTION</span> IS{" "}

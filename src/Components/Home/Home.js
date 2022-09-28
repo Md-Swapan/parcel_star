@@ -12,7 +12,7 @@ import WhyChooseUs from './WhyChooseUs/WhyChooseUs';
 
 const Home = () => {
     return (
-        <div>
+        <>
             <Header/>
             <TapToDeliveryProduct/>
             <WhyChooseUs/>
@@ -23,7 +23,7 @@ const Home = () => {
             <LogisticBrand/>
             <Footer/>
             <CopyrightFooter/>
-        </div>
+        </>
     );
 };
 

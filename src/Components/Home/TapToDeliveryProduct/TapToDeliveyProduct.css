@@ -206,6 +206,7 @@
 
 @media screen and (max-width: 786px) {
   .tapToDeliveryProduct {
+    bottom: 50px;
     margin-left: 70vw;
     height: 95px;
     width: 100px;
@@ -343,7 +344,7 @@
 
 @media screen and (max-width: 576px) {
   .tapToDeliveryProduct {
-    bottom: 180px;
+    bottom: 50px;
     margin-left: 70vw;
     height: 95px;
     width: 100px;
@@ -480,6 +481,7 @@
 }
 @media screen and (max-width: 360px) {
   .tapToDeliveryProduct {
+    bottom: 50px;
     margin-left: 70vw;
     height: 95px;
     width: 100px;

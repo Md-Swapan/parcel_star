@@ -62,6 +62,11 @@ const DashboardSidebar = () => {
           </div>
         </div>
         <ul className="menuList">
+          <NavLink to="/">
+            <li className="menu-item">
+            <i class="bi bi-house-fill"></i> Home
+            </li>
+          </NavLink>
           <NavLink to="/dashboard">
             <li className="menu-item active">
               <i className="bi bi-grid-1x2-fill"></i> Dashboard

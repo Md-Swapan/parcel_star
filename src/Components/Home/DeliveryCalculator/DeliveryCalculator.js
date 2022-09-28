@@ -3,41 +3,88 @@ import "./DeliveryCalculator.css";
 import { Link } from "react-router-dom";
 
 const DeliveryCalculator = () => {
+  const mediaQuery = window.matchMedia("(max-width: 360px)");
+  const mediaQuery576 = window.matchMedia("(max-width: 576px)");
+  const mediaQueryDesktop = window.matchMedia("(min-width: 1200px)");
+
   const calculateToggle = (e) => {
+    if(mediaQuery.matches){
+      const form = document.querySelector(".formdiv");
+      const takeServiceContainer = document.querySelector(".take-service-container");
+      
+      setTimeout(() => {
+        takeServiceContainer.style.display = "block";
+        form.style.height = "935px ";
+      }, 500);
+    }
+    if(mediaQuery576.matches){
+      const form = document.querySelector(".formdiv");
+      const takeServiceContainer = document.querySelector(".take-service-container");
+      
+      setTimeout(() => {
+        takeServiceContainer.style.display = "block";
+        form.style.height = "935px ";
+      }, 500);
+    }
+
+    if(mediaQueryDesktop.matches){
+      const form = document.querySelector(".formdiv");
+      const takeServiceContainer = document.querySelector(".take-service-container");
+      form.style.marginLeft = "50px ";
+  
+      setTimeout(() => {
+        takeServiceContainer.style.display = "block";
+      }, 500);
+    }
     e.preventDefault();
-    const form = document.querySelector(".formdiv");
-    const takeServiceContainer = document.querySelector(
-      ".take-service-container"
-    );
-    form.style.marginLeft = "50px ";
-    // takeServiceContainer.style.display = "block"
-
-    setTimeout(() => {
-      takeServiceContainer.style.display = "block";
-    }, 500);
+    
   };
 
-  const closeModal = () => {
-    const takeServiceContainer = document.querySelector(
-      ".take-service-container"
-    );
-    const form = document.querySelector(".formdiv");
-    takeServiceContainer.style.display = "none";
-    form.style.marginLeft = "300px";
-  };
+  
+    const closeModal = (e) => {
+      if(mediaQuery.matches)
+        {
+          const takeServiceContainer = document.querySelector(".take-service-container");
+          const form = document.querySelector(".formdiv");
 
+          takeServiceContainer.style.display = "none";
+          form.style.height = "auto";
+
+      }
+      if(mediaQuery576.matches)
+        {
+          const takeServiceContainer = document.querySelector(".take-service-container");
+          const form = document.querySelector(".formdiv");
+
+          takeServiceContainer.style.display = "none";
+          form.style.height = "auto";
+
+      }
+      if(mediaQueryDesktop.matches)
+      {
+        const takeServiceContainer = document.querySelector(".take-service-container");
+        const form = document.querySelector(".formdiv");
+        takeServiceContainer.style.display = "none";
+        form.style.marginLeft = "300px";
+
+      }
+    };
+    
+  
   return (
     <>
       <div className="deliveryCalculator-section " id="deliveryCalculator">
         <div className="container">
           <div className="deliveryCalculator-header">
-            <div className="d-flex">
+            {/* <div className="dcHeader"> */}
+            <div className="d-flex ">
               <div className="dc-before"></div>
               <div className="dc-header">
                 <h1>Delivery Calculator</h1>
               </div>
               <div className="dc-after"></div>
             </div>
+            {/* </div> */}
             <small>
               Plan your shipments with ease as you estimate delivery costs
               beforehand{" "}

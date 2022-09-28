@@ -5,10 +5,10 @@ import Showcase from './Showcase/Showcase';
 
 const Header = () => {
     return (
-        <div>
+        <>
             <Nav/>
             <Showcase/>
-        </div>
+        </>
     );
 };
 

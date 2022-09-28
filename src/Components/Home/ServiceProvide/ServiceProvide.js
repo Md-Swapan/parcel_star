@@ -11,53 +11,53 @@ import userImg2 from "../../../assets/img/man-profile-cartoon_18591-58482.webp";
 import quotation from "../../../assets/img/quotation-marks-removebg-preview.png";
 
 const ServiceProvide = () => {
-  useEffect(()=>{
+  const mediaQuery = window.matchMedia("(max-width: 360px)");
+  // const mediaQuery576 = window.matchMedia("(max-width: 576px)");
+  // const mediaQueryDesktop = window.matchMedia("(min-width: 1200px)");
+
+  useEffect((e) => {
+    if(!mediaQuery.matches){
+      const responsiveScreen = document.querySelector(".responsiveScreen");
+      responsiveScreen.style.display = "none"
+    }
     const btns = document.querySelectorAll(".btns");
     const children = document.querySelectorAll(".child");
     const Againchild = document.querySelectorAll(".Againchild");
     const current_position = 0;
-  
+
     btns.forEach((tab) => {
       tab.addEventListener("click", () => {
         let data_id = tab.getAttribute("data-id");
-  
+
         for (let i = current_position; i < data_id; i++) {
           children[i].style.height = "0%";
           Againchild[i].style.height = "0%";
         }
-  
+
         document.getElementById(`child${data_id}`).style.height = "100%";
         document.getElementById(`Againchild${data_id}`).style.height = "100%";
       });
     });
 
-
-
     const toggleItem = (elems) => {
-      elems.forEach(elem => {
+      elems.forEach((elem) => {
         elem.addEventListener("click", (event) => {
           removeActiveClass(elems);
           event.target.classList.add("active");
-        })
+        });
       });
+    };
 
-    }
-    
-    function removeActiveClass(elems){
-      elems.forEach(elem =>{
-        if(elem.classList.contains("active")){
-          elem.classList.remove("active")
+    function removeActiveClass(elems) {
+      elems.forEach((elem) => {
+        if (elem.classList.contains("active")) {
+          elem.classList.remove("active");
         }
-      })
+      });
     }
-       
 
-    toggleItem(btns)
-  }, [])
-  
-
-  
-
+    toggleItem(btns);
+  }, []);
 
   return (
     <>
@@ -70,12 +70,10 @@ const ServiceProvide = () => {
           <div className="swp-after"></div>
         </div>
       </div>
-      <div
-        className=" serviceProvider-container"
-      >
+      <div className=" serviceProvider-container">
         <div className="container">
-          <div className="row">
-            <div className="col-md-4">
+          <div className="row fullScreenRow">
+            <div className="col-md-4 ">
               <div className="navTab">
                 <h2>Services</h2>
                 <div id="navtabBtns">
@@ -295,6 +293,63 @@ const ServiceProvide = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+          <div className="responsiveScreen">
+            <div className="ResponsiveService HandDelivery">
+              <h4>Hand to Hand Delivery</h4>
+              {/* <span>............</span> */}
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.
+              </p>
+              <button type="">Show Details</button>
+            </div>
+            <div className="ResponsiveService BicycleDelivery">
+              <h4>Bicycle Delivery</h4>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.
+              </p>
+              <button type="">Show Details</button>
+            </div>
+            <div className="ResponsiveService BikeDelivery">
+              <h4>Bike Delivery</h4>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.
+              </p>
+              <button type="">Show Details</button>
+            </div>
+            <div className="ResponsiveService TruckDelivery">
+              <h4>Truck Delivery</h4>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.
+              </p>
+              <button type="">Show Details</button>
+            </div>
+            <div className="ResponsiveService ShipDelivery">
+              <h4>Ship Delivery</h4>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.
+              </p>
+              <button type="">Show Details</button>
+            </div>
+            <div className="ResponsiveService AirDelivery">
+              <h4>Air Delivery</h4>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.
+              </p>
+              <button type="">Show Details</button>
             </div>
           </div>
         </div>

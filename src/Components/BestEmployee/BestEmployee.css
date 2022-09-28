@@ -126,3 +126,129 @@
 .nextBtn{
     margin-left: 100px;
 }
+
+
+
+@media screen and (max-width: 360px) {
+  .bestEmployee-showcase {
+    width: 100vw;
+    /* height: 350px; */
+    overflow: hidden;
+    margin-top: 90px;
+  }
+  .bestEmployee-content {
+    width: 40%;
+  }
+  .bestEmployee-content-title {
+    width: 200px;
+    color: #002a47;
+    margin-top: 50px;
+    margin-left: 15px;
+    z-index: 4;
+  }
+  .bestEmployee-content-title h1 {
+    width: 150px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #002a47;
+  }
+  .bestEmployee-content h1 span {
+    font-weight: 600;
+    color: #fa4319;
+  }
+  .bestEmployee-content h1 small {
+    font-size: 10px;
+    font-weight: 600;
+    color: #fa4319;
+  }
+  .bestEmployee-content-title p {
+    width: 100px;
+    color: #fa4319;
+    margin: 10px 0px;
+    font-size: 10px;
+  }
+  .bestEmployee-content-title p span {
+    color: #002a47;
+  }
+  
+  .list {
+    display: none;
+  }
+  .list p {
+    font-weight: 200;
+    font-size: 10px;
+    /* line-height: 20px; */
+    color: #09273d;
+    /* display: none; */
+  }
+  
+
+  .celebrateImg {
+    width: 100px;
+    z-index: 3;
+  }
+  .celebrateImg img {
+    width: 100px;
+    margin-top: 90px;
+    margin-left: -80px;
+  }
+  
+  .bestEmployee-img-container {
+    width: 60%;
+    margin-left: auto;
+  }
+  .bestEmployee-img-container img {
+    width: 100%;
+    height: 250px;
+    z-index: -1;
+  }
+
+  
+.best-employee-carousel-slider{
+  height: 120px;
+  width: 200px;
+  position: absolute;
+  margin-top: -203px;
+  margin-left: 75px;
+  overflow: hidden;
+  z-index: 2;
+  /* border: 1px solid gainsboro; */
+}
+.best-employee-carousel-slider img{
+  width: 200px;
+  /* margin-left: -50px; */
+}
+.best-employee-carousel-slider li{
+  transition: all 5s;
+}
+
+.carouselBtn{
+  position: absolute;
+  margin-top: -70px;
+  margin-left: 145px;
+  z-index: 3;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  
+}
+.carouselBtn ul{
+  position: absolute;
+  margin-top: 7px;
+  font-family: "Poppins", sans-serif;
+}
+.carouselBtn li{
+  color: #002a47;
+}
+.carouselBtn button{
+  border: none;
+  background: none;
+  font-size: 18px;
+  position: relative;
+  color: #fa4319;
+  margin-top: 5px;
+}
+.nextBtn{
+  margin-left: 100px;
+}
+}

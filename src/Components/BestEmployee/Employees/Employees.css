@@ -7,3 +7,16 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 40px 60px;
 }
+
+@media screen and (max-width: 360px) {
+    .employee-section{
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
+    .employeeDetail-card-container{
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 25px;
+    }
+}

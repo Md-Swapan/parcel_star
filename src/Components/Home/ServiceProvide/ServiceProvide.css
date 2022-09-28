@@ -13,7 +13,7 @@
 .swp-before {
   width: 20px;
   height: 66px;
-  background: #FA4319;
+  background: #fa4319;
   position: absolute;
   margin-left: 465px;
   margin-top: -4px;
@@ -21,7 +21,7 @@
 .swp-after {
   width: 20px;
   height: 66px;
-  background: #FA4319;
+  background: #fa4319;
   position: absolute;
   margin-left: 810px;
   margin-top: -4px;
@@ -56,14 +56,14 @@
   z-index: 1;
 }
 .navTab h2 {
-  color: #FA4319;
+  color: #fa4319;
   border-bottom: 4px solid #002a47;
   text-align: center;
   font-weight: 600;
   margin-bottom: 30px;
 }
-.btns{
-  border-bottom: 2px solid #FA4319;
+.btns {
+  border-bottom: 2px solid #fa4319;
   background: none;
   padding: 15px 10px;
   font-size: 20px;
@@ -74,10 +74,10 @@
   z-index: 3;
   transition: 0.8s;
 }
-.btns:hover{
+.btns:hover {
   color: #fff;
 }
-.btns::before{
+.btns::before {
   content: "";
   position: absolute;
   left: 0;
@@ -90,11 +90,11 @@
   transition: 0.8s;
   border-radius: 50% 50% 50 50;
 }
-.btns:hover::before{
+.btns:hover::before {
   height: 180%;
 }
 .active {
-  background:#002a47;
+  background: #002a47;
   color: #fff;
 }
 
@@ -114,7 +114,7 @@
 }
 .vehicle-header {
   display: flex;
-  border-bottom: 3px solid #FA4319;
+  border-bottom: 3px solid #fa4319;
 }
 .vehicle-header .icon {
   margin-left: 100px;
@@ -135,7 +135,7 @@
 
 .review-header {
   padding-top: 5px;
-  border-bottom: 3px solid #FA4319;
+  border-bottom: 3px solid #fa4319;
 }
 .review-header h2 {
   text-align: center;
@@ -173,15 +173,13 @@
   padding: 30px 35px;
   z-index: 2;
   position: relative;
-  
 }
-.vehicle-text::after{
+.vehicle-text::after {
   content: "";
   background: linear-gradient(
     to left,
     rgba(138, 138, 138, 0.082),
     rgba(255, 255, 255, 0.747)
-    
   );
   position: absolute;
   z-index: -1;
@@ -196,7 +194,7 @@
   font-weight: 700;
 }
 .vehicle-text h4 span {
-  color: #FA4319;
+  color: #fa4319;
   font-weight: 700;
 }
 .vehicle-text p {
@@ -283,6 +281,21 @@
   }
 }
 @media screen and (max-width: 360px) {
+  .serviceProvider-container {
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(#c5d3dd56, #c5d3dd56),
+      linear-gradient(#c5d3dd56, #c5d3dd56),
+      url(../../../assets/img/service-bg.png) center center fixed;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0px;
+    font-family: "Poppins", sans-serif;
+  }
+  .fullScreenRow {
+    display: none;
+  }
   .swp-header {
     text-align: center;
     margin-bottom: 40px !important;
@@ -307,5 +320,97 @@
     position: absolute;
     margin-left: 270px;
     height: 60px;
+  }
+
+  .responsiveScreen {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 25px;
+  }
+  .ResponsiveService {
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background: #fff;
+  }
+  .ResponsiveService h4 {
+    margin: auto;
+    color: #fa4319;
+    font-weight: 600;
+    /* padding-bottom: 5px; */
+  }
+  .ResponsiveService span{
+    width: 50px;
+    border-image-slice: 1;
+    border-width: 1px;
+    border-image-source: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0),
+      #fa4319,
+      rgba(0, 0, 0, 0)
+    );
+    border-bottom: 3px solid #fa4319;
+    color: #fff;
+  }
+  .ResponsiveService p{
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #000000;
+  }
+  .ResponsiveService button{
+    font-size: 12px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #002a47;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  }
+
+  .HandDelivery {
+    background: linear-gradient(#ffffff86, #ffffff86),
+    linear-gradient(#ffffff86, #68686862),
+      url(../../../assets/img/service-pic.png) center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .BicycleDelivery {
+    background: linear-gradient(#ffffff86, #ffffff86),
+    linear-gradient(#ffffff86, #68686862),
+      url("../../../assets/img/179-large_default (1).jpg") center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .BikeDelivery {
+    background: linear-gradient(#ffffff86, #ffffff86),
+    linear-gradient(#ffffff86, #68686862),
+      url("../../../assets/img/Advantages-of-A-Motorcycle-Delivery-Service.jpg")
+        center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .TruckDelivery {
+    background: linear-gradient(#ffffff86, #ffffff86),
+    linear-gradient(#ffffff86, #68686862),
+      url("../../../assets/img/New Project (3).jpg") center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .ShipDelivery {
+    background: linear-gradient(#ffffff86, #ffffff86),
+    linear-gradient(#ffffff86, #68686862),
+      url("../../../assets/img/8-Major-Types-of-Cargo-Transported-Through-the-Shipping-Industry.png")
+        center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .AirDelivery {
+    background: linear-gradient(#ffffff86, #ffffff86),
+    linear-gradient(#ffffff86, #68686862),
+      url("../../../assets/img/download.jpg") center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }

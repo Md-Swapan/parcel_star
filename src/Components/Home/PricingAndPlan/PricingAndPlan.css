@@ -228,6 +228,23 @@
   }
 }
 @media screen and (max-width: 576px) {
+  /* .pp-header{
+    text-align: center;
+    margin-bottom: 40px !important;
+    background: none;
+    border-radius: 3px;
+    width: 177px;
+    margin: auto;
+    border-image-slice: 1;
+    border-width: 1px;
+    border-image-source: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0),
+      #fa4319,
+      rgba(0, 0, 0, 0)
+    );
+    border-bottom: 3px solid #fa4319;
+  } */
   .pp-before {
     position: absolute;
     margin-left: 72px;
@@ -298,6 +315,7 @@
     width: 200px;
     padding: 10px;
     margin: auto;
+    
   }
   .pp-header h1 {
     font-size: 20px;
@@ -316,7 +334,8 @@
   .basic,
   .standard,
   .premium {
-    width: 160px;
+    width: 100px;
+    height: 180px;
     margin-bottom: 20px !important;
     margin: auto !important ;
     border: 7px solid #fa4319;
@@ -326,8 +345,8 @@
   .basic-container,
   .standard-container,
   .premium-container {
-    margin-left: -150px;
-    margin-top: 25px;
+    margin-left: -137px;
+    margin-top: 22px;
   }
   .basic-container-border1,
   .premium-container-border2 {
@@ -337,31 +356,43 @@
   .basic-back-view,
   .standard-back-view,
   .premium-back-view {
-    height: 132px;
-    font-size: 12px;
+    width: 160px;
+    height: 120px;
+    font-size: 10px;
+    padding: 0px;
+    margin-top: -120px;
   }
   .basic-front-view,
   .standard-front-view,
   .premium-front-view {
-    width: 250px;
+    width: 160px;
+    height: 120px !important;
     padding: 13px 0px;
+    font-size: 12px;
   }
   .basic:hover .basic-front-view {
-    margin-left: -5px;
+    margin-left: 20px;
   }
   .basic:hover .basic-back-view {
-    margin-left: 240px;
+    width: 160px;
+    margin-left: 180px;
+    padding-top: 10px;
+    
   }
   .premium:hover .premium-front-view {
-    margin-left: -5px;
+    margin-left: 20px;
   }
   .premium:hover .premium-back-view {
-    margin-left: 240px;
+    width: 160px;
+    margin-left: 180px;
+    padding-top: 10px;
   }
   .standard:hover .standard-front-view {
-    margin-left: -5px;
+    margin-left: 20px;
   }
   .standard:hover .standard-back-view {
-    margin-left: 240px;
+    width: 160px;
+    margin-left: 180px;
+    padding-top: 10px;
   }
 }

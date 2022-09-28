@@ -49,13 +49,13 @@ const BestBranches = () => {
           <div className="bestBranches-slider-container">
             <Slider {...settings}>
               <div>
-                <img src={BranchImg1} alt="" />
+                <img className="img-fluid" src={BranchImg1} alt="" />
               </div>
               <div>
-                <img src={BranchImg2} alt="" />
+                <img className="img-fluid" src={BranchImg2} alt="" />
               </div>
               <div>
-                <img src={BranchImg3} alt="" />
+                <img className="img-fluid" src={BranchImg3} alt="" />
               </div>
             </Slider>
           </div>

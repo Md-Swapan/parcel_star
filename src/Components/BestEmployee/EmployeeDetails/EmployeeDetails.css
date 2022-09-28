@@ -39,3 +39,21 @@
 .nameDesignation2, .nameDesignation4{
   background: rgba(250, 66, 25, 0.164);
 }
+
+@media screen and (max-width: 360px) {
+  .employeeDetailContainer h2{
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    color: #fa4319;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  .employeeDetailContainer h2 span{
+    font-family: "Poppins", sans-serif;
+    color: #777777;
+    font-size: 18px;
+  }
+  .branch-content-header h3 {
+    font-size: 18px;
+  }
+}

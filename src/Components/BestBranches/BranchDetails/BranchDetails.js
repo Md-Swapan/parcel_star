@@ -2,6 +2,7 @@ import React from "react";
 import "./BranchDetails.css";
 import Modal from "react-modal";
 
+
 const customStyles = {
   content: {
     borderRadius: "10px",
@@ -14,11 +15,15 @@ const customStyles = {
     boxShadow: "0 0 0 500vmax rgb(0 0 0 / 0.3)",
     padding: "40px",
     paddingTop: "15px",
-    width: '700px'
+    width: '700px',
+    zIndex: "9999"
   },
+  
 };
 
+
 const BranchDetails = (props) => {
+  
   const { division, branch, locations, employees, designation } = props.branch;
 
   const [modalIsOpen, setIsOpen] = React.useState(false);

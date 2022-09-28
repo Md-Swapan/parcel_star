@@ -27,6 +27,15 @@ const customStyles = {
 
 const TakeServiceForm = () => {
   const { register, handleSubmit, errors } = useForm();
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+  
+  function openModal() {
+    setIsOpen(true);
+  }
+  function closeModal() {
+    setIsOpen(false);
+  }
+
   const onSubmit = (data) => {
     const parcelData = {
       productType: data.productType,
@@ -39,6 +48,7 @@ const TakeServiceForm = () => {
       receiverPhnNumber: data.receiverPhnNumber,
     };
     console.log(parcelData);
+
     // axios.post("http://localhost:4050/AddShop", productData).then((res) => {
 
     //   console.log("done");
@@ -47,23 +57,10 @@ const TakeServiceForm = () => {
     openModal();
   };
 
-  const [modalIsOpen, setIsOpen] = React.useState(false);
-
-  function openModal() {
-    setIsOpen(true);
-  }
-
-  function closeModal() {
-    setIsOpen(false);
-  }
-
+  
   const paymentLedgerToggle = () => {
-    const planCalculateContainer = document.querySelector(
-      ".plan-calculate-container"
-    );
-    const paymentLedgerContainer = document.querySelector(
-      ".paymentLedger-container"
-    );
+    const planCalculateContainer = document.querySelector(".plan-calculate-container");
+    const paymentLedgerContainer = document.querySelector(".paymentLedger-container");
     planCalculateContainer.style.display = "none";
     paymentLedgerContainer.style.display = "block";
   };
@@ -83,12 +80,12 @@ const TakeServiceForm = () => {
   };
 
   const paymentOptionWayHandler = () => {
-    const paymentOptionWayContent = document.querySelector(
-      ".payment-option-way-content"
-    );
+    const paymentOptionWayContent = document.querySelector(".payment-option-way-content");
 
     paymentOptionWayContent.style.display = "block";
   };
+
+
   return (
     <>
       <div className="takeService-container">

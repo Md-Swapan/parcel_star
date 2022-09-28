@@ -117,3 +117,34 @@
 .modalContainer h2 span{
     color: #FA4319;
 }
+
+@media screen and (max-width: 360px) {
+  .branchDetails-content1,
+.branchDetails-content2,
+.branchDetails-content3,
+.branchDetails-content4,
+.branchDetails-content5,
+.branchDetails-content6 {
+  display: grid;
+  color: #002a47;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 20px;
+  text-align: center;
+  margin: 20px 0px;
+}
+.branchDetails-content1 button,
+.branchDetails-content2 button,
+.branchDetails-content3 button,
+.branchDetails-content4 button,
+.branchDetails-content5 button,
+.branchDetails-content6 button {
+  padding: 10px 20px;
+  margin: 10px 0px;
+  font-size: 13px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: #a11e00;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+}
