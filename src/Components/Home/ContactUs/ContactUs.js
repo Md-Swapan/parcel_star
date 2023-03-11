@@ -106,7 +106,6 @@ const ContactUs = () => {
               <div className="d-flex">
                 <div className="contact-content-container">
                   <h2>Contact Us</h2>
-
                   <p>
                     <span>
                       <i className="bi bi-telephone"></i>
