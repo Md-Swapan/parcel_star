@@ -279,6 +279,97 @@
     position: absolute;
     margin-left: 392px;
   }
+  .responsiveScreen {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 25px;
+  }
+  .ResponsiveService {
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background: #fff;
+  }
+  .ResponsiveService h4 {
+    margin: auto;
+    color: #fa4319;
+    font-weight: 600;
+    /* padding-bottom: 5px; */
+  }
+  .ResponsiveService span{
+    width: 50px;
+    border-image-slice: 1;
+    border-width: 1px;
+    border-image-source: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0),
+      #fa4319,
+      rgba(0, 0, 0, 0)
+    );
+    border-bottom: 3px solid #fa4319;
+    color: #fff;
+  }
+  .ResponsiveService p{
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #000000;
+  }
+  .ResponsiveService button{
+    font-size: 12px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #002a47;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  }
+
+  .HandDelivery {
+    background: linear-gradient(#ffffff86, #ffffff86),
+    linear-gradient(#ffffff86, #68686862),
+      url(../../../assets/img/service-pic.png) center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .BicycleDelivery {
+    background: linear-gradient(#ffffff86, #ffffff86),
+    linear-gradient(#ffffff86, #68686862),
+      url("../../../assets/img/179-large_default (1).jpg") center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .BikeDelivery {
+    background: linear-gradient(#ffffff86, #ffffff86),
+    linear-gradient(#ffffff86, #68686862),
+      url("../../../assets/img/Advantages-of-A-Motorcycle-Delivery-Service.jpg")
+        center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .TruckDelivery {
+    background: linear-gradient(#ffffff86, #ffffff86),
+    linear-gradient(#ffffff86, #68686862),
+      url("../../../assets/img/New Project (3).jpg") center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .ShipDelivery {
+    background: linear-gradient(#ffffff86, #ffffff86),
+    linear-gradient(#ffffff86, #68686862),
+      url("../../../assets/img/8-Major-Types-of-Cargo-Transported-Through-the-Shipping-Industry.png")
+        center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .AirDelivery {
+    background: linear-gradient(#ffffff86, #ffffff86),
+    linear-gradient(#ffffff86, #68686862),
+      url("../../../assets/img/download.jpg") center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 @media screen and (max-width: 360px) {
   .serviceProvider-container {

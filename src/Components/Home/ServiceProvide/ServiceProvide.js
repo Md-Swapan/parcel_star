@@ -300,54 +300,42 @@ const ServiceProvide = () => {
               <h4>Hand to Hand Delivery</h4>
               {/* <span>............</span> */}
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry.
+                Lorem Ipsum is simply 
               </p>
               <button type="">Show Details</button>
             </div>
             <div className="ResponsiveService BicycleDelivery">
               <h4>Bicycle Delivery</h4>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry.
+                Lorem Ipsum is simply 
               </p>
               <button type="">Show Details</button>
             </div>
             <div className="ResponsiveService BikeDelivery">
               <h4>Bike Delivery</h4>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry.
+                Lorem Ipsum is simply 
               </p>
               <button type="">Show Details</button>
             </div>
             <div className="ResponsiveService TruckDelivery">
               <h4>Truck Delivery</h4>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry.
+                Lorem Ipsum is simply
               </p>
               <button type="">Show Details</button>
             </div>
             <div className="ResponsiveService ShipDelivery">
               <h4>Ship Delivery</h4>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry.
+                Lorem Ipsum is simply 
               </p>
               <button type="">Show Details</button>
             </div>
             <div className="ResponsiveService AirDelivery">
               <h4>Air Delivery</h4>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry.
+                Lorem Ipsum is simply
               </p>
               <button type="">Show Details</button>
             </div>

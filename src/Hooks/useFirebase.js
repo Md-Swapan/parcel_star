@@ -1,4 +1,4 @@
-import InitFirebase from "./../Components/LoginSignUp/Firebase/FirebaseInit";
+// import InitFirebase from "./../Components/LoginSignUp/Firebase/FirebaseInit";
 import { useState, useEffect } from "react";
 import {
   getAuth,
@@ -10,6 +10,8 @@ import {
   signOut,
 } from "firebase/auth";
 import * as axios from "axios";
+import { baseURL } from './../baseUrl';
+import { InitFirebase } from './../Components/LoginSignUp/Firebase/FirebaseInit';
 
 // firebase init app
 InitFirebase();
@@ -71,7 +73,7 @@ const UseFirebase = () => {
     setLoading(true);
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        let from = location.state?.from?.pathname || "/";
+        let from = location?.state?.from?.pathname || "/";
         navigate(from, { replace: true });
         setAuthError("");
       })
@@ -98,7 +100,7 @@ const UseFirebase = () => {
   // save user data in db
   const saveUserInDB = (email, displayName, userType, method) => {
     const user = { email, displayName, userType };
-    fetch("http://localhost:4050/AddUser", {
+    fetch(baseURL+"/AddUser", {
       method: method,
       headers: {
         "content-type": "application/json",
@@ -134,7 +136,7 @@ const UseFirebase = () => {
 
 
   useEffect(() => {
-    fetch(`http://localhost:4050/Users/merchant/${user.email}`)
+    fetch(baseURL+`/Users/merchant/${user.email}`)
       .then((res) => res.json())
       .then((data) => setMerchant(data.merchant));
   }, [user.email]);

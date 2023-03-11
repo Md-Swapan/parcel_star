@@ -36,6 +36,9 @@ const TakeServiceForm = () => {
     setIsOpen(false);
   }
 
+
+  const [parcelData, setParcelData] = useState([]);  
+
   const onSubmit = (data) => {
     const parcelData = {
       productType: data.productType,
@@ -47,7 +50,7 @@ const TakeServiceForm = () => {
       senderPhnNumber: data.senderPhnNumber,
       receiverPhnNumber: data.receiverPhnNumber,
     };
-    console.log(parcelData);
+    setParcelData(parcelData);
 
     // axios.post("http://localhost:4050/AddShop", productData).then((res) => {
 
@@ -211,10 +214,11 @@ const TakeServiceForm = () => {
               </h4>
 
               <div className="plan-content">
-                <div className="serviceCost">
+                
+                  <div className="serviceCost">
                   <div>
                     <p>
-                      Cost Per Kg, <strong>10৳</strong> (10৳ x 5 kg){" "}
+                      Cost Per Kg, <strong>10৳</strong> 10৳ x 5 kg
                       <span>= 50৳</span>
                     </p>
                     <p>
@@ -229,6 +233,7 @@ const TakeServiceForm = () => {
                     Quantity + Sub Total ( 5 qty x 100৳) <span>= 500৳</span>
                   </p>
                 </div>
+                
                 <div className="haveToPay">
                   <h4>You Have To Pay</h4>
                   <h2>500 ৳</h2>

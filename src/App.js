@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Home from "./Components/Home/Home";
 import { Routes, Route } from "react-router-dom";
 import BestEmployee from "./Components/BestEmployee/BestEmployee";
@@ -17,15 +17,34 @@ import Offers from "./Components/Dashboard/Offers/Offers";
 import Support from "./Components/Dashboard/Support/Support";
 import CoverageArea from "./Components/Dashboard/CoverageArea/CoverageArea";
 import CreateShopForm from "./Components/Dashboard/CreateShopForm/CreateShopForm";
-import TakeServiceForm from "./Components/Dashboard/TakeService/TakeServiceForm";
 import TrackProductModal from './Components/Dashboard/TrackProduct/TrackProductModal';
-import ProductTracker from './Components/Header/Showcase/ProductTracker';
 import TakeServiceAll from './Components/Dashboard/TakeService/TakeServiceall';
 import Settings from './Components/Settings/Settings';
 import Help from './Components/Help/Help';
 import Faq from './Components/Faq/Faq';
+import { getToken } from "firebase/messaging";
+import { messaging } from "./Components/LoginSignUp/Firebase/FirebaseInit";
 
 function App() {
+
+  // async function requestPermission(){
+  //   const permission = await Notification.requestPermission();
+
+  //   if(permission === 'granted'){
+  //     const token = getToken(messaging, {
+  //       vapidKey: 'vapidkey'
+  //     });
+
+  //     console.log('Token generate', token);                  
+  //   }else if(permission === 'denied'){
+  //     alert('You denied for the notification');
+  //   }
+  // }
+
+  // useEffect(() => {
+  //   requestPermission()
+  // }, [])
+
   return (
     <>
       <div className="App">
@@ -53,6 +72,7 @@ function App() {
               <Route path="coverage-area" element={<CoverageArea />}></Route>
               <Route path="create-shop" element={<CreateShopForm />}></Route>
             </Route>
+            
             <Route path="take-service" element={<PrivateRoute> <TakeServiceAll /> </PrivateRoute>} />
             <Route path="track-products" element={<PrivateRoute> <TrackProductModal /> </PrivateRoute>} />
             <Route path="settings" element={<PrivateRoute> <Settings /> </PrivateRoute>} />

@@ -4,6 +4,7 @@ import "./CreateShopForm.css";
 import axios from "axios";
 import { useForm } from "react-hook-form";
 import Modal from "react-modal";
+import { baseURL } from './../../../baseUrl';
 
 const customStyles = {
   content: {
@@ -39,19 +40,19 @@ const CreateShopForm = () => {
   };
 
   const onSubmit = (data) => {
-    console.log(data);
+    // console.log(data);
     const productData = {
       name: data.name,
       email: data.email,
       number: data.number,
-      Website: data.Website,
+      website: data.website,
       address: data.address,
       licenseKey: data.licenseKey,
       category: data.category,
       imageUrlOne: imageUrl,
     };
-    console.log(productData);
-    axios.post("http://localhost:4050/AddShop", productData).then((res) => {
+    // console.log(productData);
+    axios.post(baseURL+"/AddShop", productData).then((res) => {
       openModal();
     });
   };
@@ -111,7 +112,7 @@ const CreateShopForm = () => {
             type="text"
             name=""
             placeholder="Enter Shop Website Link"
-            {...register("Website")}
+            {...register("website")}
           />
         </div>
         <div>

@@ -103,7 +103,7 @@ const DeliveryCalculator = () => {
                   <label htmlFor="">Pickup Area</label>
                   <br />
                   <select>
-                    <option selected>Select pickup area</option>
+                    <option value="none" selected disabled hidden>Select pickup area</option>
                     <option value="One">One</option>
                     <option value="Two">Two</option>
                     <option value="Three">Three</option>
@@ -122,7 +122,7 @@ const DeliveryCalculator = () => {
                   <label htmlFor="">Product Type</label>
                   <br />
                   <select aria-label="Default select example">
-                    <option selected>Select product type</option>
+                    <option value="none" selected disabled hidden>Select product type</option>
                     <option value="One">One</option>
                     <option value="Two">Two</option>
                     <option value="Three">Three</option>
@@ -132,7 +132,7 @@ const DeliveryCalculator = () => {
                   <label htmlFor="">Delivery Area</label>
                   <br />
                   <select aria-label="Default select example">
-                    <option selected>Select delivery area</option>
+                    <option value="none" selected disabled hidden>Select delivery area</option>
                     <option value="One">One</option>
                     <option value="Two">Two</option>
                     <option value="Three">Three</option>

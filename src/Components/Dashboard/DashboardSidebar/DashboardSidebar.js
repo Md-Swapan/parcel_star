@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import * as axios from "axios";
 import { NavLink } from "react-router-dom";
+import { baseURL } from './../../../baseUrl';
 
 const DashboardSidebar = () => {
   const { user, logOut } = useAuth();
@@ -36,11 +37,11 @@ const DashboardSidebar = () => {
   }, []);
 
   const [shops, setShops] = useState([]);
-  console.log(shops);
+  // console.log(shops);
   useEffect(() => {
-    axios("http://localhost:4050/shops").then((res) => {
+    axios(baseURL+"/shops").then((res) => {
       setShops(res.data);
-      console.log(res);
+      // console.log(res);
     });
   }, []);
 
@@ -64,7 +65,7 @@ const DashboardSidebar = () => {
         <ul className="menuList">
           <NavLink to="/">
             <li className="menu-item">
-            <i class="bi bi-house-fill"></i> Home
+            <i className="bi bi-house-fill"></i> Home
             </li>
           </NavLink>
           <NavLink to="/dashboard">

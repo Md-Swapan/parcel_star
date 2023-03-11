@@ -2,6 +2,7 @@
   "name": "parcel_star",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://parcel.shahidmahmum.com",
   "dependencies": {
     "@flaticon/flaticon-uicons": "^1.7.0",
     "@testing-library/jest-dom": "^5.16.5",

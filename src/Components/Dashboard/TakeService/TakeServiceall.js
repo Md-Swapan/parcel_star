@@ -24,7 +24,7 @@ const TakeServiceAll = () => {
                 color: "#002a47",
               }}
             >
-              <i class="bi bi-caret-left-fill"></i> Back
+              <i className="bi bi-caret-left-fill"></i> Back
             </span>
           </Link>
           <div

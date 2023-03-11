@@ -1,8 +1,9 @@
 import { initializeApp } from "firebase/app";
+import { getMessaging } from "firebase/messaging";
 import firebaseConfig from './firebaseConfig';
 
-const InitFirebase = () => {
+export const InitFirebase = () => {
   initializeApp(firebaseConfig);
 }
 
-export default InitFirebase;
+// export const messaging = getMessaging(InitFirebase)

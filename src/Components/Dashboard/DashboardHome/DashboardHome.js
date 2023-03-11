@@ -16,6 +16,7 @@ import {
 } from 'chart.js';
 import {  Line } from 'react-chartjs-2';
 import faker from 'faker';
+import { baseURL } from './../../../baseUrl';
 
 ChartJS.register(
   CategoryScale,
@@ -96,9 +97,9 @@ const DashboardHome = () => {
   const [shops, setShops] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:4050/shops").then((res) => {
+    axios.get(baseURL+"/shops").then((res) => {
       setShops(res.data);
-      console.log(res);
+      // console.log(res);
     });
   }, []);
 
